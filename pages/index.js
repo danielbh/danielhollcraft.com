@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import FontAwesome from 'react-fontawesome';
 import { config } from 'config'
-import particlesConfig from '../scripts/particles.config'
+import particlesConfig from '../scripts/particlesJS/particles.config'
 import './index.scss'
 
 export default class Index extends React.Component {

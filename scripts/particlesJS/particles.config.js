@@ -40,7 +40,7 @@ export default   {
       }
     },
     "size": {
-      "value": 5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -57,12 +57,13 @@ export default   {
       "width": 1
     },
     "move": {
-      "enable": true,
+      "enable": false,
       "speed": 6,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -98,7 +99,8 @@ export default   {
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -108,5 +110,5 @@ export default   {
       }
     }
   },
-  "retina_detect": true,
+  "retina_detect": true
 }
