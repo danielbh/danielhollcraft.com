@@ -1,4 +1,4 @@
-@import '../stylesheets/colors.scss';
+@import '../stylesheets/variables.scss';
 
 .wrapper {
   margin: 0;
@@ -25,6 +25,7 @@
   width: 250px;
   height: 250px;
   background: $primary-color;
+  opacity: $foreground-element-opacity;
   border-radius: 4px;
   z-index: 1;
   display: flex;
@@ -35,6 +36,7 @@
   width: 250px;
   height: 250px;
   background: $primary-color;
+  opacity: $foreground-element-opacity;
   border-radius: 4px;
   z-index: 1;
   display: flex;

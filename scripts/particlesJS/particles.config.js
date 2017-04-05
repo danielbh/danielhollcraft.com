@@ -82,7 +82,7 @@ export default   {
         "enable": true,
         "mode": "push"
       },
-      "resize": true
+      "resize": false
     },
     "modes": {
       "grab": {

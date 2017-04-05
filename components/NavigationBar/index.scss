@@ -1,4 +1,4 @@
-@import '../../stylesheets/colors.scss';
+@import '../../stylesheets/variables.scss';
 
 .logo {
   cursor: pointer; /* Pointer not appearing z-index issue */
@@ -17,20 +17,21 @@
 
 .nav-bar {
   background: $primary-color;
+  opacity:$foreground-element-opacity;
 }
 
-.nav-items > li {
+.nav-links > li {
   margin: 0;
   min-height: 60px;
 }
 
-.nav-items > li > a {
+.nav-links > li > a {
   padding-top: 20px;
   padding-bottom: 18px;
 }
 
 
-.nav-items > .active > a {
+.nav-links > .active > a {
   background-color: transparent !important;
   font-weight: 600;
   position: relative;
