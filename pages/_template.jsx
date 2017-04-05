@@ -3,7 +3,6 @@ import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
-import normalize from 'normalize.css'
 import '../css/markdown-styles'
 import '../css/index'
 

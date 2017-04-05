@@ -10,8 +10,8 @@ export default class Index extends React.Component {
 
   componentDidMount() {
     // TODO: Import particleJS from npm.
-    // Imported in Head.js. Particles JS is not built for a universal environment and requires
-    // a rewrite to play nice with next.js and npm imports.
+    // Particles JS is not built for a universal environment and requires
+    // a rewrite to play nice with gatsby.js and npm imports.
     particlesJS('particle', particlesConfig);
   }
 
