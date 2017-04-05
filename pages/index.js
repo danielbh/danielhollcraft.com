@@ -3,9 +3,9 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import FontAwesome from 'react-fontawesome';
+
 import { config } from 'config'
 import particlesConfig from '../scripts/particlesJS/particles.config'
-import './index.scss'
 
 export default class Index extends React.Component {
 
@@ -45,9 +45,6 @@ export default class Index extends React.Component {
                   </a>
               </div>
             </div>
-          </div>
-          <div className="about-wrapper">
-
           </div>
         </div>
       </div>
