@@ -1,5 +1,6 @@
 /**
  * Created by danielhollcraft on 4/2/17.
+ * Configuration for particle.js background.
  */
 export default   {
   "particles": {

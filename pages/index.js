@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import FontAwesome from 'react-fontawesome';
 import { config } from 'config'
-import particlesConfig from './particles.config'
+import particlesConfig from '../scripts/particles.config'
 
 export default class Index extends React.Component {
 
@@ -31,7 +31,7 @@ export default class Index extends React.Component {
             <div className="profile-items">
               <img
                 className="profile-item photo"
-                src="./profile-photo.png"
+                src={require("../images/profile-photo.png")}
                 alt="Profile Photo"
               />
               <h2 className="profile-item">{config.siteTitle}</h2>
