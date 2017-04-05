@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 import FontAwesome from 'react-fontawesome';
 import { config } from 'config'
 import particlesConfig from '../scripts/particles.config'
+import './index.scss'
 
 export default class Index extends React.Component {
 
@@ -36,14 +37,17 @@ export default class Index extends React.Component {
               />
               <h2 className="profile-item">{config.siteTitle}</h2>
               <div className="profile-item">
-                  <a href={config.githubProfile} className="social-link">
-                    <FontAwesome name="github" />
+                  <a href={config.githubProfile} >
+                    <FontAwesome name="github" size='2x' className="social-link" />
                   </a>
-                  <a href={config.linkedinProfile} className="social-link">
-                    <FontAwesome name="linkedin-square"/>
+                  <a href={config.linkedinProfile} >
+                    <FontAwesome name="linkedin-square" size='2x' className="social-link"/>
                   </a>
               </div>
             </div>
+          </div>
+          <div className="about-wrapper">
+
           </div>
         </div>
       </div>

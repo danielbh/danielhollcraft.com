@@ -1,0 +1,74 @@
+@import '../stylesheets/colors.scss';
+
+.wrapper {
+  margin: 0;
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  background: $secondary-color;
+  height: 100vh;
+  width: 100vw;
+  text-align: center
+}
+
+.particle-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-wrapper {
+  width: 250px;
+  height: 250px;
+  background: $primary-color;
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  width: 250px;
+  height: 250px;
+  background: $primary-color;
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-items {
+  margin-top: 7%;
+  margin-bottom: 6.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.photo {
+  flex: 1;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  min-height: 120px !important; /* Firefox */
+}
+
+.profile-item {
+  color: $primary-text-color;
+  display: flex;
+  align-items: center;
+  min-width: 0; /* Firefox */
+  min-height: 0; /* Firefox */
+}
+
+.social-link {
+  color: $primary-text-color;
+  width: 1.8em;
+}
+
