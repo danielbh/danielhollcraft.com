@@ -26,15 +26,13 @@ const NavigationBar = (props) => {
     <Navbar className="nav-bar" fluid fixedTop >
       <Navbar.Header>
         <Navbar.Brand>
-            <LinkContainer to={prefixLink('/')}>
-              <Nav>
+            <Link to='/'>
                 <Image
                   className='logo'
                   src={require('../../images/logo.png')}
                   alt="daniel_hollcraft_logo"
                 />
-              </Nav>
-            </LinkContainer>
+            </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
