@@ -23,7 +23,7 @@ import './index.scss'
 
 const NavigationBar = (props) => {
   return (
-    <Navbar className="nav-bar" fluid fixedTop >
+    <Navbar className="navbar" collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
             <Link to='/'>

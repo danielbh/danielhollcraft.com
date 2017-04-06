@@ -1,76 +1,77 @@
 @import '../stylesheets/variables.scss';
 
 .wrapper {
-  margin: 0;
-  padding-top: 10%;
+  padding-top: 40px;
   display: flex;
-  justify-content: space-around;
-  background: $secondary-color;
-  height: 100vh;
-  width: 100vw;
-  text-align: center
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 20px 0 60px 0;
+  }
 }
 
 .particle-background {
+  background: $secondary-color;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
-.profile-wrapper {
-  width: 250px;
-  height: 250px;
-  background: $primary-color;
-  opacity: $foreground-element-opacity;
-  border-radius: 4px;
+.about {
+  background-color: $primary-color;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-}
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 900px;
 
-.about-wrapper {
-  width: 250px;
-  height: 250px;
-  background: $primary-color;
-  opacity: $foreground-element-opacity;
-  border-radius: 4px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-items {
-  margin-top: 7%;
-  margin-bottom: 6.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  div {
+    padding: 20px 30px 30px 30px;
+    font-size: 20px;
+    color: $primary-text-color;
+  }
 
 }
 
 .photo {
-  flex: 1;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  min-height: 120px !important; /* Firefox */
+  opacity: 1;
+  display: block;
+  margin: auto;
+  padding: 10px 10%;
+  max-height: 200px;  /* Firefox */
+  min-width: 200px;
 }
 
-.profile-item {
-  color: $primary-text-color;
-  display: flex;
-  align-items: center;
-  min-width: 0; /* Firefox */
-  min-height: 0; /* Firefox */
+
+// Mobile
+@media screen and (max-width: 991px) {
+  .about {
+
+    div {
+      padding: 20px 30px 40px 30px;
+      font-size: 20px;
+    }
+  }
 }
 
-.social-link {
-  color: $primary-text-color;
-  width: 1.8em;
+@media screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    padding: 25px 0 0 0;
+
+    div {
+      font-size: 18px;
+    }
+  }
+
 }
+
+
+
+
+
+
 

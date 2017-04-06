@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
-import FontAwesome from 'react-fontawesome';
-
+import {Image} from 'react-bootstrap'
 import { config } from 'config'
 import particlesConfig from '../scripts/particlesJS/particles.config'
 
@@ -28,23 +27,19 @@ export default class Index extends React.Component {
         />
         <div className="wrapper">
           <div id="particle" className="particle-background"></div>
-          <div className="profile-wrapper">
-            <div className="profile-items">
-              <img
-                className="profile-item photo"
+          <div className="about">
+              <Image
+                className="photo"
                 src={require("../images/profile-photo.png")}
-                alt="Profile Photo"
+                alt="Daniel Hollcraft"
+                circle
               />
-              <h2 className="profile-item">{config.siteTitle}</h2>
-              <div className="profile-item">
-                  <a href={config.githubProfile} >
-                    <FontAwesome name="github" size='2x' className="social-link" />
-                  </a>
-                  <a href={config.linkedinProfile} >
-                    <FontAwesome name="linkedin-square" size='2x' className="social-link"/>
-                  </a>
+
+              <div>
+                <p>Hello, I'm Daniel.</p>
+                I have been working in the software industry since 2008. I have a background in both Software Engineering and Marketing. My experience has made me understand that real and profitable innovation is the result of these two areas working tightly togetherTherefore when I work with someone on a project I prefer to do more than just help them from a technical stand point. I make it my purpose to help them achieve a superior market position as well.
+
               </div>
-            </div>
           </div>
         </div>
       </div>

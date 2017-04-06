@@ -9,14 +9,14 @@
 @media (max-width: 768px) {
   .logo {
     max-width: 70px;
-    margin-left: 10px;
     margin-top: -12px;
   }
 }
 
-.nav-bar {
+.navbar {
+  z-index: 1;
   background: $primary-color;
-  opacity:$foreground-element-opacity;
+  border-radius: 0; // override default border radius
 }
 
 .nav-links > li {
