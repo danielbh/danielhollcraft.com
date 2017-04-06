@@ -57,7 +57,7 @@ export default   {
       "width": 1
     },
     "move": {
-      "enable": false,
+      "enable": true,
       "speed": 6,
       "direction": "none",
       "random": false,
@@ -75,11 +75,11 @@ export default   {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": false

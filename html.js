@@ -32,9 +32,8 @@ module.exports = React.createClass({
           <link rel="icon" type="image/png" sizes="96x96" href={require("images/favicons/favicon-96x96.png")} />
           <link rel="icon" type="image/png" sizes="16x16" href={require("images/favicons/favicon.ico")} />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
-
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-          <script src={require("scripts/particlesJS/particles.min.js")}></script>
+          <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
           {head.title.toComponent()}
           {head.meta.toComponent()}
           <TypographyStyle typography={typography} />
