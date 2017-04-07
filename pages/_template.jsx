@@ -6,12 +6,10 @@ import './index.scss'
 
 const Base = ({children}) => (
   <div>
-      <NavigationBar/>
-    <Grid>
-        {children}
-    </Grid>
+    <NavigationBar/>
+    {children}
   </div>
-)
+);
 
 
 Base.propTypes = {
