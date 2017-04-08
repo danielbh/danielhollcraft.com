@@ -1,0 +1,30 @@
+@import '../../stylesheets/variables.scss';
+
+.social-links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  color: $primary-text-color;
+}
+
+.photo {
+  opacity: 1;
+  display: block;
+  margin: auto;
+  padding: 10px 10%;
+  max-height: 200px;  /* Firefox */
+  min-width: 200px;
+}
+
+.profile {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+}

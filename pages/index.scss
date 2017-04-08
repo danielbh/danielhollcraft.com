@@ -4,19 +4,6 @@
   padding-top: 40px;
 }
 
-@media (max-width: 1199px) {
-  .wrapper {
-    //margin-right: -100px //FIXME: Hacky
-  }
-}
-
-@media (max-width: 991px) {
-  .container {
-    //margin: 0;
-    //padding: 0;
-  }
-}
-
 .particle-background {
   background: $secondary-color;
   position: fixed;
@@ -26,14 +13,12 @@
   bottom: 0;
 }
 
-.profile {
+
+.sidebar {
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $primary-color;
-  border-radius: 20px;
-  padding: 25px;
-  max-width: 300px;
 
   h2 {
     color: $primary-text-color;
@@ -45,34 +30,33 @@
 }
 
 .blog-feed {
-  margin: 0 20px 100px 20px;
+  margin: 0 20px 100px 50px;
   padding: 50px 10px 0 10px;
   background-color: $primary-color;
   border-radius: 20px;
 }
 
-.social-links {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+@media (min-width: 1200px) {
+  // Make the profile width look nicer when in this window size by making it wider
+  .wrapper {
+    .col-lg-3 {
+      width: 27%; // TODO: Hacky, find a cleaner way.
+    }
+  }
 }
 
-.social-link {
-  color: $primary-text-color;
+@media (max-width: 992px) {
+  .wrapper {
+    .container {
+      width: 90%;
+    }
+  }
+
+  .wrapper {
+    padding-top: 400px;
+  }
+
+  .blog-feed {
+    margin: 0 20px 100px 0;
+  }
 }
-
-.photo {
-  opacity: 1;
-  display: block;
-  margin: auto;
-  padding: 10px 10%;
-  max-height: 200px;  /* Firefox */
-  min-width: 200px;
-}
-
-
-
-
-
-
-

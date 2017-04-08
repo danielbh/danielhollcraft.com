@@ -7,8 +7,8 @@ import './index.scss'
 const Base = ({children}) => (
   <div>
     <NavigationBar/>
-    {children}
-  </div>
+      {children}
+    </div>
 );
 
 

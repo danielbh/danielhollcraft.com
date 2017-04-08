@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
-import {Image, Col, Row, Grid} from 'react-bootstrap'
+import {Col, Row, Grid} from 'react-bootstrap'
 import { config } from 'config'
 import particlesConfig from '../scripts/particlesJS/particles.config'
-import FontAwesome from 'react-fontawesome';
+import Profile from '../components/Profile'
 import BlogSummary from '../components/BlogSummary'
 
 export default class Index extends React.Component {
@@ -19,7 +18,7 @@ export default class Index extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="wrapper">
         <Helmet
           title={config.siteTitle}
           meta={[
@@ -28,11 +27,9 @@ export default class Index extends React.Component {
           ]}
         />
         <Grid>
-          <Row className="wrapper">
+          <Row>
             <div id="particle" className="particle-background"></div>
-
             <Col xs={12} sm={12} md={7} lg={8} className="blog-feed">
-              <BlogSummary/>
               <BlogSummary/>
               <BlogSummary/>
               <BlogSummary/>
@@ -40,23 +37,8 @@ export default class Index extends React.Component {
               <BlogSummary/>
             </Col>
 
-            <Col lg={4} md={4} xsHidden smHidden className="profile">
-              <Image
-                className="photo"
-                src={require("../images/profile-photo.png")}
-                alt="Daniel Hollcraft"
-                circle
-              />
-              <h2>{config.siteTitle}</h2>
-              <p>Full-stack Javascript Developer</p>
-              <div className="social-links">
-                <a href={config.githubProfile} >
-                  <FontAwesome name="github" size='2x' className="social-link" />
-                </a>
-                <a href={config.linkedinProfile} >
-                  <FontAwesome name="linkedin-square" size='2x' className="social-link"/>
-                </a>
-              </div>
+            <Col lg={3} md={4} xs={0} smOffset={0} xsHidden smHidden className="sidebar">
+            <Profile/>
             </Col>
           </Row>
         </Grid>
