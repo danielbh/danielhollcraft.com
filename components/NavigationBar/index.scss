@@ -17,6 +17,7 @@
   z-index: 1;
   background: $primary-color;
   border-radius: 0; // override default border radius
+  border-bottom: 1px solid $primary-selected-color;
 }
 
 @media (max-width: 991px) {
@@ -25,7 +26,6 @@
       width: 97%; // Make navbar look nicer as it gets smaller by pulling nav buttons & logo towards the edges of screen
     }
   }
-
 }
 
 
