@@ -39,14 +39,14 @@ const NavigationBar = (props) => {
       <Navbar.Collapse>
         <Nav pullRight
              className="nav-links">
-          <LinkContainer to={prefixLink('/blog/')}>
-            <NavItem eventKey={2}>
+          <LinkContainer to='/'>
+            <NavItem eventKey={1}>
               <FontAwesome name="bookmark" className='icon'/>
               Blog
             </NavItem>
           </LinkContainer>
           <LinkContainer to={prefixLink('/projects/')}>
-            <NavItem eventKey={1}>
+            <NavItem eventKey={2}>
               <FontAwesome name="rocket" className='icon' />
               Projects
             </NavItem>

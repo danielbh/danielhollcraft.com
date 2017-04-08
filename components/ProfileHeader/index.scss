@@ -1,0 +1,35 @@
+@import '../../stylesheets/variables.scss';
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+
+  .photo {
+    border: 2px solid $primary-color;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  h1, h3 {
+    color: $primary-color;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  // Make the profile width look nicer when in this window size by making it wider
+  .profile-header {
+    h1 {
+      font-size: 29px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+}

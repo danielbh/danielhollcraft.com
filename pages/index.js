@@ -6,6 +6,7 @@ import { config } from 'config'
 import particlesConfig from '../scripts/particlesJS/particles.config'
 import Profile from '../components/Profile'
 import BlogSummary from '../components/BlogSummary'
+import ProfileHeader from '../components/ProfileHeader'
 
 export default class Index extends React.Component {
 
@@ -26,9 +27,12 @@ export default class Index extends React.Component {
             {"name": "keywords", "content": "sample, something"},
           ]}
         />
+        <div id="particle" className="particle-background"></div>
         <Grid>
           <Row>
-            <div id="particle" className="particle-background"></div>
+            <Col xs={12} sm={12} mdHidden lgHidden className="small-screen-header">
+              <ProfileHeader/>
+            </Col>
             <Col xs={12} sm={12} md={7} lg={8} className="blog-feed">
               <BlogSummary/>
               <BlogSummary/>
@@ -37,8 +41,8 @@ export default class Index extends React.Component {
               <BlogSummary/>
             </Col>
 
-            <Col lg={3} md={4} xs={0} smOffset={0} xsHidden smHidden className="sidebar">
-            <Profile/>
+            <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
+              <Profile/>
             </Col>
           </Row>
         </Grid>

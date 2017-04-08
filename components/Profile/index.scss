@@ -6,10 +6,6 @@
   justify-content: center;
 }
 
-.social-link {
-  color: $primary-text-color;
-}
-
 .photo {
   opacity: 1;
   display: block;
@@ -27,4 +23,12 @@
   border-radius: 20px;
   padding: 25px;
   width: 100%;
+
+  h2 {
+    color: $primary-text-color;
+  }
+
+  .social-link {
+    color: $primary-text-color;
+  }
 }
