@@ -4,24 +4,32 @@
 .blog-summary {
   padding: 0;
   margin: 0 40px 40px 30px;
-  border-bottom: 1px solid $secondary-text-color;
 
   h2 {
     color: $primary-text-color;
-    margin-top: 10px;
     line-height: 10px;
-    margin-bottom: 25px;
+    margin: 25px 0;
   }
 
   p {
     color: $primary-text-color;
-    line-height: 26px;
+    line-height: 25px;
+    font-size: 18px;
     margin-top: 10px;
   }
 
   time {
     color: $primary-text-color;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 900;
   }
+}
+
+.blog-preview-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tag {
+  font-size: 14px;
 }

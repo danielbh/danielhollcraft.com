@@ -17,7 +17,7 @@ const Profile = (props) => {
   return (
     <div className="profile">
       <Image
-        className="photo"
+        className="profile-photo"
         src={require("../../images/profile-photo.png")}
         alt="Daniel Hollcraft"
         circle

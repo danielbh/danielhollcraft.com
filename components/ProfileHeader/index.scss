@@ -1,6 +1,5 @@
 @import '../../stylesheets/variables.scss';
 
-
 .profile-header {
   display: flex;
   align-items: center;
@@ -9,7 +8,7 @@
   padding: 25px;
   width: 100%;
 
-  .photo {
+  .profile-photo {
     border: 2px solid $primary-color;
     padding: 0;
     margin-bottom: 20px;
