@@ -15,6 +15,8 @@ import {
   PortfolioProject
 } from '../../components'
 
+import './index.scss'
+
 const Portfolio = (props) => (
   <div className="portfolio-wrapper">
     <Helmet

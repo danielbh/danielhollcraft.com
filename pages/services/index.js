@@ -14,6 +14,8 @@ import {
   ParticleBackground,
 } from '../../components'
 
+import './index.scss'
+
 const Services = (props) => {
   return (
     <div className="portfolio-wrapper">
@@ -28,7 +30,14 @@ const Services = (props) => {
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >
-
+            <div className="services">
+              <div><span className="font-bold">Type:</span> Freelance</div>
+              <div><span className="font-bold">Skills:</span> React Native, Google Places API, Node.js, REST API</div>
+              <div>This is a project long description This is a project long description This is a project long description
+                This is a project long description This is a project long description This is a project long description This
+                is a project long description This is a project long description This is a project long description This is a
+                project long description This is a project long description This is a project long description.</div>
+            </div>
           </Col>
         </Row>
       </Grid>
