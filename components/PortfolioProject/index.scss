@@ -1,0 +1,92 @@
+@import '../../stylesheets/variables.scss';
+
+
+.project {
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 25px 0;
+  margin: 0 120px 70px 120px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+
+
+  p {
+    color: $primary-text-color;
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  time {
+    width: 90%;
+    color: $primary-text-color;
+    font-size: 17px;
+    font-weight: 900;
+  }
+}
+
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  div {
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    color: $primary-text-color;
+    font-weight: 800;
+  }
+}
+
+.project-summary {
+  width: 90%;
+
+  div {
+    text-align: justify;
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    color: $primary-text-color;
+  }
+}
+
+.project-footer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    //margin-left: 20px;
+    font-size: 22px;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+  }
+}
+
+.project-image {
+  //border-radius: 10px;
+  width: 100%;
+}
+
+.tag {
+  font-size: 14px;
+}
+
+@media  (max-width: 800px) {
+  .project-heading {
+    flex-direction: column;
+    div {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .project-image {
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+
+  }
+}

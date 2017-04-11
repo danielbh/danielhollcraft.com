@@ -16,7 +16,7 @@ const BlogSummary = (props) => {
       <Image
         className="blog-preview-image"
         src="http://placehold.it/350x150"
-        alt="blog-preview-image"
+        alt="blog preview image"
       />
       <time>3/20/2016</time>
       {/*<br/>*/}

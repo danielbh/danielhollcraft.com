@@ -11,11 +11,12 @@ import { config } from 'config'
 
 import {
   ProfileHeader,
-  ParticleBackground
+  ParticleBackground,
+  PortfolioProject
 } from '../../components'
 
 const Portfolio = (props) => (
-  <div className="wrapper">
+  <div className="portfolio-wrapper">
     <Helmet
       title={config.siteTitle}
       meta={[
@@ -28,6 +29,9 @@ const Portfolio = (props) => (
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
           <ProfileHeader/>
+          <PortfolioProject/>
+          <PortfolioProject/>
+          <PortfolioProject/>
         </Col>
       </Row>
     </Grid>
