@@ -9,9 +9,8 @@
   justify-content: center;
   border-radius: 10px;
   padding: 25px 0;
-  margin: 0 120px 70px 120px;
+  margin: 0 10% 70px 10%;
   box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
-
 
   p {
     color: $primary-text-color;
@@ -35,15 +34,16 @@
   width: 90%;
 
   div {
+    align-text: right;
     margin: 0 0 25px 0;
-    font-size: 20px;
+    font-size: 23px;
     color: $primary-text-color;
     font-weight: 800;
   }
 }
 
 .project-summary {
-  width: 90%;
+  width: 85%;
 
   div {
     text-align: justify;
@@ -54,25 +54,52 @@
 }
 
 .project-footer {
-  width: 80%;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
 
   button {
-    //margin-left: 20px;
+    width: 22%;
+    margin: 10px;
     font-size: 22px;
     box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
   }
 }
 
 .project-image {
-  //border-radius: 10px;
   width: 100%;
 }
 
 .tag {
   font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+  .project-footer {
+
+    button {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .project {
+    margin: 0 2% 70px 2%;
+  }
+}
+
+@media (max-width: 762px) {
+  .project-footer {
+    button {
+      width: 100%;
+    }
+  }
 }
 
 @media  (max-width: 800px) {
@@ -87,6 +114,5 @@
     box-shadow: none;
     width: 100%;
     border-radius: 0;
-
   }
 }

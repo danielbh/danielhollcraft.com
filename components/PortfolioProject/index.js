@@ -16,7 +16,7 @@ const PortfolioProject = (props) => {
   return (
     <div className="project">
       <div className="project-heading">
-        <div> <span className="font-bold">LaL Paris:</span> A tour guide App for one of Paris</div>
+        <div> A tour guide app for Paris, France</div>
         <div> Aug 2016 – Present</div>
 
       </div>
@@ -29,12 +29,13 @@ const PortfolioProject = (props) => {
       <div className="project-summary">
         <div><span className="font-bold">Type:</span> Freelance</div>
         <div><span className="font-bold">Skills:</span> React Native, Google Places API, Node.js, REST API</div>
-        <div>This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description This is a project long description.</div>
+        <div>This is a project long description This is a project long description This is a project long description
+          This is a project long description This is a project long description This is a project long description This
+          is a project long description This is a project long description This is a project long description This is a
+          project long description This is a project long description This is a project long description.</div>
       </div>
 
       <div className="project-footer">
-        {/*<div>Google Play</div>*/}
-        {/*<div>App Store</div>*/}
         <Button bsStyle="primary" bsSize="large">
           <FontAwesome name="external-link" className='icon'/>Website</Button>
         <Button bsStyle="success" bsSize="large">
