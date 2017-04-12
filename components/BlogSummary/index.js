@@ -6,27 +6,35 @@ import React, {
 } from 'react';
 
 import {Image, Label} from 'react-bootstrap'
+import { Link } from 'react-router';
 
+import {LinkContainer} from 'react-router-bootstrap'
 import './index.scss'
 
 
 const BlogSummary = (props) => {
   return (
     <div className="blog-summary">
-      <Image
-        className="blog-preview-image"
-        src="http://placehold.it/350x150"
-        alt="blog preview image"
-      />
+      {/*<Image*/}
+        {/*className="blog-preview-image"*/}
+        {/*src="http://placehold.it/350x150"*/}
+        {/*alt="blog preview image"*/}
+      {/*/>*/}
       <time>3/20/2016</time>
-      <h2> Blog Entry </h2>
+      <div className="blog-title">
+        <Link to="/"><h2> Blog Entry </h2></Link>
+      </div>
       {/*<br/>*/}
       {/*<Label className="tag" bsStyle="info">Node.js</Label>&nbsp;*/}
       {/*<Label className="tag" bsStyle="warning">Project Management</Label> &nbsp;*/}
       {/*<Label className="tag" bsStyle="danger">Marketing</Label>*/}
 
 
-      <p>This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about</p>
+      <p>This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry.
+      </p>
+      <div className="read-more">
+        <Link  to="/">Read More...</Link>
+      </div>
     </div>
   );
 };

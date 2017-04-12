@@ -1,31 +1,56 @@
 @import '../../stylesheets/variables.scss';
 
+@mixin summary-text {
+  line-height: 25px;
+  font-size: 18px;
+  padding: 10px 30px 20px 30px;
+  color: $primary-text-color;
+
+}
 
 .blog-summary {
   background-color: $primary-color;
   border-radius: 20px;
+  padding: 20px 0;
+  margin-bottom: 25px;
+
+  p {
+    @include summary-text();
+    padding: 10px 30px 20px 30px;
+    color: $primary-text-color;
+    margin-top: 10px;
+    margin-bottom: 0; // overriding default
+  }
+
+  time {
+    padding: 20px 30px 20px 30px;
+    color: $primary-text-color;
+    font-size: 17px;
+    font-weight: 900;
+  }
+}
+
+.blog-title {
 
   h2 {
-    padding: 10px 30px 0 30px;
+    padding: 0 30px 0 30px;
     color: $primary-text-color;
     line-height: 10px;
     margin: 25px 0;
   }
 
-  p {
-    padding: 10px 30px 20px 30px;
-    color: $primary-text-color;
-    line-height: 25px;
-    font-size: 18px;
-    margin-top: 10px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.read-more {
+  a {
+    @include summary-text();
+    font-size: 20px;
+    text-decoration: underline;
   }
 
-  time {
-    padding: 10px 30px 20px 30px;
-    color: $primary-text-color;
-    font-size: 17px;
-    font-weight: 900;
-  }
 }
 
 .blog-preview-image {

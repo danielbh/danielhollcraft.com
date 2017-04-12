@@ -1,6 +1,5 @@
 @import '../../stylesheets/variables.scss';
 
-
 .project {
   background: $primary-color;
   display: flex;
@@ -56,7 +55,6 @@
   width: 90%;
   padding: 0;
   margin: 0;
-  list-style: none;
   display: flex;
 
   flex-flow: row wrap;
