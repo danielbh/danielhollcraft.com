@@ -10,6 +10,13 @@
   min-width: 200px;
 }
 
+.about {
+  font-size: 18px;
+  text-align: center;
+  color: $primary-text-color;
+  margin-bottom: 20px;
+}
+
 .profile {
   box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
   background-color: $primary-color;
@@ -17,14 +24,8 @@
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  padding: 25px;
+  padding: 14px 25px;
   width: 100%;
-
-  p {
-    font-size: 18px;
-    text-align: center;
-    color: $primary-text-color;
-  }
 
   h2 {
     color: $primary-text-color;
@@ -33,7 +34,7 @@
 
   .social-links {
     font-size: 20px;
-    width: 38%;
+    width: 35%;
     align-items: center;
     display: flex;
     justify-content: space-between;

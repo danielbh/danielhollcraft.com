@@ -4,3 +4,12 @@ $primary-color: rgba(238, 238, 238, 0.9);
 $primary-selected-color: black;
 $primary-text-color: rgba(28, 28, 28, 0.71);
 $secondary-text-color: rgba(149, 149, 149, 0.71);
+
+
+// For tagging blog posts
+@mixin tag {
+  font-size: 14px;
+  background: none;
+  border: 1px solid;
+  color: $primary-text-color;
+}

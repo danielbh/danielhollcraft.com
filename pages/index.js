@@ -8,7 +8,8 @@ import {
   Profile,
   BlogSummary,
   ProfileHeader,
-  ParticleBackground
+  ParticleBackground,
+  Categories
 } from '../components'
 
 const Index = (props) => (
@@ -35,7 +36,12 @@ const Index = (props) => (
         </Col>
 
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
-          <Profile/>
+          <Row>
+            <Profile/>
+          </Row>
+          <Row>
+            <Categories/>
+          </Row>
         </Col>
       </Row>
     </Grid>

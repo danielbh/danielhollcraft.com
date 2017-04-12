@@ -16,7 +16,7 @@
 
   p {
     @include summary-text();
-    padding: 10px 30px 20px 30px;
+    padding: 5px 30px 20px 30px;
     color: $primary-text-color;
     margin-top: 10px;
     margin-bottom: 0; // overriding default
@@ -58,6 +58,12 @@
   border-radius: 10px;
 }
 
+.tags {
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .tag {
-  font-size: 14px;
+  @include tag()
 }

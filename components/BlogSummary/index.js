@@ -24,12 +24,11 @@ const BlogSummary = (props) => {
       <div className="blog-title">
         <Link to="/"><h2> Blog Entry </h2></Link>
       </div>
-      {/*<br/>*/}
-      {/*<Label className="tag" bsStyle="info">Node.js</Label>&nbsp;*/}
-      {/*<Label className="tag" bsStyle="warning">Project Management</Label> &nbsp;*/}
-      {/*<Label className="tag" bsStyle="danger">Marketing</Label>*/}
-
-
+      <div className="tags">
+        <Label className="tag">Node.js</Label>&nbsp;
+        <Label className="tag">React Native</Label> &nbsp;
+        <Label className="tag">App Development</Label>
+      </div>
       <p>This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry.
       </p>
       <div className="read-more">

@@ -5,8 +5,12 @@
 
   .row {
     z-index: 1;
-    margin-left: 20px;
+    width: 100%;
   }
+}
+
+.blog-feed {
+  margin-left: 20px;
 }
 
 .sidebar {
@@ -23,7 +27,10 @@
   // Make the profile width look nicer when in this window size by making it wider
   .wrapper {
     .col-lg-3 {
-      width: 27%; // TODO: Hacky, find a cleaner way.
+      width: 27%;
+    }
+    .col-lg-8 {
+      width: 70%;
     }
   }
 }
@@ -68,3 +75,5 @@
     }
   }
 }
+
+
