@@ -46,26 +46,18 @@ const Contact = (props) => {
                     <FormControl type="email" placeholder="Email" />
                   </Col>
                 </FormGroup>
-
-                <FormGroup controlId="formHorizontalPassword">
+                <FormGroup controlId="formHorizontalMessage">
                   <Col componentClass={ControlLabel} sm={2}>
-                    Password
+                    Message
                   </Col>
                   <Col sm={10}>
-                    <FormControl type="password" placeholder="Password" />
+                    <FormControl componentClass="textarea" placeholder="Your message..." />
                   </Col>
                 </FormGroup>
-
-                <FormGroup>
-                  <Col smOffset={2} sm={10}>
-                    <Checkbox>Remember me</Checkbox>
-                  </Col>
-                </FormGroup>
-
                 <FormGroup>
                   <Col smOffset={2} sm={10}>
                     <Button type="submit">
-                      Sign in
+                      Send
                     </Button>
                   </Col>
                 </FormGroup>

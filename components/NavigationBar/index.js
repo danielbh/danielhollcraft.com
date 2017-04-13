@@ -25,13 +25,13 @@ const NavigationBar = (props) => {
     <Navbar className="navbar"  collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
-            <IndexLink to="/">
-                <Image
-                  className='logo'
-                  src={require('../../images/logo.png')}
-                  alt="daniel_hollcraft_logo"
-                />
-            </IndexLink>
+          <IndexLink to="/">
+            <Image
+              className='logo'
+              src={require('../../images/logo.png')}
+              alt="daniel_hollcraft_logo"
+            />
+          </IndexLink>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
@@ -56,12 +56,14 @@ const NavigationBar = (props) => {
               Portfolio
             </NavItem>
           </LinkContainer>
-          <LinkContainer to="/contact/">
-            <NavItem eventKey={4}>
+          {/*Work around to put e-mail contact into navbar. This causes errors in console*/}
+          <li role="presentation">
+            <a href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
               <FontAwesome name="envelope" className='icon' />
               Contact
-            </NavItem>
-          </LinkContainer>
+            </a>
+          </li>    
+          
         </Nav>
       </Navbar.Collapse>
     </Navbar>
