@@ -14,7 +14,7 @@
   padding-bottom: 50px;
 
   .container {
-    width: 100%;
+    //width: 100%;
   }
 }
 
@@ -27,9 +27,7 @@
   }
 }
 
-.blog-feed {
-  margin-left: 20px;
-}
+.blog-feed { }
 
 .sidebar {
   display: flex;
@@ -89,7 +87,7 @@
 @media (max-width: 720px) {
   .blog-wrapper {
     .container {
-      width: 100%;
+      width: 95%;
     }
   }
 }
