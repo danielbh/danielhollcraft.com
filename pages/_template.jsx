@@ -10,8 +10,10 @@ import './index.scss'
 const Base = ({children}) => (
   <div>
     <NavigationBar/>
+    <Grid className="content">
       {children}
-    <Footer/>
+      <Footer/>
+    </Grid>
     </div>
 );
 

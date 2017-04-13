@@ -8,7 +8,6 @@ import React, {
 import {Image, Label} from 'react-bootstrap'
 import { Link } from 'react-router';
 
-import {LinkContainer} from 'react-router-bootstrap'
 import './index.scss'
 
 
@@ -26,7 +25,6 @@ const BlogSummary = (props) => {
       </div>
       <div className="tags">
         <Label className="tag">Node.js</Label>&nbsp;
-        <Label className="tag">React Native</Label> &nbsp;
         <Label className="tag">App Development</Label>
       </div>
       <p>This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry.

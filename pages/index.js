@@ -13,7 +13,7 @@ import {
 } from '../components'
 
 const Index = (props) => (
-  <div className="wrapper">
+  <div className="blog-wrapper">
     <Helmet
       title={config.siteTitle}
       meta={[
@@ -23,7 +23,6 @@ const Index = (props) => (
     />
     <ParticleBackground backgroundColor="#2e3250"/>
     <Grid>
-      <Row>
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>
         </Col>
@@ -34,7 +33,6 @@ const Index = (props) => (
           <BlogSummary/>
           <BlogSummary/>
         </Col>
-
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
           <Row>
             <Profile/>
@@ -43,7 +41,6 @@ const Index = (props) => (
             <Categories/>
           </Row>
         </Col>
-      </Row>
     </Grid>
   </div>
 );

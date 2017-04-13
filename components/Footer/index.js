@@ -5,10 +5,14 @@ import React, {
   PropTypes,
 } from 'react';
 
+import './index.scss'
+
 const Footer = (props) => {
   return (
     <footer className="footer">
-       Daniel Hollcraft © 2017
+    <div className="footer-text">
+        Copyright © Daniel Hollcraft 2017
+    </div>
     </footer>
   );
 };

@@ -1,7 +1,16 @@
 @import '../stylesheets/variables.scss';
 
-.wrapper {
-  padding-top: 20px;
+.container {
+  padding-right: 0; // override bootstrap globally
+  padding-left: 0; // override bootstrap globally
+}
+
+.content {
+  width: 100%
+}
+
+.blog-wrapper {
+  padding-top: 10px;
 
   .row {
     z-index: 1;
@@ -25,7 +34,7 @@
 
 @media (min-width: 1200px) {
   // Make the profile width look nicer when in this window size by making it wider
-  .wrapper {
+  .blog-wrapper {
     .col-lg-3 {
       width: 27%;
     }
@@ -36,7 +45,7 @@
 }
 
 @media (max-width: 1199px) {
-  .wrapper {
+  .blog-wrapper {
     .row {
       margin-left: 0;
       margin-right: 0;
@@ -48,14 +57,14 @@
   }
 }
 
-@media (max-width: 992px) {
-  .wrapper {
+@media (max-width: 991px) {
+  .blog-wrapper {
+    width: 100%;
     padding-top: 0;
-
     .container {
-      width: 90%;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 0; // remove bootstrap defaults
+      padding-right: 0; // remove bootstrap defaults
+      width: 95%;
     }
 
     .row {
@@ -69,9 +78,9 @@
 }
 
 @media (max-width: 720px) {
-  .wrapper {
+  .blog-wrapper {
     .container {
-      width: 98%;
+      width: 100%;
     }
   }
 }

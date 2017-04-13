@@ -1,6 +1,18 @@
 @import '../../stylesheets/variables.scss';
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  border-top: 2px solid $primary-selected-color;
+  width: 100%;
+  font-size: 18px;
+  color: $primary-text-color;
+  position: relative; // To be in front of background
+  padding: 8px;
   background: $primary-color;
-  z-index: 1;
+  text-align: center;
 }
