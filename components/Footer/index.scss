@@ -4,14 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
 }
 
 .footer-text {
-  border-top: 2px solid $primary-selected-color;
+  border-top: 1px solid $primary-selected-color;
   width: 100%;
   font-size: 18px;
   color: $primary-text-color;
-  position: relative; // To be in front of background
   padding: 8px;
   background: $primary-color;
   text-align: center;

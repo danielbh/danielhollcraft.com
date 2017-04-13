@@ -1,12 +1,21 @@
 @import '../stylesheets/variables.scss';
 
+
 .container {
   padding-right: 0; // override bootstrap globally
   padding-left: 0; // override bootstrap globally
 }
 
 .content {
-  width: 100%
+  width: 100%;
+  background-color: #FFF; /* #F7F7F7; */
+  min-height: 100%;
+  position:absolute;
+  padding-bottom: 50px;
+
+  .container {
+    width: 100%;
+  }
 }
 
 .blog-wrapper {
