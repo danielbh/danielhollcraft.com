@@ -22,7 +22,7 @@ const BlogSummary = (props) => {
       {/*/>*/}
       <time>3/20/2016</time>
       <div className="blog-title">
-        <Link to="/"><h2> Blog Entry </h2></Link>
+        <Link to="/"><h2>Fake Blog Entry Title That is Moderately Long</h2></Link>
       </div>
       <div className="tags">
         <Label className="tag">Node.js</Label>&nbsp;
