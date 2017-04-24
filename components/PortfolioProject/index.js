@@ -35,7 +35,7 @@ const PortfolioProject = (props) => {
           project long description This is a project long description This is a project long description.</div>
       </div>
 
-      <div className="project-footer">
+      <div className="panel-footer">
         <Button bsStyle="primary" bsSize="large">
           <FontAwesome name="external-link" className='icon'/>Website</Button>
         <Button bsStyle="success" bsSize="large">

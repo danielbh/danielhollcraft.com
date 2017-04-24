@@ -62,8 +62,7 @@ const NavigationBar = (props) => {
               <FontAwesome name="envelope" className='icon' />
               Contact
             </a>
-          </li>    
-          
+          </li>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
