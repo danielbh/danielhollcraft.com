@@ -28,6 +28,9 @@ const Categories = (props) => {
         <div className="category">
           <Label className="tag">App Development</Label>
         </div>
+        <div className="category">
+          <Label className="tag">DevOps</Label>
+        </div>
       </div>
 
     </div>
