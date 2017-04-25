@@ -11,32 +11,38 @@ import { Link } from 'react-router';
 import './index.scss'
 
 
-const BlogSummary = (props) => {
+const BlogSummary = ({title, date, categories, summary, path}) => {
   return (
+
     <div className="blog-summary">
       {/*<Image*/}
-        {/*className="blog-preview-image"*/}
-        {/*src="http://placehold.it/350x150"*/}
-        {/*alt="blog preview image"*/}
+      {/*className="blog-preview-image"*/}
+      {/*src="http://placehold.it/350x150"*/}
+      {/*alt="blog preview image"*/}
       {/*/>*/}
-      <time>3/20/2016</time>
+      <time>{date}</time>
       <div className="blog-title">
-        <Link to="/"><h2>Fake Blog Entry Title That is Moderately Long</h2></Link>
+        <Link to={path}><h2>{title}</h2></Link>
       </div>
       <div className="tags">
-        <Label className="tag">Node.js</Label>&nbsp;
-        <Label className="tag">App Development</Label>
+        { categories.map(category => <Label className="tag">{category}</Label>) }
       </div>
-      <p>This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry. I want it to be about This is a fake description about the blog entry.
-      </p>
+      <p>{summary}</p>
       <div className="read-more">
-        <Link  to="/">Read More...</Link>
+        <Link  to={path}>Read More...</Link>
       </div>
     </div>
   );
 };
 
-BlogSummary.propTypes = {};
+BlogSummary.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  categories: PropTypes.array.isRequired,
+  summary: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
+};
 BlogSummary.defaultProps = {};
 
 export default BlogSummary;
+

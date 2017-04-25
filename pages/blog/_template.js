@@ -18,9 +18,7 @@ import {
 const BlogPageTemplate = ({route, location}) => {
 
   const post = route.pages.find(p => p.path === location.pathname).data;
-  // Convert categories string field into array split by commmas.
-  // TODO: Put logic in separate function with validation to help blog user.
-  const categories = post.categories.split(",");
+  const categoryArray = post.categories.split(",");
 
   return (
     <div className="blog-wrapper">
@@ -41,7 +39,7 @@ const BlogPageTemplate = ({route, location}) => {
             title={post.title}
             date={post.date}
             body={post.body}
-            categories={categories}
+            categories={categoryArray}
           />
         </Col>
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
