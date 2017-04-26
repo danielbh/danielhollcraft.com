@@ -33,7 +33,7 @@ const Services = ({children}) => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <ProfileHeader/>
-            <div className="services">
+            <div className="panel">
               {children}
               <div className="panel-footer">
                 <a href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
@@ -42,7 +42,6 @@ const Services = ({children}) => {
                   </Button>
                 </a>
               </div>
-
             </div>
           </Col>
         </Row>

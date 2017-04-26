@@ -7,7 +7,7 @@
   }
 }
 
-.blog-component { }
+.blog-column { }
 
 .sidebar {
   display: flex;
@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 1199px) {
-  .blog-component {
+  .blog-column {
     margin-left: 40px;
   }
 }
@@ -48,7 +48,7 @@
     }
   }
 
-  .blog-component {
+  .blog-column {
     margin-left: 0;
   }
 }

@@ -16,8 +16,8 @@ import {
 
 import './index.scss'
 
-const Portfolio = (props) => (
-  <div className="portfolio-wrapper">
+const Index = ({props}) => (
+  <div>
     <Helmet
       title={config.siteTitle}
       meta={[
@@ -30,13 +30,16 @@ const Portfolio = (props) => (
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} >
           <ProfileHeader/>
+          <div className="panel">
+            Hell test
+          </div>
         </Col>
       </Row>
     </Grid>
   </div>
 );
 
-Portfolio.propTypes = {};
-Portfolio.defaultProps = {};
+Index.propTypes = {};
+Index.defaultProps = {};
 
-export default Portfolio;
+export default Index;

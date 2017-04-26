@@ -30,6 +30,64 @@
   }
 }
 
+.panel {
+  background: $primary-color;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 25px 8% 35px 8%;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+
+  ul, p{
+    font-size: 20px;
+  }
+
+  // Override
+  .panel-footer {
+    width: 100%;
+
+    a {
+      width: 100%;
+
+      button {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .panel {
+    margin: 25px 4% 35px 4%;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .panel {
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    margin: 25px 3%;
+  }
+}
+
+@media (max-width: 415px) {
+  .panel {
+    margin: 15px 8px;
+    padding: 25px 30px;
+
+    ul, p{
+      font-size: 20px;
+    }
+
+  }
+}
+
 .panel-footer {
   border-top: none; // override
   background: transparent;

@@ -18,7 +18,7 @@ import {
   Categories
 } from '../../components'
 
-const BlogPageTemplate = ({route, location}) => {
+const Blog = ({route, location}) => {
 
   let blogComponent;
 
@@ -51,7 +51,7 @@ const BlogPageTemplate = ({route, location}) => {
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>
         </Col>
-        <Col xs={12} sm={12} md={7} lg={8} className="blog-component">
+        <Col xs={12} sm={12} md={7} lg={8} className="blog-column">
           {blogComponent}
         </Col>
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
@@ -67,7 +67,7 @@ const BlogPageTemplate = ({route, location}) => {
   );
 };
 
-BlogPageTemplate.propTypes = {};
-BlogPageTemplate.defaultProps = {};
+Blog.propTypes = {};
+Blog.defaultProps = {};
 
-export default BlogPageTemplate;
+export default Blog;
