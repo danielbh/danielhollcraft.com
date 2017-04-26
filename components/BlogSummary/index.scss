@@ -28,6 +28,16 @@
     font-size: 17px;
     font-weight: 900;
   }
+
+  .tags {
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tag {
+    margin-right: 3px;
+  }
 }
 
 .blog-title {
@@ -58,12 +68,4 @@
   border-radius: 10px;
 }
 
-.tags {
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-}
 
-.tag {
-  @include tag()
-}

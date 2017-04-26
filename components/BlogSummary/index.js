@@ -25,7 +25,7 @@ const BlogSummary = ({title, date, categories, summary, path}) => {
         <Link to={path}><h2>{title}</h2></Link>
       </div>
       <div className="tags">
-        { categories.map(category => <Label className="tag">{category}</Label>) }
+        { categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }
       </div>
       <p>{summary}</p>
       <div className="read-more">

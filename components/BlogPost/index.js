@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 
 import './index.scss'
 
-const BlogEntry = ({title, date, body, categories}) => (
+const BlogPost = ({title, date, body, categories, route}) => (
   <div className="blog-post">
     {/*<Image*/}
     {/*className="blog-preview-image"*/}
@@ -19,18 +19,18 @@ const BlogEntry = ({title, date, body, categories}) => (
       <Link to="/"><h1>{title}</h1></Link>
     </div>
     <div className="tags">
-      { categories.map(category => <Label className="tag">{category}</Label>) }
+      { categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }
     </div>
     <div dangerouslySetInnerHTML={{ __html: body }} />
   </div>
 );
 
-BlogEntry.propTypes = {
+BlogPost.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   categories: PropTypes.array.isRequired,
-  body: PropTypes.string.isRequired
+  body: PropTypes.string.isRequired,
 };
-BlogEntry.defaultProps = {};
+BlogPost.defaultProps = {};
 
-export default BlogEntry;
+export default BlogPost;

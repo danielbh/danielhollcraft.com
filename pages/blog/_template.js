@@ -7,9 +7,12 @@ import Helmet from "react-helmet"
 import {Col, Row, Grid} from 'react-bootstrap'
 import { config } from 'config'
 
+import './index.scss'
+
 import {
   Profile,
   BlogPost,
+  BlogFeed,
   ProfileHeader,
   ParticleBackground,
   Categories
@@ -17,8 +20,22 @@ import {
 
 const BlogPageTemplate = ({route, location}) => {
 
-  const post = route.pages.find(p => p.path === location.pathname).data;
-  const categoryArray = post.categories.split(",");
+  let blogComponent;
+
+  // Display main blog page or blog post depending on what the current url.
+  if (location.pathname !== '/blog/') {
+    const post = route.pages.find(p => p.path === location.pathname).data;
+    const categoryArray = post.categories.split(",");
+
+    blogComponent = <BlogPost
+      title={post.title}
+      date={post.date}
+      body={post.body}
+      categories={categoryArray}
+    />
+  } else {
+    blogComponent = <BlogFeed route={route}/>
+  }
 
   return (
     <div className="blog-wrapper">
@@ -34,13 +51,8 @@ const BlogPageTemplate = ({route, location}) => {
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>
         </Col>
-        <Col xs={12} sm={12} md={7} lg={8} className="blog-feed">
-          <BlogPost
-            title={post.title}
-            date={post.date}
-            body={post.body}
-            categories={categoryArray}
-          />
+        <Col xs={12} sm={12} md={7} lg={8} className="blog-component">
+          {blogComponent}
         </Col>
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
           <Row>
