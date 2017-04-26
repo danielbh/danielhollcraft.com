@@ -46,7 +46,7 @@ const BlogPageTemplate = ({route, location}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <ParticleBackground backgroundColor="#2e3250"/>
+      <ParticleBackground backgroundColor="#273744"/>
       <Grid>
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>

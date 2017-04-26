@@ -13,6 +13,7 @@ import { config } from 'config'
 
 import {
   ParticleBackground,
+  ProfileHeader,
 } from '../../components'
 
 import './index.scss'
@@ -31,6 +32,7 @@ const Services = ({children}) => {
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
+            <ProfileHeader/>
             <div className="services">
               {children}
               <div className="panel-footer">

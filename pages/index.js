@@ -12,8 +12,7 @@ import { config } from 'config'
 import {
   ProfileHeader,
   ParticleBackground,
-  PortfolioProject
-} from '../../components'
+} from '../components'
 
 import './index.scss'
 
@@ -31,9 +30,6 @@ const Portfolio = (props) => (
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} >
           <ProfileHeader/>
-          <PortfolioProject/>
-          <PortfolioProject/>
-          <PortfolioProject/>
         </Col>
       </Row>
     </Grid>

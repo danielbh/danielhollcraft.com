@@ -16,7 +16,7 @@ const BlogPost = ({title, date, body, categories, route}) => (
     {/*/>*/}
     <time>{date}</time>
     <div className="blog-title">
-      <Link to="/"><h1>{title}</h1></Link>
+      <h1>{title}</h1>
     </div>
     <div className="tags">
       { categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }
