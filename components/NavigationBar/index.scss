@@ -54,3 +54,12 @@
   font-size: 1.4em;
   margin-right: 7px;
 }
+
+// override nav bar button background when selected
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
