@@ -14,6 +14,7 @@ import { config } from 'config'
 import {
   ParticleBackground,
   ProfileHeader,
+  CTAButton
 } from '../../components'
 
 import './index.scss'
@@ -36,11 +37,7 @@ const Services = ({children}) => {
             <div className="panel">
               {children}
               <div className="panel-footer">
-                <a href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
-                  <Button bsStyle="primary" bsSize="large">
-                    <FontAwesome name="envelope" className='icon' /> Contact me
-                  </Button>
-                </a>
+               <CTAButton/>
               </div>
             </div>
           </Col>
