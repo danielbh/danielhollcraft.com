@@ -11,7 +11,7 @@ import { config } from 'config'
 
 import {
   ProfileHeader,
-  ParticleBackground,
+  Background,
   PortfolioProject
 } from '../../components'
 
@@ -26,7 +26,7 @@ const Portfolio = (props) => (
         {"name": "keywords", "content": "sample, something"},
       ]}
     />
-    <ParticleBackground backgroundColor="#2e3250"/>
+    <Background color="#2e3250"/>
     <Grid>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} >

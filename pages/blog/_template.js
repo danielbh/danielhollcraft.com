@@ -14,7 +14,7 @@ import {
   BlogPost,
   BlogFeed,
   ProfileHeader,
-  ParticleBackground,
+  Background,
   Categories
 } from '../../components'
 
@@ -46,7 +46,7 @@ const Blog = ({route, location}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <ParticleBackground backgroundColor="#273744"/>
+      <Background color="#273744"/>
       <Grid>
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>

@@ -16,7 +16,7 @@ import {
 import { config } from 'config'
 
 import {
-  ParticleBackground,
+  Background,
 } from '../../components'
 
 import './index.scss'
@@ -32,7 +32,7 @@ const Contact = (props) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <ParticleBackground backgroundColor="#2F4F4F"/>
+      <Background color="#2F4F4F"/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >

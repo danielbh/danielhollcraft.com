@@ -12,7 +12,7 @@ import {Link} from 'react-router'
 
 import {
   ProfileHeader,
-  ParticleBackground,
+  Background,
   CTAButton
 } from '../components'
 
@@ -27,7 +27,7 @@ const Index = ({props}) => (
         {"name": "keywords", "content": "sample, something"},
       ]}
     />
-    <ParticleBackground backgroundColor="#00688B"/>
+    <Background color="#00688B"/>
     <Grid>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} >

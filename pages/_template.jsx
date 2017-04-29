@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react'
 import {
   NavigationBar,
-  Footer
+  Footer,
+  ParticleBackground
 } from '../components'
 import { Grid } from 'react-bootstrap'
 import { rhythm } from '../utils/typography'
@@ -10,6 +11,7 @@ import './index.scss'
 const Base = ({children}) => (
   <div>
     <NavigationBar/>
+    <ParticleBackground/>
     <Grid className="content">
       {children}
       <Footer/>
