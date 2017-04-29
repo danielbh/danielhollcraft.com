@@ -13,26 +13,24 @@ import FontAwesome from 'react-fontawesome';
 import './index.scss'
 
 const PortfolioProject = (props) => {
+  console.log(props.title)
   return (
     <div className="project">
       <div className="project-heading">
-        <div> A tour guide app for Paris, France</div>
-        <div> Aug 2016 – Present</div>
+        <div>{props.title}</div>
+        <div> {props.start} – {props.end}</div>
 
       </div>
 
       <Image
         className="project-image"
-        src="http://placehold.it/350x150"
+        src={props.image}
         alt="project image"
       />
       <div className="project-summary">
-        <div><span className="font-bold">Type:</span> Freelance</div>
-        <div><span className="font-bold">Skills:</span> React Native, Google Places API, Node.js, REST API</div>
-        <div>This is a project long description This is a project long description This is a project long description
-          This is a project long description This is a project long description This is a project long description This
-          is a project long description This is a project long description This is a project long description This is a
-          project long description This is a project long description This is a project long description.</div>
+        <div><span className="font-bold">Type:</span> {props.type}</div>
+        <div><span className="font-bold">Skills:</span> {props.skills}</div>
+        <div dangerouslySetInnerHTML={{ __html: props.body }} />
       </div>
 
       <div className="panel-footer">
@@ -49,7 +47,18 @@ const PortfolioProject = (props) => {
   );
 };
 
-PortfolioProject.propTypes = {};
+PortfolioProject.propTypes = {
+  title: PropTypes.string.isRequired,
+  start: PropTypes.string.isRequired,
+  end: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  skills: PropTypes.string.isRequired,
+  website: PropTypes.string,
+  appstore: PropTypes.string,
+  googleplay: PropTypes.string,
+  source: PropTypes.string
+};
 PortfolioProject.defaultProps = {};
 
 export default PortfolioProject;
