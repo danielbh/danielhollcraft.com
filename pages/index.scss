@@ -64,21 +64,33 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .panel {
     margin: 25px 3%;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 767px) {
+
   .panel {
-    margin: 15px 8px;
-    padding: 25px 30px;
+    margin: 25px 3%;
+    padding: 30px;
 
     ul, p{
       font-size: 20px;
     }
+  }
+}
 
+@media (max-width: 415px) {
+
+  .panel {
+    margin: 0 0 30px 0;
+    padding: 20px;
+
+    ul, p{
+      font-size: 19px;
+    }
   }
 }
 
