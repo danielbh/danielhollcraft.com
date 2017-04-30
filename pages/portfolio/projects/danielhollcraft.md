@@ -1,13 +1,12 @@
 ---
-title: A static website blog
-start: Aug 2016 
+title: A Static Website Blog
+start: Apr 2017 
 end: Present
 type: Open Source
-skills: React Native, Google Places API, Node.js, REST API
-website: www.website.com
-appstore: www.appstore.com
-googleplay: www.googleplay.com
-source: www.github.com
+skills: GatsbyJS, React, SCSS
+website: /
+source: https://github.com/danielbh/danielhollcraft.com-gatsbyjs
 image: http://placehold.it/350x150
 ---
-This is a test
+Created my personal website using the Gatsby static website builder framework. With Gatsby you can create documentation sites, blogs, and community sites fast and without the need of a back-end.
+git 
