@@ -18,9 +18,9 @@ const BlogPost = ({title, date, body, categories, route}) => (
     <div className="blog-title">
       <h1>{title}</h1>
     </div>
-    <div className="tags">
-      { categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }
-    </div>
+    {/*<div className="tags">*/}
+      {/*{ categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }*/}
+    {/*</div>*/}
     <div dangerouslySetInnerHTML={{ __html: body }} />
   </div>
 );

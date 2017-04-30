@@ -58,9 +58,9 @@ const Blog = ({route, location}) => {
           <Row>
             <Profile/>
           </Row>
-          <Row>
-            <Categories/>
-          </Row>
+          {/*<Row>*/}
+            {/*<Categories/>*/}
+          {/*</Row>*/}
         </Col>
       </Grid>
     </div>

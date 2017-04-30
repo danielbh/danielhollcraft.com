@@ -23,10 +23,10 @@ const BlogSummary = ({title, date, categories, summary, path}) => {
       <time>{date}</time>
       <div className="blog-title">
         <Link to={path}><h2>{title}</h2></Link>
-      </div>
-      <div className="tags">
-        { categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }
-      </div>
+      </div>g
+      {/*<div className="tags">*/}
+        {/*{ categories.map((category, i) => <Label key={i} className="tag">{category}</Label>) }*/}
+      {/*</div>*/}
       <p>{summary}</p>
       <div className="read-more">
         <Link  to={path}>Read More...</Link>
