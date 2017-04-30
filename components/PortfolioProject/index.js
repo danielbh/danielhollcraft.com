@@ -34,14 +34,33 @@ const PortfolioProject = (props) => {
       </div>
 
       <div className="panel-footer">
-        <Button bsStyle="primary" bsSize="large">
-          <FontAwesome name="external-link" className='icon'/>Website</Button>
-        <Button bsStyle="success" bsSize="large">
-          <FontAwesome name="apple" className='icon'/>App Store</Button>
-        <Button bsStyle="info" bsSize="large">
-          <FontAwesome name="google" className='icon'/>Google Play</Button>
-        <Button bsStyle="warning" bsSize="large">
-          <FontAwesome name="file-code-o" className='icon'/>Source</Button>
+        {
+          props.website ?
+            <Button bsStyle="primary" bsSize="large" href={props.website}>
+              <FontAwesome name="external-link" className='icon' />Website
+            </Button> : ""
+        }
+
+        {
+          props.appstore ?
+            <Button bsStyle="success" bsSize="large" href={props.appstore}>
+              <FontAwesome name="apple" className='icon'/>App Store
+            </Button> : ""
+        }
+
+        {
+          props.googleplay ?
+            <Button bsStyle="info" bsSize="large" href={props.googleplay}>
+              <FontAwesome name="google" className='icon'/>Google Play
+            </Button>: ""
+        }
+
+        {
+          props.source ?
+            <Button bsStyle="warning" bsSize="large" href={props.source}>
+              <FontAwesome name="file-code-o" className='icon'/>Source
+            </Button>: ""
+        }
       </div>
     </div>
   );

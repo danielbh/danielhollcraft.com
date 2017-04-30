@@ -44,15 +44,10 @@
   // Override
   .panel-footer {
     width: 100%;
-
-    a {
-      width: 100%;
-
-      button {
+      a {
         width: 100%;
         margin: auto;
       }
-    }
   }
 }
 
@@ -96,11 +91,10 @@
   display: flex;
 
   flex-flow: row wrap;
-  justify-content: space-around;
 
-  button {
-    width: 22%;
-    margin: 10px;
+  a {
+    width: 23.5%;
+    margin: 10px 10px 10px 0;
     font-size: 22px;
     box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
   }
@@ -108,7 +102,9 @@
 
 @media (max-width: 1199px) {
   .panel-footer {
-    button {
+    justify-content: space-around;
+
+    a {
       width: 50%;
     }
   }
@@ -116,7 +112,7 @@
 
 @media (max-width: 762px) {
   .panel-footer {
-    button {
+    a {
       width: 100%;
     }
   }

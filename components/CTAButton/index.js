@@ -10,11 +10,10 @@ import {Button} from 'react-bootstrap'
 
 const CTAButton = ({type, text}) => {
   return (
-    <a href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
-      <Button bsStyle={type || "primary"} bsSize="large">
+      <Button bsStyle={type || "primary"} bsSize="large"
+              href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
         <FontAwesome name="envelope" className='icon' /> {text || "Contact Me"}
       </Button>
-    </a>
   );
 };
 
