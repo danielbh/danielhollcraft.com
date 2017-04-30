@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "danielhollcraft.com",
+  "description": "Daniel Hollcraft's Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
+  "author": "Daniel Hollcraft",
+  "devDependencies": {
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
     "highlight.js": "^9.6.0",
@@ -25,9 +25,6 @@
     "typography": "^0.13.0",
     "typography-plugin-code": "^0.13.0"
   },
-  "devDependencies": {
-    "gh-pages": "^0.11.0"
-  },
   "keywords": [
     "gatsby"
   ],
@@ -35,7 +32,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "cd public && now",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

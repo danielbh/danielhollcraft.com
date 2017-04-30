@@ -29,3 +29,4 @@ node_modules
 .sass-cache/
 .idea
 .DS_Store
+public
