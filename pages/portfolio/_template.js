@@ -24,7 +24,7 @@ const PortfolioTemplate = ({route}) => {
   return (
     <div className="portfolio-wrapper">
       <Helmet
-        title={config.siteTitle}
+        title="Daniel Hollcraft | Portfolio"
         meta={[
           {"name": "description", "content": "Blog"},
           {"name": "keywords", "content": "sample, something"},

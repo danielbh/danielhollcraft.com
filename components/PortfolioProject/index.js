@@ -13,7 +13,6 @@ import FontAwesome from 'react-fontawesome';
 import './index.scss'
 
 const PortfolioProject = (props) => {
-  console.log(props.title)
   return (
     <div className="project">
       <div className="project-heading">

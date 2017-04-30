@@ -21,26 +21,30 @@ import {
 const Blog = ({route, location}) => {
 
   let blogComponent;
+  const onBlogMainPage = location.pathname === '/blog/';
+  const postObject = route.pages.find(p => p.path === location.pathname);
+  const pageTitle = onBlogMainPage ? "Daniel Hollcraft | Blog" : postObject.data.title
 
   // Display main blog page or blog post depending on what the current url.
-  if (location.pathname !== '/blog/') {
-    const post = route.pages.find(p => p.path === location.pathname).data;
-    const categoryArray = post.categories.split(",");
+  if (onBlogMainPage) {
+
+    blogComponent = <BlogFeed route={route}/>
+  } else {
+    const {title, date, body, categories} = postObject.data;
+    const categoryArray = categories.split(",");
 
     blogComponent = <BlogPost
-      title={post.title}
-      date={post.date}
-      body={post.body}
+      title={title}
+      date={date}
+      body={body}
       categories={categoryArray}
     />
-  } else {
-    blogComponent = <BlogFeed route={route}/>
   }
 
   return (
     <div className="blog-wrapper">
       <Helmet
-        title={config.siteTitle}
+        title={pageTitle}
         meta={[
           {"name": "description", "content": "Blog"},
           {"name": "keywords", "content": "sample, something"},

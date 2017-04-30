@@ -25,7 +25,7 @@ const Services = ({children}) => {
       <Helmet
         title="Services"
         meta={[
-          {"name": "description", "content": "Blog"},
+          {"name": "description", "content": "Services"},
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
