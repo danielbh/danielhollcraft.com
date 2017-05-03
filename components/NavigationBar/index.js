@@ -44,7 +44,7 @@ const NavigationBar = (props) => {
               Blog
             </NavItem>
           </LinkContainer>
-          <LinkContainer to={prefixLink('/services/')}>
+          <LinkContainer to='/services/'>
             <NavItem eventKey={2}>
               <FontAwesome name="rocket" className='icon' />
               Services

@@ -12,14 +12,13 @@ import { config } from 'config'
 import {
   ProfileHeader,
   Background,
-  PortfolioProject
 } from '../../components'
 
 import './index.scss'
+import Index from './index'
 
 const PortfolioTemplate = ({route}) => {
   const projectDataArray = route.childRoutes.map(r => r.page.data);
-  const projects = projectDataArray.map((p, i) => <PortfolioProject key={i} {...p}/>);
 
   return (
     <div className="portfolio-wrapper">
@@ -35,7 +34,7 @@ const PortfolioTemplate = ({route}) => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >
             <ProfileHeader/>
-            {projects}
+            <Index projectDataArray={projectDataArray}/>
           </Col>
         </Row>
       </Grid>
