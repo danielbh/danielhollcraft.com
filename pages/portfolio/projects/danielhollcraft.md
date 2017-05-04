@@ -4,7 +4,6 @@ start: Apr 2017
 end: Present
 type: Open Source
 skills: GatsbyJS, React, SCSS
-website: /
 source: https://github.com/danielbh/danielhollcraft.com-gatsbyjs
 image: http://placehold.it/350x150
 ---

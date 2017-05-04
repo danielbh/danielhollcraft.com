@@ -9,16 +9,14 @@ import {
   PortfolioProject
 } from '../../components'
 
-const PortfolioIndex = ({projectDataArray}) => {
-
-  const projects = projectDataArray.map((p, i) => <PortfolioProject key={i} {...p}/>);
+const PortfolioIndex = ({projects}) => {
   return (
-    <div>{projects}</div>
+    <div>{projects.map((p, i) => <PortfolioProject key={i} {...p}/>)}</div>
   );
 };
 
 PortfolioIndex.propTypes = {
-  projectDataArray: PropTypes.array
+  projects: PropTypes.array
 };
 PortfolioIndex.defaultProps = {};
 

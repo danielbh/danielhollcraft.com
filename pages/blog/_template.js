@@ -21,7 +21,7 @@ import Index from './index.js'
 const Blog = ({route, location}) => {
 
   const onBlogMainPage = location.pathname === '/blog/';
-  const postObject = route.pages.find(p => p.path === location.pathname);
+  const blogPost = route.pages.find(p => p.path === location.pathname);
   const pageTitle = onBlogMainPage ? "Daniel Hollcraft | Blog" : postObject.data.title;
 
   return (
@@ -39,7 +39,7 @@ const Blog = ({route, location}) => {
           <ProfileHeader/>
         </Col>
         <Col xs={12} sm={12} md={7} lg={8} className="blog-column">
-          <Index onBlogMainPage={onBlogMainPage} postObject={postObject} route={route} />
+          <Index onBlogMainPage={onBlogMainPage} post={blogPost} route={route} />
         </Col>
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
           <Row>

@@ -10,7 +10,7 @@ import {
   BlogFeed,
 } from '../../components'
 
-const BlogIndex = ({onBlogMainPage, postObject, route}) => {
+const BlogIndex = ({onBlogMainPage, post, route}) => {
 
   let blogComponent;
 
@@ -18,7 +18,7 @@ const BlogIndex = ({onBlogMainPage, postObject, route}) => {
   if (onBlogMainPage) {
     blogComponent = <BlogFeed route={route}/>
   } else {
-    const {title, date, body, categories} = postObject.data;
+    const {title, date, body, categories} = post.data;
     const categoryArray = categories.split(",");
 
     blogComponent = <BlogPost
@@ -36,7 +36,7 @@ const BlogIndex = ({onBlogMainPage, postObject, route}) => {
 
 BlogIndex.propTypes = {
   onBlogMainPage: PropTypes.bool,
-  postObject: PropTypes.object,
+  post: PropTypes.object,
   route: PropTypes.object
 };
 BlogIndex.defaultProps = {};
