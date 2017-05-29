@@ -19,6 +19,8 @@ const Background = ({color}) => (
 Background.propTypes = {
   color: PropTypes.string
 };
-Background.defaultProps = {};
+Background.defaultProps = {
+  color: "#00688B"
+};
 
 export default Background;

@@ -22,7 +22,7 @@ const Blog = ({route, location}) => {
 
   const onBlogMainPage = location.pathname === '/blog/';
   const blogPost = route.pages.find(p => p.path === location.pathname);
-  const pageTitle = onBlogMainPage ? "Daniel Hollcraft | Blog" : postObject.data.title;
+  const pageTitle = onBlogMainPage ? "Daniel Hollcraft | Blog" : blogPost.data.title;
 
   return (
     <div className="blog-wrapper">
@@ -33,7 +33,7 @@ const Blog = ({route, location}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background color="#273744"/>
+      <Background/>
       <Grid>
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>

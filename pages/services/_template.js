@@ -29,7 +29,7 @@ const Services = ({children}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background color="#2E8B57"/>
+      <Background/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
@@ -37,7 +37,7 @@ const Services = ({children}) => {
             <div className="panel">
               {children}
               <div className="panel-footer">
-               <CTAButton/>
+               <CTAButton type="success"/>
               </div>
             </div>
           </Col>

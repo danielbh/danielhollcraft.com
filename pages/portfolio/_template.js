@@ -27,7 +27,7 @@ const PortfolioTemplate = ({route}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background color="#2e3250"/>
+      <Background/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >

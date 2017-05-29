@@ -27,7 +27,7 @@ const Index = ({props}) => (
         {"name": "keywords", "content": "sample, something"},
       ]}
     />
-    <Background color="#00688B"/>
+    <Background/>
     <Grid>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} >
