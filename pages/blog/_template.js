@@ -38,7 +38,7 @@ const Blog = ({route, location}) => {
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>
         </Col>
-        <Col xs={12} sm={12} md={7} lg={8} className="blog-column">
+        <Col xs={12} sm={12} md={8} lg={8} className="blog-column">
           <Index onBlogMainPage={onBlogMainPage} post={blogPost} route={route} />
         </Col>
         <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">

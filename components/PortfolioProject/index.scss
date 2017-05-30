@@ -8,7 +8,7 @@
   justify-content: center;
   border-radius: 10px;
   padding: 25px 0;
-  margin: 0 10% 70px 10%;
+  margin-bottom: 70px;
   box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
 
   p {
@@ -16,7 +16,6 @@
     line-height: 25px;
     font-size: 18px;
     margin-top: 10px;
-    //width: 90%;
   }
 
   time {
@@ -58,12 +57,6 @@
   font-size: 14px;
 }
 
-@media (max-width: 992px) {
-  .project {
-    margin: 0 6% 70px 6%;
-  }
-}
-
 @media  (max-width: 800px) {
   .project-heading {
     flex-direction: column;
@@ -84,6 +77,6 @@
     width: 85%;
   }
   .project {
-    margin: 0 2% 40px 2%;
+    margin-bottom: 40px;
   }
 }
