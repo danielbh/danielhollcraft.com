@@ -40,7 +40,7 @@ const BlogFeed = ({route}) => {
   });
 
   return <div>{blogSummaryComponents}</div>
-}
+};
 
 
 
