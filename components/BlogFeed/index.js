@@ -5,12 +5,26 @@ import React, {
   PropTypes,
 } from 'react';
 
+import {orderBy} from 'lodash';
+
 import BlogSummary from '../BlogSummary'
 
 const BlogFeed = ({route}) => {
-  const blogSummaries = route.pages.map((p,i) => {
+
+  // Remove other pages from list
+  // TODO: This might require optimization down the road since I'm filtering through ALL the pages
+  const blogSummaries = route.pages.filter(p => {
     const path = p.path;
-    if(path !== '/blog/' && path.includes("blog")) {
+    return path !== '/blog/' && path.includes("blog")
+  });
+
+  // Sort blog posts by date descending
+  // TODO: This might require optimization down the road since I'm sorting ALL blog entries
+  const blogSummariesSortedByDate =
+    orderBy(blogSummaries, [s => Date.parse(s.data.date)], ['desc']);
+
+  // Generate blog summary components
+  const blogSummaryComponents = blogSummariesSortedByDate.map((p,i) => {
       const {title, date, categories, summary} = p.data;
       const categoryArray = categories.split(",");
       return (
@@ -23,10 +37,9 @@ const BlogFeed = ({route}) => {
           path={p.path}
         />
       )
-    }
-  })
+  });
 
-  return <div>{blogSummaries}</div>
+  return <div>{blogSummaryComponents}</div>
 }
 
 
