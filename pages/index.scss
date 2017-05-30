@@ -41,9 +41,9 @@
 
 .panel {
   background: $primary-color;
-  border-radius: 10px;
+  border-radius: $border-radius;
   padding: 40px;
-  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: $box-shadow;
 
   ul, p{
     font-size: 20px;
@@ -93,7 +93,7 @@
     width: 23.5%;
     margin: 10px 10px 10px 0;
     font-size: 22px;
-    box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: $box-shadow;
   }
 }
 

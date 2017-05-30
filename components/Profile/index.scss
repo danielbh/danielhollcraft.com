@@ -18,12 +18,12 @@
 }
 
 .profile {
-  box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: $box-shadow;
   background-color: $primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  border-radius: $border-radius;
   padding: 14px 25px;
   width: 100%;
 

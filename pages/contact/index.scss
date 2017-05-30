@@ -2,8 +2,8 @@
 
 .contact {
   background: $primary-color;
-  border-radius: 10px;
+  border-radius: $border-radius;
   padding: 40px 20px 20px 30px;
   margin: 20% 10% 70px 10%;
-  box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: $box-shadow;
 }
