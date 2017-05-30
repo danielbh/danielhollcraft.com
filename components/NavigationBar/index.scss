@@ -2,8 +2,6 @@
 
 .logo {
   max-width: 70px;
-  margin-left: -5px;
-  margin-top: -5px;
 }
 
 @media (max-width: 768px) {
@@ -14,9 +12,17 @@
 }
 
 .navbar {
+  left:0;
+  right: 0;
+  position:absolute;
   z-index: 1;
   background: $primary-color;
   border-radius: 0; // override default border radius
+
+  .container {
+    width: 100%;
+    max-width: 1192px;
+  }
 }
 
 @media (max-width: 991px) {

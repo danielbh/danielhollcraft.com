@@ -41,7 +41,7 @@ const Blog = ({route, location}) => {
         <Col xs={12} sm={12} md={8} lg={8} className="blog-column">
           <Index onBlogMainPage={onBlogMainPage} post={blogPost} route={route} />
         </Col>
-        <Col lg={3} md={4} xs={0} xsHidden smHidden className="sidebar">
+        <Col lg={4} md={4} xs={0} xsHidden smHidden className="sidebar">
           <Row>
             <Profile/>
           </Row>

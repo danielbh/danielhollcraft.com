@@ -15,18 +15,6 @@
   align-items: center;
 }
 
-@media (min-width: 1200px) {
-  // Make the profile width look nicer when in this window size by making it wider
-  .blog-wrapper {
-    .col-lg-3 {
-      width: 27%;
-    }
-    .col-lg-8 {
-      width: 70%;
-    }
-  }
-}
-
 @media (max-width: 991px) {
   .blog-wrapper {
     width: 100%;
