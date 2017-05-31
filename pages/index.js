@@ -12,7 +12,6 @@ import {Link} from 'react-router'
 
 import {
   ProfileHeader,
-  Background,
   CTAButton
 } from '../components'
 
@@ -30,7 +29,6 @@ const Index = ({route}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >

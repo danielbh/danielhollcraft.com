@@ -12,7 +12,6 @@ import FontAwesome from 'react-fontawesome';
 import { config } from 'config'
 
 import {
-  Background,
   ProfileHeader,
   CTAButton
 } from '../../components'
@@ -29,7 +28,6 @@ const Services = ({children}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>

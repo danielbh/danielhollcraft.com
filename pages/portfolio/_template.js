@@ -11,7 +11,6 @@ import { config } from 'config'
 
 import {
   ProfileHeader,
-  Background,
 } from '../../components'
 
 import './index.scss'
@@ -27,7 +26,6 @@ const PortfolioTemplate = ({route}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >

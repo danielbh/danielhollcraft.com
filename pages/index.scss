@@ -1,9 +1,19 @@
 @import '../stylesheets/variables.scss';
 
+// CSS Debugger. Uncomment to Debug CSS.
+//* {
+//  background: #000 !important;
+//  color: #0f0 !important;
+//  outline: solid #f00 1px !important;
+//}
+
 .base-layout {
   display: flex;
   flex-direction: column;
   width: 100%;
+  // Looks a bit nicer when overscrolling on iOS
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .content {

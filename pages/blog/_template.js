@@ -12,7 +12,6 @@ import './index.scss'
 import {
   Profile,
   ProfileHeader,
-  Background,
   Categories
 } from '../../components'
 
@@ -33,7 +32,6 @@ const Blog = ({route, location}) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background/>
       <Grid>
         <Col xs={12} sm={12} mdHidden lgHidden>
           <ProfileHeader/>
