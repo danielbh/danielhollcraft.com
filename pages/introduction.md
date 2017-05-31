@@ -1,6 +1,6 @@
 [//]: <> (This is the introduction text to the website)
 
-Hello. I'm Daniel
+Hello. I'm Daniel.
  
 I've been passionately developing software for the past 5 years. I can help make your web or mobile software project awesome. My tools of choice are **React.js** and **React Native** for the front end, and **Node.js** for the back end. Please see <Link to="/portfolio/">my portfolio</Link> for past projects I have done.
  

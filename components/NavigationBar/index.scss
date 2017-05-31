@@ -12,9 +12,6 @@
 }
 
 .navbar {
-  left:0;
-  right: 0;
-  position:absolute;
   z-index: 1;
   background: $primary-color;
   border-radius: 0; // override default border radius
