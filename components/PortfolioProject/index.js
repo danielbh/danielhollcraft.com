@@ -18,12 +18,11 @@ const PortfolioProject = (props) => {
       <div className="project-heading">
         <div>{props.title}</div>
         <div> {props.start} – {props.end}</div>
-
       </div>
 
       <Image
         className="project-image"
-        src={props.image}
+        src={require("../../pages/portfolio/project-images/"+props.image)}
         alt="project image"
       />
       <div className="project-summary">

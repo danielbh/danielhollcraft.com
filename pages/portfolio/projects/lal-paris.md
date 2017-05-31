@@ -6,7 +6,7 @@ type: Freelance
 skills: React Native, Google Places API, Node.js, REST, Digital Ocean
 appstore: https://appsto.re/us/5n7Bfb.i
 googleplay: https://play.google.com/store/apps/details?id=com.antos_paris&hl=en
-image: https://placehold.it/350x150
+image: lal-paris.png
 ---
 Designed and built a tour guide app on Android and iOS with React Native for a top Paris tour guide. The app displays several of his best travelling tips.
 

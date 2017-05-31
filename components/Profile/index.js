@@ -12,7 +12,6 @@ import { config } from 'config'
 
 import './index.scss'
 
-
 const Profile = (props) => {
   return (
     <div className="profile">
