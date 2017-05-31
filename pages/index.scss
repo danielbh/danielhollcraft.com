@@ -1,12 +1,14 @@
 @import '../stylesheets/variables.scss';
 
+.base-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .content {
   width: 100%;
   background-color: transparent;
-  min-height: 100%;
-  position:absolute;
-  padding-bottom: 50px;
-  padding-top: 95px;
 
   // Remove breakpoints and just smoothly decrease container size.
   @media (max-width: 1202px) {

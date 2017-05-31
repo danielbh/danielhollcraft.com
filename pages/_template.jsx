@@ -8,12 +8,12 @@ import { rhythm } from '../utils/typography'
 import './index.scss'
 
 const Base = ({children}) => (
-  <div>
+  <div className="base-layout">
     <NavigationBar/>
     <Grid className="content">
       {children}
-      <Footer/>
     </Grid>
+    <Footer/>
   </div>
 );
 
