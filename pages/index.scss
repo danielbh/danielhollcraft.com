@@ -16,6 +16,19 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.not-found {
+  background: $primary-color;
+  padding: 40px;
+  //FIX ME: Not found requires to add 100% to margin-bottom so that flexbox works correcty. Too hacky.
+  margin: 20px 20px 100% 20px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  h1, p {
+    color: $primary-text-color;
+  }
+}
+
 .content {
   width: 100%;
   background-color: transparent;
