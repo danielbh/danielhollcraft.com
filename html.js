@@ -28,9 +28,10 @@ module.exports = React.createClass({
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-          <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-32x32.png")} />
-          <link rel="icon" type="image/png" sizes="96x96" href={require("images/favicons/favicon-96x96.png")} />
-          <link rel="icon" type="image/png" sizes="16x16" href={require("images/favicons/favicon.ico")} />
+          <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-16x16.png?v=2")} />
+          <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-32x32.png?v=2")} />
+          <link rel="icon" type="image/png" sizes="96x96" href={require("images/favicons/favicon-96x96.png?v=2")} />
+          <link rel="icon" type="image/png" sizes="16x16" href={require("images/favicons/favicon.ico?v=2")} />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
           <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'/>
