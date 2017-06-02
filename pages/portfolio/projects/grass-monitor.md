@@ -5,7 +5,7 @@ end: Mar 2017
 type: Freelance
 skills: Node.js, React, Meteor, Bluetooth, Raspberry Pi, WiFi, Docker, Cordova, Push Notifications, LESS, Resin.io
 googleplay: https://play.google.com/store/apps/details?id=com.grass.monitor&hl=en
-image: grass-monitor.png
+mobilePreview: grass-monitor-mobile.png
 ---
 
 An agriculture monitoring system that displayed humidity, temperature, and luminosity of many different areas of a greenhouse. If any sensor reading was not what it was supposed to be, a notification was sent to the user's smart phone.

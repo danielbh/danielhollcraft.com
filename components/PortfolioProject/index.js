@@ -20,11 +20,22 @@ const PortfolioProject = (props) => {
         <div> {props.start} – {props.end}</div>
       </div>
 
-      <Image
-        className="project-image"
-        src={require("../../pages/portfolio/project-images/"+props.image)}
-        alt="project image"
-      />
+      { props.mobilePreview ?
+        <Image
+          className="mobile-preview"
+          src={require("../../pages/portfolio/project-images/"+props.mobilePreview)}
+          alt="project image"
+        /> : ""
+      }
+
+      { props.desktopPreview ?
+        <Image
+          className="desktop-preview"
+          src={require("../../pages/portfolio/project-images/"+props.desktopPreview)}
+          alt="project image"
+        /> : ""
+      }
+
       <div className="project-summary">
         <div><span className="font-bold">Type:</span> {props.type}</div>
         <div><span className="font-bold">Skills:</span> {props.skills}</div>
@@ -40,15 +51,15 @@ const PortfolioProject = (props) => {
         }
 
         {
-          props.appstore ?
-            <Button bsStyle="success" bsSize="large" href={props.appstore}>
+          props.googlePlay ?
+            <Button bsStyle="success" bsSize="large" href={props.appStore}>
               <FontAwesome name="apple" className='icon'/>App Store
             </Button> : ""
         }
 
         {
-          props.googleplay ?
-            <Button bsStyle="info" bsSize="large" href={props.googleplay}>
+          props.googlePlay ?
+            <Button bsStyle="info" bsSize="large" href={props.googlePlay}>
               <FontAwesome name="google" className='icon'/>Google Play
             </Button>: ""
         }
@@ -68,12 +79,13 @@ PortfolioProject.propTypes = {
   title: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  mobilePreview: PropTypes.string.isRequired,
+  desktopPreview: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   skills: PropTypes.string.isRequired,
   website: PropTypes.string,
-  appstore: PropTypes.string,
-  googleplay: PropTypes.string,
+  appStore: PropTypes.string,
+  googlePlay: PropTypes.string,
   source: PropTypes.string
 };
 PortfolioProject.defaultProps = {};
