@@ -20,25 +20,29 @@ const PortfolioProject = (props) => {
         <div> {props.start} – {props.end}</div>
       </div>
 
-      { props.mobilePreview ?
-        <Image
-          className="mobile-preview"
-          src={require("../../pages/portfolio/project-images/"+props.mobilePreview)}
-          alt="project image"
-        /> : ""
-      }
+      <div className="project-preview">
+        { props.mobilePreview ?
+          <Image
+            className="mobile-preview"
+            src={require("../../pages/portfolio/project-images/"+props.mobilePreview)}
+            alt={props.previewDesc + "mobile"}
+          /> : ""
+        }
 
-      { props.desktopPreview ?
-        <Image
-          className="desktop-preview"
-          src={require("../../pages/portfolio/project-images/"+props.desktopPreview)}
-          alt="project image"
-        /> : ""
-      }
+        { props.desktopPreview ?
+          <Image
+            className="desktop-preview"
+            src={require("../../pages/portfolio/project-images/"+props.desktopPreview)}
+            alt={props.previewDesc + " desktop"}
+          /> : ""
+        }
+      </div>
+
 
       <div className="project-summary">
         <div><span className="font-bold">Type:</span> {props.type}</div>
         <div><span className="font-bold">Skills:</span> {props.skills}</div>
+        <div><span className="font-bold">Platform:</span> {props.platform}</div>
         <div dangerouslySetInnerHTML={{ __html: props.body }} />
       </div>
 
@@ -79,10 +83,12 @@ PortfolioProject.propTypes = {
   title: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,
-  mobilePreview: PropTypes.string.isRequired,
-  desktopPreview: PropTypes.string.isRequired,
+  mobilePreview: PropTypes.string,
+  desktopPreview: PropTypes.string,
+  previewDesc: PropTypes.string,
   type: PropTypes.string.isRequired,
   skills: PropTypes.string.isRequired,
+  platform: PropTypes.string.isRequired,
   website: PropTypes.string,
   appStore: PropTypes.string,
   googlePlay: PropTypes.string,
