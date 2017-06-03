@@ -2,7 +2,7 @@
 
 Hello. I'm Daniel.
  
-I've been passionately developing software for the past 5 years. I can help make your web or mobile software project awesome. My tools of choice are **React.js** and **React Native** for the front end, and **Node.js** for the back end. Please see <Link to="/portfolio/">my portfolio</Link> for past projects I have done.
+I've been passionately developing software for the past 5 years. I can help make your web or mobile software project awesome. My tools of choice are **React.js** and **React Native** for the front end, and **Node.js** for the back end. Please see [my portfolio](/portfolio/) for past projects I have done.
  
 Of all the lessons I've learned over the years, there is one that stands above the rest... Well designed software adheres to the **Cool Software Standard.** It must:
 
