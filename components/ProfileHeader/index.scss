@@ -14,21 +14,30 @@
     margin-bottom: 20px;
   }
 
-  h1, h3 {
+  p {
     color: $primary-color;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    font-size: 42px;
+  }
+
+  .subheading {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 360px) {
-  // Make the profile width look nicer when in this window size by making it wider
   .profile-header {
-    h1 {
-      font-size: 29px;
+    .heading {
+      font-size: 34px;
     }
 
-    h3 {
-      font-size: 22px;
+    .subheading {
+      font-size: 30px;
     }
   }
 }

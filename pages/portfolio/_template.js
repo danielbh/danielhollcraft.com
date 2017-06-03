@@ -29,7 +29,7 @@ const PortfolioTemplate = ({route}) => {
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >
-            <ProfileHeader/>
+            <ProfileHeader subheading="Portfolio"/>
             <Index projects={route.childRoutes.map(r => r.page.data)}/>
           </Col>
         </Row>

@@ -11,7 +11,7 @@ import {Image} from 'react-bootstrap'
 
 import './index.scss'
 
-const ProfileHeader = ({color}) => {
+const ProfileHeader = ({color, subheading}) => {
   return (
     <div className="profile-header">
       <Image
@@ -21,15 +21,19 @@ const ProfileHeader = ({color}) => {
         circle
         style={{borderColor: color}}
       />
-      <h1 style={{color}}>{config.siteTitle}</h1>
-      <h3 style={{color}}>Full-stack Javascript Developer</h3>
+      <p className="heading">{config.siteTitle}</p>
+      <p className="subheading">{subheading}</p>
     </div>
   );
 };
 
 ProfileHeader.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  subheading: PropTypes.string
 };
-ProfileHeader.defaultProps = {};
+
+ProfileHeader.defaultProps = {
+  subheading: config.tagline
+};
 
 export default ProfileHeader;

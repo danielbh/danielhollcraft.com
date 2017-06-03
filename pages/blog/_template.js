@@ -34,7 +34,7 @@ const Blog = ({route, location}) => {
       />
       <Grid>
         <Col xs={12} sm={12} mdHidden lgHidden>
-          <ProfileHeader/>
+          <ProfileHeader subheading="Blog"/>
         </Col>
         <Col xs={12} sm={12} md={8} lg={8} className="blog-column">
           <Index onBlogMainPage={onBlogMainPage} post={blogPost} route={route} />
