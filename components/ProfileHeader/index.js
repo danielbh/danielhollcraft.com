@@ -9,6 +9,8 @@ import React, {
 import { config } from 'config'
 import {Image} from 'react-bootstrap'
 
+import FontAwesome from 'react-fontawesome'
+
 import './index.scss'
 
 const ProfileHeader = ({color, subheading}) => {
@@ -23,6 +25,15 @@ const ProfileHeader = ({color, subheading}) => {
       />
       <p className="heading">{config.siteTitle}</p>
       <p className="subheading">{subheading}</p>
+
+      {/*<div className="social-links">*/}
+        {/*<a href={config.githubProfile} >*/}
+          {/*<FontAwesome name="github" size='2x' className="social-link" />*/}
+        {/*</a>*/}
+        {/*<a href={config.linkedinProfile} >*/}
+          {/*<FontAwesome name="linkedin-square" size='2x' className="social-link"/>*/}
+        {/*</a>*/}
+      {/*</div>*/}
     </div>
   );
 };

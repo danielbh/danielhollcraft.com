@@ -15,9 +15,9 @@
   }
 
   p {
+    font-weight: bold;
     color: $primary-color;
     text-align: center;
-    font-weight: bold;
     margin-bottom: 15px;
   }
 
@@ -27,6 +27,22 @@
 
   .subheading {
     font-size: 32px;
+  }
+
+  .social-links {
+    background: $primary-color;
+    padding: 5px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    font-size: 20px;
+    width: 15%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-link {
+    color: $primary-text-color;
   }
 }
 
