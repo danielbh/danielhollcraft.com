@@ -4,7 +4,7 @@ start: Jan 2016
 end: Mar 2017
 type: Freelance
 skills: Node.js, React, Meteor, Bluetooth, Raspberry Pi, WiFi, Docker, Cordova, Push Notifications, LESS, Resin.io
-googleplay: https://play.google.com/store/apps/details?id=com.grass.monitor&hl=en
+googlePlay: https://play.google.com/store/apps/details?id=com.grass.monitor&hl=en
 mobilePreview: grass-monitor-mobile.png
 previewDesc: Grass Monitor preview
 platform: Web, Android, iOS

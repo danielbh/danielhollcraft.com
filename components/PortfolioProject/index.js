@@ -55,7 +55,7 @@ const PortfolioProject = (props) => {
         }
 
         {
-          props.googlePlay ?
+          props.appStore ?
             <Button bsStyle="success" bsSize="large" href={props.appStore}>
               <FontAwesome name="apple" className='icon'/>App Store
             </Button> : ""
