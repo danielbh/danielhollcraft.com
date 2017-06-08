@@ -56,13 +56,12 @@ const NavigationBar = (props) => {
               Portfolio
             </NavItem>
           </LinkContainer>
-          {/*Work around to put e-mail contact into navbar. This causes errors in console*/}
-          <li role="presentation">
-            <a href="mailto:hello@danielhollcraft.com?Subject=danielhollcraft%20contact%20form">
+          <LinkContainer to="/contact/">
+            <NavItem eventKey={4}>
               <FontAwesome name="envelope" className='icon' />
               Contact
-            </a>
-          </li>
+            </NavItem>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

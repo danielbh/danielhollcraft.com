@@ -8,19 +8,18 @@ import React, {
 
 import Helmet from "react-helmet"
 import {
-  Col, Row, Grid,
-  Form, FormControl,
-  FormGroup, ControlLabel,
-  Checkbox, Button
+  Col,
+  Row,
+  Grid,
+  Form,
+  FormControl,
+  FormGroup,
+  ControlLabel,
+  Button
 } from 'react-bootstrap'
 import { config } from 'config'
 
-import {
-  Background,
-} from '../../components'
-
 import './index.scss'
-
 
 const Contact = (props) => {
   return (
@@ -32,7 +31,6 @@ const Contact = (props) => {
           {"name": "keywords", "content": "sample, something"},
         ]}
       />
-      <Background color="#2F4F4F"/>
       <Grid>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >
@@ -46,6 +44,14 @@ const Contact = (props) => {
                     <FormControl type="email" placeholder="Email" />
                   </Col>
                 </FormGroup>
+                <FormGroup controlId="formHorizontalName">
+                  <Col componentClass={ControlLabel} sm={2}>
+                    Name
+                  </Col>
+                  <Col sm={10}>
+                    <FormControl type="text" placeholder="Name" />
+                  </Col>
+                </FormGroup>
                 <FormGroup controlId="formHorizontalMessage">
                   <Col componentClass={ControlLabel} sm={2}>
                     Message
@@ -56,7 +62,7 @@ const Contact = (props) => {
                 </FormGroup>
                 <FormGroup>
                   <Col smOffset={2} sm={10}>
-                    <Button type="submit">
+                    <Button bsStyle="success" bsSize="large" type="submit">
                       Send
                     </Button>
                   </Col>
