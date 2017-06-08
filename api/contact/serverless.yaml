@@ -1,0 +1,25 @@
+service: mailgun-lambda
+
+frameworkVersion: ">=1.8.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    SUBJECT: 'danielhollcraft.com contact form'
+    FROM: ${file(./secret.yaml):FROM}
+    TO: ${file(./secret.yaml):TO}
+    API_KEY: ${file(./secret.yaml):API_KEY}
+    DOMAIN: mg.danielhollcraft.com
+
+functions:
+  main:
+    handler: index.handler
+    events:
+      - http:
+          path: /
+          method: post
+
+plugins:
+  - serverless-offline
+

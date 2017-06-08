@@ -34,7 +34,6 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "cd public && now",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
