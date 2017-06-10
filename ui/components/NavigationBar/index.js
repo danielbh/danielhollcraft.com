@@ -8,15 +8,13 @@ import { config } from 'config'
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import FontAwesome from 'react-fontawesome';
 import { IndexLink } from 'react-router'; // eslint-disable-line
-
 import {
   Navbar,
   Nav,
   NavItem,
   Image
 } from 'react-bootstrap'
-
-import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 import './index.scss'
 
