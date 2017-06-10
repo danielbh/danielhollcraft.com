@@ -42,18 +42,18 @@ class Contact extends Component {
     });
 
     if(this.isFormValid()) {
-
       const body = {
         email: this.state.email,
         name: this.state.name,
         message: this.state.message
       };
 
-      fetch("localhost:8080/", {
+      fetch("http://localhost:3000", {
         method: "POST",
-        body,
+        body: JSON.stringify(body),
         headers: {
-          'Content-Type': 'x-www-form-urlggitencoded'
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         }
       });
     }
@@ -72,7 +72,7 @@ class Contact extends Component {
   }
 
   isValidEmail() {
-     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email);
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email);
   }
 
   getEmailValidationState() {

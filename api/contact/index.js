@@ -23,7 +23,7 @@ module.exports.handler = (event, context, callback) => {
 
   console.log(JSON.stringify(event));
 
-  const body = querystring.parse(event.body)
+  const body = JSON.parse(event.body);
   const {name, message, email} = body;
 
   validate(body)
