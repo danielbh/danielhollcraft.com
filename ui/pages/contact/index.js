@@ -42,7 +42,20 @@ class Contact extends Component {
     });
 
     if(this.isFormValid()) {
-      console.log("can submit form")
+
+      const body = {
+        email: this.state.email,
+        name: this.state.name,
+        message: this.state.message
+      };
+
+      fetch("localhost:8080/", {
+        method: "POST",
+        body,
+        headers: {
+          'Content-Type': 'x-www-form-urlggitencoded'
+        }
+      });
     }
   }
 
