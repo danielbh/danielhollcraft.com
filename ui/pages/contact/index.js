@@ -28,7 +28,7 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      submitPress: false,
+      submitPressed: false,
       email: '',
       name: '',
       message: ''
@@ -55,6 +55,13 @@ class Contact extends Component {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         }
+      }).then(() => {
+        this.setState({
+          submitPressed: false,
+          email: '',
+          name: '',
+          message: ''
+        });
       });
     }
   }
