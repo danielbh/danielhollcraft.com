@@ -10,9 +10,10 @@
   box-shadow: $box-shadow;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .contact {
     padding: 20px;
+    margin: 10px 10px 100% 10px;
   }
 }
 
