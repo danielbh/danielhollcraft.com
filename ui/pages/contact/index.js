@@ -184,9 +184,11 @@ class Contact extends Component {
                       Name
                     </Col>
                     <Col sm={10}>
-                      <FormControl type="text" placeholder="Name"
-                                   value={this.state.name}
-                                   onChange={this.onNameChange.bind(this)}
+                      <FormControl
+                        type="text"
+                        placeholder="Name"
+                        value={this.state.name}
+                        onChange={this.onNameChange.bind(this)}
                       />
                       <FormControl.Feedback />
                     </Col>
@@ -198,9 +200,12 @@ class Contact extends Component {
                       Message
                     </Col>
                     <Col sm={10}>
-                      <FormControl componentClass="textarea" placeholder="Your message..."
-                                   value={this.state.message}
-                                   onChange={this.onMessageChange.bind(this)} />
+                      <FormControl
+                        componentClass="textarea"
+                        placeholder="Your message..."
+                        value={this.state.message}
+                        onChange={this.onMessageChange.bind(this)}
+                      />
                       <FormControl.Feedback />
                     </Col>
                   </FormGroup>
