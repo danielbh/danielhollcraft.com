@@ -52,7 +52,10 @@ class Contact extends Component {
         message: this.state.message
       };
 
-      fetch("http://localhost:3000", {
+      const apiEndpoint =
+        process.env.NODE_ENV === 'production' ? config.apiProduction : config.apiDevelopment
+
+      fetch(apiEndpoint, {
         method: "POST",
         body: JSON.stringify(body),
         headers: {
@@ -61,13 +64,11 @@ class Contact extends Component {
         }
       })
         .then((response) => {
-
           if(response.status === 200) {
             this.handleFormSubmitSuccess()
           } else {
             this.handleFormSubmitError()
           }
-
         }).catch((error) => {
         this.handleFormSubmitError()
       });
@@ -161,7 +162,7 @@ class Contact extends Component {
         <Grid>
           <Row>
             <Col xs={12} sm={12} md={12} lg={12} >
-              <div className="contact">
+              <div className="contact-form">
                 <Form horizontal>
                   <FormGroup controlId="formHorizontalEmail" validationState={this.getEmailValidationState()}>
                     <Col componentClass={ControlLabel} sm={2}>

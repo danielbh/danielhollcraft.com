@@ -16,6 +16,11 @@ import {
 
 import './index.scss'
 
+// Used to give IE fetch API support
+// https://github.com/matthew-andrews/isomorphic-fetch
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 const Index = ({route}) => (
   <div>
     <Helmet

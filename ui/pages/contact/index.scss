@@ -1,6 +1,6 @@
 @import '../../stylesheets/variables.scss';
 
-.contact {
+.contact-form {
   background: $primary-color;
   color: $primary-text-color;
   padding: 40px;
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 500px) {
-  .contact {
+  .contact-form {
     padding: 20px;
     margin: 10px 10px 100% 10px;
   }
