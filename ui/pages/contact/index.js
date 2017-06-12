@@ -19,7 +19,10 @@ import {
   ControlLabel,
   Button
 } from 'react-bootstrap'
+
 import { config } from 'config'
+
+import { AlertList } from 'react-bs-notifier';
 
 import './index.scss'
 
@@ -29,6 +32,7 @@ class Contact extends Component {
     super(props);
     this.state = {
       submitPressed: false,
+      alerts: [],
       email: '',
       name: '',
       message: ''
@@ -55,26 +59,71 @@ class Contact extends Component {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         }
-      }).then(() => {
-        this.setState({
-          submitPressed: false,
-          email: '',
-          name: '',
-          message: ''
-        });
+      })
+        .then((response) => {
+
+          if(response.status === 200) {
+            this.handleFormSubmitSuccess()
+          } else {
+            this.handleFormSubmitError()
+          }
+
+        }).catch((error) => {
+        this.handleFormSubmitError()
       });
     }
   }
 
-  handleEmailChange(evt) {
+  onAlertDismissed(alert) {
+    const alerts = this.state.alerts;
+    const idx = alerts.indexOf(alert);
+
+    if (idx >= 0) {
+      this.setState({
+        alerts: [...alerts.slice(0, idx), ...alerts.slice(idx + 1)]
+      });
+    }
+  }
+
+  handleFormSubmitSuccess() {
+    this.setState({
+      submitPressed: false,
+      email: '',
+      name: '',
+      message: '',
+      alerts: [
+        {
+          id: (new Date()).getTime(),
+          type: "success",
+          headline: `Contact Form Successly Submitted`,
+          message: "You will receive a reply to your message within 24 hours. "
+        }
+      ]
+    });
+  }
+
+  handleFormSubmitError() {
+    this.setState({
+      alerts: [
+        {
+          id: (new Date()).getTime(),
+          type: "danger",
+          headline: `Contact Form Submit Failure`,
+          message: "Please try again."
+        }
+      ]
+    });
+  }
+
+  onEmailChange(evt) {
     this.setState({email: evt.target.value});
   }
 
-  handleNameChange(evt) {
+  onNameChange(evt) {
     this.setState({name: evt.target.value});
   }
 
-  handleMessageChange(evt) {
+  onMessageChange(evt) {
     this.setState({message: evt.target.value});
   }
 
@@ -95,6 +144,13 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-wrapper">
+        <AlertList
+          position="top-left"
+          alerts={this.state.alerts}
+          timeout={5000}
+          dismissTitle="Dismiss Alert"
+          onDismiss={this.onAlertDismissed.bind(this)}
+        />
         <Helmet
           title={config.siteTitle}
           meta={[
@@ -116,7 +172,7 @@ class Contact extends Component {
                         type="email"
                         placeholder="Email"
                         value={this.state.email}
-                        onChange={this.handleEmailChange.bind(this)}
+                        onChange={this.onEmailChange.bind(this)}
                       />
                       <FormControl.Feedback />
                     </Col>
@@ -130,7 +186,7 @@ class Contact extends Component {
                     <Col sm={10}>
                       <FormControl type="text" placeholder="Name"
                                    value={this.state.name}
-                                   onChange={this.handleNameChange.bind(this)}
+                                   onChange={this.onNameChange.bind(this)}
                       />
                       <FormControl.Feedback />
                     </Col>
@@ -144,7 +200,7 @@ class Contact extends Component {
                     <Col sm={10}>
                       <FormControl componentClass="textarea" placeholder="Your message..."
                                    value={this.state.message}
-                                   onChange={this.handleMessageChange.bind(this)} />
+                                   onChange={this.onMessageChange.bind(this)} />
                       <FormControl.Feedback />
                     </Col>
                   </FormGroup>

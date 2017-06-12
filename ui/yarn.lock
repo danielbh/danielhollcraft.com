@@ -1640,6 +1640,12 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
+css-vendor@^0.3.8:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-0.3.8.tgz#6421cfd3034ce664fe7673972fd0119fc28941fa"
+  dependencies:
+    is-in-browser "^1.0.2"
+
 cssesc@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-0.1.0.tgz#c814903e45623371a0477b40109aaafbeeaddbb4"
@@ -3139,6 +3145,14 @@ is-gzip@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-gzip/-/is-gzip-1.0.0.tgz#6ca8b07b99c77998025900e555ced8ed80879a83"
 
+is-in-browser@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.0.2.tgz#f688bea8f1e5aadc3244ebc870d188cfb9b613cf"
+
+is-in-browser@^1.0.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
+
 is-jpg@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-jpg/-/is-jpg-1.0.0.tgz#2959c17e73430db38264da75b90dd54f2d86da1c"
@@ -3438,6 +3452,71 @@ jsprim@^1.2.2:
     extsprintf "1.0.2"
     json-schema "0.2.3"
     verror "1.3.6"
+
+jss-camel-case@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jss-camel-case/-/jss-camel-case-4.0.0.tgz#39ef2a137aaa1e2f160ab826845305f8efabcfd5"
+
+jss-compose@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/jss-compose/-/jss-compose-3.0.1.tgz#0ac07f20baf1d523c211016d383dab08dcfe4186"
+  dependencies:
+    warning "^3.0.0"
+
+jss-default-unit@^6.0.0:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-6.1.2.tgz#6c460154129b7be304a4a4dcd2b283584954aec5"
+
+jss-expand@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/jss-expand/-/jss-expand-3.0.1.tgz#90f1b30ad0ab700e666ea54f7186341c50d7feed"
+
+jss-extend@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/jss-extend/-/jss-extend-4.0.1.tgz#6b716a1b217ba32715dbcb69940ec67b35c415dc"
+  dependencies:
+    warning "^3.0.0"
+
+jss-global@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jss-global/-/jss-global-1.0.1.tgz#36731778f6d8649110611f7c178dbcd60fd92b24"
+
+jss-nested@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/jss-nested/-/jss-nested-4.0.1.tgz#f50cc206430c8a920ccd54e3b756f7fc72455130"
+  dependencies:
+    warning "^3.0.0"
+
+jss-preset-default@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jss-preset-default/-/jss-preset-default-2.0.0.tgz#0368d99626b31067e8d04ab3c7cb17ba8354d422"
+  dependencies:
+    jss-camel-case "^4.0.0"
+    jss-compose "^3.0.0"
+    jss-default-unit "^6.0.0"
+    jss-expand "^3.0.0"
+    jss-extend "^4.0.0"
+    jss-global "^1.0.0"
+    jss-nested "^4.0.0"
+    jss-props-sort "^4.0.0"
+    jss-vendor-prefixer "^5.0.0"
+
+jss-props-sort@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jss-props-sort/-/jss-props-sort-4.0.0.tgz#ef4239c6795ca304c18dce9e0395a1789ed9f78a"
+
+jss-vendor-prefixer@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/jss-vendor-prefixer/-/jss-vendor-prefixer-5.1.0.tgz#59b73544de81e6b2efd71f6d3b744671826865a2"
+  dependencies:
+    css-vendor "^0.3.8"
+
+jss@^7.0.0:
+  version "7.1.5"
+  resolved "https://registry.yarnpkg.com/jss/-/jss-7.1.5.tgz#7d27b07b0f2f7f1a2ec9fe0ee1e2ab3f9d903de5"
+  dependencies:
+    is-in-browser "1.0.2"
+    warning "3.0.0"
 
 keycode@^2.1.2:
   version "2.1.8"
@@ -4994,7 +5073,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.6:
+prop-types@^15.5.6, prop-types@^15.5.8:
   version "15.5.8"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
@@ -5103,6 +5182,13 @@ rc@^1.1.2, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+"react-addons-css-transition-group@>=0.14 <16":
+  version "15.5.2"
+  resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.5.2.tgz#ea7e0a9f0e1c27ca426da4efd3559915bd42ead2"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-bootstrap@^0.30.8:
   version "0.30.8"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-0.30.8.tgz#4ceca8e138ce2351228c4a58d59db00c003ca9c0"
@@ -5116,6 +5202,15 @@ react-bootstrap@^0.30.8:
     react-prop-types "^0.4.0"
     uncontrollable "^4.0.1"
     warning "^3.0.0"
+
+react-bs-notifier@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/react-bs-notifier/-/react-bs-notifier-4.3.2.tgz#1b4663e1a54aca0d83b87d36c0fd6faf04228dc4"
+  dependencies:
+    prop-types "^15.5.8"
+    react-addons-css-transition-group ">=0.14 <16"
+    react-jss ">= 5.2 <7"
+    toetag "3.x"
 
 react-deep-force-update@^1.0.0:
   version "1.0.1"
@@ -5165,6 +5260,15 @@ react-hot-loader@^1.3.0:
   dependencies:
     react-hot-api "^0.4.5"
     source-map "^0.4.4"
+
+"react-jss@>= 5.2 <7":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-6.1.1.tgz#01a548e6531b691186c3e8d8250980fb2938f1fe"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+    jss "^7.0.0"
+    jss-preset-default "^2.0.0"
+    prop-types "^15.5.8"
 
 react-overlays@^0.6.12:
   version "0.6.12"
@@ -6021,6 +6125,10 @@ to-fast-properties@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.2.tgz#f3f5c0c3ba7299a7ef99427e44633257ade43320"
 
+toetag@3.x:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/toetag/-/toetag-3.3.6.tgz#0c935875a9555de03730e429a3ac9d0129fc417c"
+
 toml-js@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/toml-js/-/toml-js-0.0.8.tgz#648ea6f1a4d63b19c0bb30b8ed03e40d09473b0a"
@@ -6355,15 +6463,15 @@ ware@^1.2.0:
   dependencies:
     wrap-fn "^0.1.0"
 
-warning@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-2.1.0.tgz#21220d9c63afc77a8c92111e011af705ce0c6901"
+warning@3.0.0, warning@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
   dependencies:
     loose-envify "^1.0.0"
 
-warning@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+warning@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-2.1.0.tgz#21220d9c63afc77a8c92111e011af705ce0c6901"
   dependencies:
     loose-envify "^1.0.0"
 
