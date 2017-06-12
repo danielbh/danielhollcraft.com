@@ -55,7 +55,7 @@ class Contact extends Component {
       const apiEndpoint =
         process.env.NODE_ENV === 'production' ? config.apiProduction : config.apiDevelopment
 
-      fetch(apiEndpoint, {
+      fetch(apiEndpoint + '/contact', {
         method: "POST",
         body: JSON.stringify(body),
         headers: {
