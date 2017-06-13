@@ -1,0 +1,31 @@
+service: danielhollcraft
+
+frameworkVersion: ">=1.8.0 <2.0.0"
+
+custom:
+  stage: ${opt.stage, self:provider.stage}
+  rootDomain: danielhollcraft.com
+  devDomains:
+    - dev.danielhollcraft.com
+  prodDomains:
+    - www.danielhollcraft.com
+    - danielhollcraft.com
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs6.10
+
+resources:
+  Outputs:
+    WebSiteUrl:
+      Value: {"Fn::GetAtt": [WebSite, WebsiteURL]}
+    WebSiteBucket:
+      Value: {Ref: WebSite}
+  Resources:
+    WebSite:
+      Type: "AWS::S3::Bucket"
+      Properties:
+        WebsiteConfiguration:
+          IndexDocument: index.html
+
