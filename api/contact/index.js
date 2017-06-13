@@ -26,6 +26,8 @@ module.exports.handler = (event, context, callback) => {
   const body = JSON.parse(event.body);
   const {name, message, email} = body;
 
+  const headers = {'Content-Type': 'text/html'};
+
   validate(body)
     .then(valid => {
       const opts = {
@@ -42,7 +44,7 @@ module.exports.handler = (event, context, callback) => {
           callback(null, {
             statusCode: 200,
             body: 'form submitted successfully',
-            headers: {'Content-Type': 'text/html'}
+            headers
           })
         }
       });
@@ -53,7 +55,7 @@ module.exports.handler = (event, context, callback) => {
         callback(null, {
           statusCode: 502,
           body: error.errors[0].message,
-          headers: {'Content-Type': 'text/html'}
+          headers
         })
       }
     });

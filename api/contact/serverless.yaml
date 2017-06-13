@@ -1,15 +1,15 @@
-service: mailgun-lambda
+service: danielhollcraft
 
 frameworkVersion: ">=1.8.0 <2.0.0"
 
 custom:
-  prodDomains:
-   - api.danielhollcraft.com
+  stage: ${opt:stage, self:provider.stage}
 
 provider:
   name: aws
   runtime: nodejs6.10
   environment:
+    SLS_STAGE: ${self:custom.stage}
     SUBJECT: 'danielhollcraft.com contact form'
     FROM: ${file(./secret.yaml):FROM}
     TO: ${file(./secret.yaml):TO}
@@ -23,7 +23,16 @@ functions:
       - http:
           path: /contact
           method: post
+          cors: true
 
 plugins:
   - serverless-offline
 
+resources:
+  Resources:
+    CustomDomainMap:
+      Type: "AWS::ApiGateway::BasePathMapping"
+      Properties:
+        DomainName: api.danielhollcraft.com
+        Stage: ${self:custom.stage}
+        RestApiId: {Ref: ApiGatewayRestApi}

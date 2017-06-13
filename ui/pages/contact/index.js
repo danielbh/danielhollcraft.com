@@ -52,8 +52,7 @@ class Contact extends Component {
         message: this.state.message
       };
 
-      const apiEndpoint =
-        process.env.NODE_ENV === 'production' ? config.apiProduction : config.apiDevelopment
+      const apiEndpoint = process.env.NODE_ENV === 'production' ? config.apiProduction : config.apiDevelopment;
 
       fetch(apiEndpoint + '/contact', {
         method: "POST",
