@@ -1,3 +1,2 @@
 node_modules
-secret.yaml
-.serverless
+secret.yml

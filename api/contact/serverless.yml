@@ -4,16 +4,15 @@ frameworkVersion: ">=1.8.0 <2.0.0"
 
 custom:
   stage: ${opt:stage, self:provider.stage}
-
 provider:
   name: aws
   runtime: nodejs6.10
   environment:
     SLS_STAGE: ${self:custom.stage}
     SUBJECT: 'danielhollcraft.com contact form'
-    FROM: ${file(./secret.yaml):FROM}
-    TO: ${file(./secret.yaml):TO}
-    API_KEY: ${file(./secret.yaml):API_KEY}
+    FROM: ${file(./secret.yml):FROM}
+    TO: ${file(./secret.yml):TO}
+    API_KEY: ${file(./secret.yml):API_KEY}
     DOMAIN: mg.danielhollcraft.com
 
 functions:
@@ -21,6 +20,7 @@ functions:
     handler: index.handler
     events:
       - http:
+          cors: true
           path: /contact
           method: post
           cors: true
@@ -36,3 +36,4 @@ resources:
         DomainName: api.danielhollcraft.com
         Stage: ${self:custom.stage}
         RestApiId: {Ref: ApiGatewayRestApi}
+

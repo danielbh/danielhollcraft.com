@@ -26,7 +26,10 @@ module.exports.handler = (event, context, callback) => {
   const body = JSON.parse(event.body);
   const {name, message, email} = body;
 
-  const headers = {'Content-Type': 'text/html'};
+  const headers = {
+    'Content-Type': 'text/html',
+    'Access-Control-Allow-Origin': '*'
+  };
 
   validate(body)
     .then(valid => {
