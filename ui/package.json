@@ -38,7 +38,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy-d": "./deploy/scripts/deploy_static_files.sh",
+    "staticDeploy": "./deploy/scripts/deploy_static_files.sh",
+    "staticDestroy": "./deploy/scripts/delete_static_files.sh ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {}
