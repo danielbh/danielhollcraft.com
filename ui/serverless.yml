@@ -44,7 +44,7 @@ resources:
               CustomOriginConfig:
                 HTTPPort: 80
                 HTTPSPort: 443
-                OriginProtocolPolicy: https-only
+                OriginProtocolPolicy: http-only
           DefaultCacheBehavior:
             ViewerProtocolPolicy: redirect-to-https
             TargetOriginId: S3Origin
