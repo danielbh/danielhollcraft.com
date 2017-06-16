@@ -1,0 +1,23 @@
+{
+  "name": "danielhollcraft.com",
+  "version": "1.0.0",
+  "description": "Daniel Hollcraft's Website",
+  "main": "index.js",
+  "scripts": {
+    "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
+    "staticDestroy": "./ui/deploy/scripts/delete_static_files.sh ",
+    "uiDeploy": "cd ui && sls deploy -s prod",
+    "apiDeploy": "cd api && sls deploy -s prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbh/danielhollcraft.com.git"
+  },
+  "author": "Daniel Hollcraft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielbh/danielhollcraft.com/issues"
+  },
+  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme"
+}

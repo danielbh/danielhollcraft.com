@@ -1,6 +1,6 @@
 {
-  "name": "danielhollcraft.com",
-  "description": "Daniel Hollcraft's Website",
+  "name": "web-ui-danielhollcraft",
+  "description": "The web ui made with gastby.js",
   "version": "1.0.0",
   "author": "Daniel Hollcraft",
   "devDependencies": {
@@ -38,8 +38,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "staticDeploy": "./deploy/scripts/deploy_static_files.sh",
-    "staticDestroy": "./deploy/scripts/delete_static_files.sh ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {}

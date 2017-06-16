@@ -1,7 +1,7 @@
 {
-  "name": "mailgun-lambda",
+  "name": "api-danielhollcraft",
   "version": "0.0.1",
-  "description": "Use mailgun with aws lambda",
+  "description": "The api for danielhollcraft.com",
   "author": "Daniel Hollcraft",
   "license": "MIT",
   "scripts": {

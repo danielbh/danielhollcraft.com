@@ -17,6 +17,6 @@ WEBSITE_URL=$(aws \
     --query "Stacks[0].Outputs[?OutputKey=='WebSiteUrl'] | [0].OutputValue" \
     --output text)
 
-aws s3 sync --acl 'public-read' --delete src/public/ "s3://${BUCKET_NAME}/"
+aws s3 sync --acl 'public-read' --delete ui/src/public/ "s3://${BUCKET_NAME}/"
 
 echo "Bucket URL: ${WEBSITE_URL}"
