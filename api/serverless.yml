@@ -1,4 +1,4 @@
-service: danielhollcraft
+service: api-danielhollcraft
 
 frameworkVersion: ">=1.8.0 <2.0.0"
 
@@ -17,23 +17,26 @@ provider:
 
 functions:
   contact:
-    handler: index.handler
+    handler: endpoints/contact/index.handler
     events:
       - http:
           cors: true
           path: /contact
           method: post
-          cors: true
 
 plugins:
   - serverless-offline
 
-resources:
-  Resources:
-    CustomDomainMap:
-      Type: "AWS::ApiGateway::BasePathMapping"
-      Properties:
-        DomainName: api.danielhollcraft.com
-        Stage: ${self:custom.stage}
-        RestApiId: {Ref: ApiGatewayRestApi}
+#resources:
+#  Resources:
+#    SSLCert:
+#      Type: "AWS::CertificateManager::Certificate"
+#      Properties:
+#        DomainName: api.danielhollcraft.com
+#    CustomDomainMap:
+#      Type: "AWS::ApiGateway::BasePathMapping"
+#      Properties:
+#        DomainName: api.danielhollcraft.com
+#        Stage: ${self:custom.stage}
+#        RestApiId: {Ref: ApiGatewayRestApi}
 
