@@ -6,8 +6,13 @@
   "scripts": {
     "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
     "staticDestroy": "./ui/deploy/scripts/delete_static_files.sh ",
-    "uiDeploy": "cd ui && sls deploy -s prod",
-    "apiDeploy": "cd api && sls deploy -s prod",
+    "uiLocal": "cd ui/src && gatsby develop",
+    "uiBuild": "cd ui/src && gatsby build",
+    "uiDeploy": "cd ui && sls deploy",
+    "uiDeployProd": "cd ui && sls deploy -s prod",
+    "apiDeployProd": "cd api && sls deploy -s prod",
+    "apiDeploy": "cd api && sls deploy",
+    "apiLocal": "cd api && sls offline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
