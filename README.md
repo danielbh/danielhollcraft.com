@@ -1,8 +1,6 @@
 # danielhollcraft.com powered by gatsbyjs and serverless
 
-## Overview
-
-### UI
+### WEB UI
 
 This the repo for my personal website. It includes an about me as the main page, a portfolio page a services page, and a blog. To create the front-end I used the library [gatsby.js](https://github.com/gatsbyjs/gatsby) for static content generation. The reason I prefer gatsby as a static generation lib is because it uses [React.js](https://github.com/facebook/react) and I love to React! I also use [SCSS](http://sass-lang.com/) for CSS as it is my preferred CSS pre-processor.
 
