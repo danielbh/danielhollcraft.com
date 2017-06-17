@@ -1,5 +1,40 @@
-**danielhollcraft.com powered by gatsbyjs and serverless**
+#danielhollcraft.com powered by gatsbyjs and serverless
 
-UI deployed with: https://github.com/alestic/aws-git-backed-static-website
+##Overview
+
+###UI
+
+This the repo for my personal website. It includes an about me as the main page, a portfolio page a services page, and a blog. To create the front-end I used the library [gatsby.js](https://github.com/gatsbyjs/gatsby) for static content generation. The reason I prefer gatsby as a static generation lib is because it uses [React.js](https://github.com/facebook/react) and I love to React! I also use [SCSS](http://sass-lang.com/) for CSS as it is my preferred CSS pre-processor.
+
+It is deployed using [serverless](https://serverless.com/). While you can use Amazon Web Services (AWS), Azure, IBM Open Wisk, or Google Cloud for serverless deployments, I used AWS since it is the most mature, and best IMHO. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/ui/serverless.yml) to see the deployment configuration for the UI. If you are confused about how to create, read, and use these files here are a few resources:
+
+- [acloud.guru](https://acloud.guru) where I received most of my education about serverless.
+- [serverless docs](https://serverless.com/framework/docs/providers/aws/guide/intro/)
+
+####To Deploy:
+
+**Pre-requistes**
+
+1) [An Amazon Web Services (AWS) account](https://www.amazon.com/ap/signin?openid.assoc_handle=aws&openid.return_to=https%3A%2F%2Fsignin.aws.amazon.com%2Foauth%3Fresponse_type%3Dcode%26client_id%3Darn%253Aaws%253Aiam%253A%253A015428540659%253Auser%252Fhomepage%26redirect_uri%3Dhttps%253A%252F%252Fconsole.aws.amazon.com%252Fconsole%252Fhome%253Fregion%253Dus-east-1%2526state%253DhashArgs%252523%2526isauthcode%253Dtrue%26noAuthCookie%3Dtrue&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&action=&disableCorpSignUp=&clientContext=&marketPlaceId=&poolName=&authCookies=&pageId=aws.ssop&siteState=registered%2Cen_US&accountStatusPolicy=P1&sso=&openid.pape.preferred_auth_policies=MultifactorPhysical&openid.pape.max_auth_age=120&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&server=%2Fap%2Fsignin%3Fie%3DUTF8&accountPoolAlias=&forceMobileApp=0&language=en_US&forceMobileLayout=0)
+2) [aws-cli installed](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+3) [AWS user created with programmatic access](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
+4) [aws-cli authenticated](http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html) 
+5) [Node.js installed](https://nodejs.org/en/)
+5) [serverless installed](https://serverless.com/framework/docs/getting-started/)
+6) [gatbsy.js installed](https://github.com/gatsbyjs/gatsby)
+
+**Instructions**
+
+1) You must have a registered domain name that points to AWS name servers.
+2) Go to [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/ui/serverless.yml) and change the following to match the attributes for your project
+   - `custom.rootDomain`
+   - `custom.devDomains`
+   - `custom.prodDomains`
+   - `provider.region`
+   
+   As for everything else in the file I recommend that only advanced users mess with it.
+
+
+**API**
 
 API deployed with: https://www.serverless.com

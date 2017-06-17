@@ -14,7 +14,6 @@ custom:
 provider:
   name: aws
   region: us-east-1
-  runtime: nodejs6.10
 
 resources:
   Mappings: ${file(deploy/resources/mappings.yml)}
