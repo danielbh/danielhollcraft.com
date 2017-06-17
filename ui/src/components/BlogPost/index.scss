@@ -1,10 +1,10 @@
 @import '../../stylesheets/variables.scss';
 
-@mixin summary-text {
-  line-height: 25px;
-  font-size: 18px;
-  padding: 10px 30px 20px 30px;
+@mixin blog-post-text {
   color: $primary-text-color;
+  padding: 10px 30px;
+  margin-top: 0;
+  margin-bottom: 0; // overriding default
 }
 
 .blog-post {
@@ -14,12 +14,14 @@
   padding: 20px 0;
   margin-bottom: 25px;
 
-  p {
-    @include summary-text();
-    padding: 5px 30px 20px 30px;
-    color: $primary-text-color;
-    margin-top: 10px;
-    margin-bottom: 0; // overriding default
+  p, ul, ol {
+    @include blog-post-text();
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  h1,h2,h3,h4,h5 {
+    @include blog-post-text();
   }
 
   time {
