@@ -6,8 +6,8 @@
   "scripts": {
     "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
     "staticDestroy": "./ui/deploy/scripts/delete_static_files.sh ",
+    "staticBuild": "cd ui/src && gatsby build",
     "uiLocal": "cd ui/src && gatsby develop",
-    "uiBuild": "cd ui/src && gatsby build",
     "uiDeploy": "cd ui && sls deploy",
     "uiDeployProd": "cd ui && sls deploy -s prod",
     "apiDeployProd": "cd api && sls deploy -s prod",
