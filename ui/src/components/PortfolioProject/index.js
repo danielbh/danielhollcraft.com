@@ -24,7 +24,7 @@ const PortfolioProject = (props) => {
         { props.mobilePreview ?
           <Image
             className="mobile-preview"
-            src={require("../../pages/portfolio/project-images/"+props.mobilePreview)}
+            src={require('../../pages' + props.path + props.mobilePreview)}
             alt={props.previewDesc + "mobile"}
           /> : ""
         }
@@ -32,7 +32,7 @@ const PortfolioProject = (props) => {
         { props.desktopPreview ?
           <Image
             className="desktop-preview"
-            src={require("../../pages/portfolio/project-images/"+props.desktopPreview)}
+            src={require('../../pages' + props.path + props.desktopPreview)}
             alt={props.previewDesc + " desktop"}
           /> : ""
         }
@@ -80,6 +80,7 @@ const PortfolioProject = (props) => {
 };
 
 PortfolioProject.propTypes = {
+  path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,

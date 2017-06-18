@@ -17,6 +17,10 @@ import './index.scss'
 import Index from './index'
 
 const PortfolioTemplate = ({route}) => {
+  const projects = route.childRoutes.map(r => {
+    return {...r.page.data, path: r.page.path}
+  });
+
   return (
     <div className="portfolio-wrapper">
       <Helmet
@@ -30,7 +34,7 @@ const PortfolioTemplate = ({route}) => {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} >
             <ProfileHeader subheading="Portfolio"/>
-            <Index projects={route.childRoutes.map(r => r.page.data)}/>
+            <Index projects={projects}/>
           </Col>
         </Row>
       </Grid>
