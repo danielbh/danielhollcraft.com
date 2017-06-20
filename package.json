@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
+    "staticCleanDeployProd": "npm run staticDestroy prod && npm run staticDestroyLocal &&  npm run staticBuild && npm run staticDeploy prod",
     "staticDestroy": "./ui/deploy/scripts/delete_static_files.sh ",
     "staticDestroyLocal": "rm -rf ui/src/public",
-    "staticBuild": "cd ui/src && gatsby build",
-    "uiLocal": "cd ui/src && gatsby develop",
-    "uiDeploy": "cd ui && sls deploy",
-    "uiDeployProd": "cd ui && sls deploy -s prod",
-    "apiDeployProd": "cd api && sls deploy -s prod",
-    "apiDeploy": "cd api && sls deploy",
-    "apiLocal": "cd api && sls offline",
+    "staticBuild": "cd ui/src && gatsby build && cd ../..",
+    "uiLocal": "cd ui/src && gatsby develop && cd ../..",
+    "uiDeploy": "cd ui && sls deploy && cd .. ",
+    "uiDeployProd": "cd ui && sls deploy -s prod && cd ..",
+    "apiDeployProd": "cd api && sls deploy -s prod && cd ..",
+    "apiDeploy": "cd api && sls deploy && cd ..",
+    "apiLocal": "cd api && sls offline && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
