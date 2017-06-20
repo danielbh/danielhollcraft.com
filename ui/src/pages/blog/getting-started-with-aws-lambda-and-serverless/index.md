@@ -12,7 +12,7 @@ There are many steps you need to follow and understand before deploying and exec
 **By the time you finish this series you will learn:**
  
 1) How to create a lambda function.
-2) [How to deploy a lambda function from the command-line using Serverless](http://localhost:8000/blog/deploy-lamda-function-using-serverless/)
+2) [How to deploy a lambda function from the command-line using Serverless](/blog/deploy-lamda-function-using-serverless/)
 3) [How to deploy a lambda function with public and private environment variables](/blog/deploy-lambda-function-with-public-and-private-enviromental-variables-using-serverless/)
 
 **To do this part of the tutorial you will need to...**
