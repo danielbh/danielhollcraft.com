@@ -6,6 +6,7 @@
   "scripts": {
     "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
     "staticDestroy": "./ui/deploy/scripts/delete_static_files.sh ",
+    "staticDestroyLocal": "rm -rf ui/src/public",
     "staticBuild": "cd ui/src && gatsby build",
     "uiLocal": "cd ui/src && gatsby develop",
     "uiDeploy": "cd ui && sls deploy",
