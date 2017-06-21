@@ -4,7 +4,7 @@
  */
 import ReactDOM from 'react-dom'
 import React from 'react'
-import trianglify from 'trianglify'
+import Trianglify from 'trianglify';
 
 export default class TrianglifyCanvas extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class TrianglifyCanvas extends React.Component {
 
   renderCanvas() {
     let canvas = ReactDOM.findDOMNode(this);
-    trianglify(this.props).canvas(canvas);
+    Trianglify(this.props).canvas(canvas);
   }
 
   render() {
@@ -39,5 +39,5 @@ export default class TrianglifyCanvas extends React.Component {
 }
 
 TrianglifyCanvas.defaultProps = {
-  ...trianglify.defaults
+  ...Trianglify.defaults
 };
