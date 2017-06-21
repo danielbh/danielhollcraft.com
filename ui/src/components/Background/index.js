@@ -13,12 +13,13 @@ const Background = ({color}) => (
     className="background"
     style={{background: color}}
   />
-);
+    );
 
 
 Background.propTypes = {
   color: PropTypes.string
 };
+
 Background.defaultProps = {
   color: "#00688B"
 };

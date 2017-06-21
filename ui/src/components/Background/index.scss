@@ -1,6 +1,6 @@
 @import '../../stylesheets/variables.scss';
 
-.background {
+canvas {
   position: fixed;
   // Prevent bug on mobile that causes a white bar to appear on bottom of screen when scrolling.
   height: 200vh;

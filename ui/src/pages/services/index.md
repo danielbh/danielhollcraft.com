@@ -4,13 +4,14 @@ title: Services
 
 ### Web Front-End Development
 
-I've been doing front-end development professionally since 2011. My framework of specialization is React.js/Redux. 
+As a React.js expert I can provide consulting or build a web interface that is modern and leverages the newest and best technologies. 
+I can help you structure your front end code (html, css, javascript) in a way that scales.
 
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
 ### Mobile Development
 
-I have been doing mobile development since 2013. I specialize in React Native for building cross-platform apps fast that look and feel like their native counterparts.
+Build a cross-platform app that uses React Native to give you a native feeling app that works on both iOS and Android.
 
 [comment]: <> (Here is a testimonial - Coming soon)
 [comment]: <> (Here are a few examples of what I've done Coming soon)
@@ -27,7 +28,7 @@ As a soon to be [AWS Certified Solutions Architect - Associate](https://aws.amaz
 - Create and automate the deployment of solutions based on best practices. 
 - Craft solutions that are as efficient and inexpensive as possible.
 - Migrate you from an expensive architecture to a much more affordable one.
-- Leverage the new [Serverless paradigm](https://en.wikipedia.org/wiki/Serverless_computing) and allow you to pay based on use instead of by per-hour resources consumed.
+- Leverage the new [Serverless paradigm](https://en.wikipedia.org/wiki/Serverless_computing) and allow you to pay based on use instead of by per-hour.
 
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
