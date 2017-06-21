@@ -70,8 +70,13 @@
   padding: 40px;
   box-shadow: $box-shadow;
 
+
   ul, p{
     font-size: 20px;
+  }
+
+  h1, h2, h3, h4, h5, ol, ul, p {
+    color: $primary-text-color;
   }
 
   // Override
@@ -104,6 +109,8 @@
     }
   }
 }
+
+
 
 .panel-footer {
   border-top: none; // override
