@@ -24,8 +24,21 @@
     @include blog-post-text();
   }
 
+
+  // pre and code add horizontal scrolling and a scrollbar
   pre {
     margin: 20px;
+    overflow: auto;
+    word-wrap: normal;
+  }
+
+  code {
+    font-size: .8rem;
+    border-radius: 2px;
+    font-family: Roboto Mono, Monaco, courier, monospace;
+    max-width: inherit;
+    overflow: inherit;
+    white-space: inherit;
   }
 
   @media (max-width: 400px) {

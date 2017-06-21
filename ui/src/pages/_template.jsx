@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import 'normalize.css';
 import {
   NavigationBar,
   Footer,

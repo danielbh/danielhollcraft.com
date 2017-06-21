@@ -18,6 +18,7 @@
     "markdown-it-deflist": "^2.0.1",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-sub": "^1.0.0",
+    "normalize.css": "^7.0.0",
     "object-assign": "^4.1.0",
     "react-bootstrap": "^0.30.8",
     "react-bs-notifier": "^4.3.2",

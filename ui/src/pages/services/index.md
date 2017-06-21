@@ -27,7 +27,7 @@ As a soon to be [AWS Certified Solutions Architect - Associate](https://aws.amaz
 - Create and automate the deployment of solutions based on best practices. 
 - Craft solutions that are as efficient and inexpensive as possible.
 - Migrate you from an expensive architecture to a much more affordable one.
-- Leverage the new [Serverless paradigm](https://en.wikipedia.org/wiki/Serverless_computing) and allow you to pay based on use instead of by per hour resources consumed.
+- Leverage the new [Serverless paradigm](https://en.wikipedia.org/wiki/Serverless_computing) and allow you to pay based on use instead of by per-hour resources consumed.
 
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
