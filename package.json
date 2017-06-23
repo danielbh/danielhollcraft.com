@@ -4,12 +4,11 @@
   "description": "Daniel Hollcraft's Website",
   "main": "index.js",
   "scripts": {
-    "staticDeploy": "./ui/deploy/scripts/deploy_static_files.sh",
-    "staticCleanDeployProd": "npm run staticDestroy prod && npm run staticDestroyLocal &&  npm run staticBuild && npm run staticDeploy prod",
-    "static:destroy": "./ui/deploy/scripts/delete_static_files.sh ",
-    "static:destroy:local": "rm -rf ui/src/public",
-    "static:build": "cd ui/src && gatsby build && cd ../..",
-    "ui:local": "cd ui/src && gatsby develop && cd ../..",
+    "static:deploy": "./ui/.deploy/scripts/deploy_static_files.sh",
+    "static:destroy": "./ui/.deploy/scripts/delete_static_files.sh ",
+    "static:destroy:local": "rm -rf ui/public",
+    "static:build": "cd ui && gatsby build && cd ../..",
+    "ui:local": "cd ui && gatsby develop",
     "ui:deploy": "cd ui && sls deploy && cd .. ",
     "ui:deploy:prod": "cd ui && sls deploy -s prod && cd ..",
     "api:deploy:prod": "cd api && sls deploy -s prod && cd ..",
@@ -26,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/danielbh/danielhollcraft.com/issues"
   },
-  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme"
+  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme",
+  "devDependencies": {}
 }
