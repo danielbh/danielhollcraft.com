@@ -8,6 +8,7 @@
     "static:destroy": "./ui/.deploy/scripts/delete_static_files.sh ",
     "static:destroy:local": "rm -rf ui/public",
     "static:build": "cd ui && gatsby build && cd ../..",
+    "static:build:deploy": "npm run static:build && npm run static:deploy prod",
     "ui:local": "cd ui && gatsby develop",
     "ui:deploy": "cd ui && sls deploy && cd .. ",
     "ui:deploy:prod": "cd ui && sls deploy -s prod && cd ..",

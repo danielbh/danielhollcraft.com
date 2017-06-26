@@ -3,7 +3,7 @@ title: A Static Website Blog
 start: Apr 2017 
 end: Present
 type: Open Source
-skills: GatsbyJS, React, SCSS
+skills: GatsbyJS, React, SCSS, Serverless, S3, Amazon Web Services
 source: https://github.com/danielbh/danielhollcraft.com-gatsbyjs
 mobilePreview: daniel-hollcraft-mobile.png
 desktopPreview: daniel-hollcraft-desktop.png

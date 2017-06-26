@@ -42,7 +42,7 @@ export default class Background extends Component {
   resize() {
     this.setState({
       height: ReactDOM.findDOMNode(this).offsetHeight,
-      width: ReactDOM.findDOMNode(this).offsetWidth
+      width: window.innerWidth
     });
   }
 
@@ -57,8 +57,8 @@ export default class Background extends Component {
           height={this.state.height + 10}
           width={this.state.width + 10}
           x_colors="GnBu"
-          variance={0.90}
-          cell_size={60}
+          variance={1}
+          cell_size={100}
           seed={this.state.seed}/>
       </div>
     );
