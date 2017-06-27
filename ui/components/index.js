@@ -4,7 +4,6 @@
 
 export BlogSummary from './BlogSummary'
 export NavigationBar from './NavigationBar'
-export ParticleBackground from './ParticleBackground'
 export Profile from './Profile'
 export ProfileHeader from './ProfileHeader'
 export PortfolioProject from './PortfolioProject'

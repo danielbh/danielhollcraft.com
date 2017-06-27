@@ -24,16 +24,16 @@ const PortfolioProject = (props) => {
         { props.mobilePreview ?
           <Image
             className="mobile-preview"
-            src={require('../../pages' + props.path + props.mobilePreview)}
-            alt={props.previewDesc + "mobile"}
+            src={props.mobilePreview}
+            alt={props.previewCaption + "mobile"}
           /> : ""
         }
 
         { props.desktopPreview ?
           <Image
             className="desktop-preview"
-            src={require('../../pages' + props.path + props.desktopPreview)}
-            alt={props.previewDesc + " desktop"}
+            src={props.desktopPreview}
+            alt={props.previewCaption + " desktop"}
           /> : ""
         }
       </div>
@@ -43,7 +43,7 @@ const PortfolioProject = (props) => {
         <div><span className="font-bold">Type:</span> {props.type}</div>
         <div><span className="font-bold">Skills:</span> {props.skills}</div>
         <div><span className="font-bold">Platform:</span> {props.platform}</div>
-        <div dangerouslySetInnerHTML={{ __html: props.body }} />
+        { props.summary.map(paragraph => (<p>{paragraph}</p> ))}
       </div>
 
       <div className="panel-footer">
@@ -80,7 +80,6 @@ const PortfolioProject = (props) => {
 };
 
 PortfolioProject.propTypes = {
-  path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   start: PropTypes.string.isRequired,
   end: PropTypes.string.isRequired,
@@ -93,7 +92,9 @@ PortfolioProject.propTypes = {
   website: PropTypes.string,
   appStore: PropTypes.string,
   googlePlay: PropTypes.string,
-  source: PropTypes.string
+  source: PropTypes.string,
+  // This allows for multi-line project summaries if desired
+  summary:PropTypes.array
 };
 PortfolioProject.defaultProps = {};
 

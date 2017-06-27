@@ -8,6 +8,7 @@ import React, {
 import Helmet from "react-helmet"
 import {Col, Row, Grid} from 'react-bootstrap'
 import { config } from 'config'
+import projects from './projects'
 
 import {
   ProfileHeader,
@@ -16,31 +17,25 @@ import {
 import './index.scss'
 import Index from './index'
 
-const PortfolioTemplate = ({route}) => {
-  const projects = route.childRoutes.map(r => {
-    return {...r.page.data, path: r.page.path}
-  });
-
-  return (
-    <div className="portfolio-wrapper">
-      <Helmet
-        title="Daniel Hollcraft | Portfolio"
-        meta={[
-          {"name": "description", "content": "Blog"},
-          {"name": "keywords", "content": "sample, something"},
-        ]}
-      />
-      <Grid>
-        <Row>
-          <Col xs={12} sm={12} md={12} lg={12} >
-            <ProfileHeader subheading="Portfolio"/>
-            <Index projects={projects}/>
-          </Col>
-        </Row>
-      </Grid>
-    </div>
-  )
-};
+const PortfolioTemplate = (props) => (
+  <div className="portfolio-wrapper">
+    <Helmet
+      title="Daniel Hollcraft | Portfolio"
+      meta={[
+        {"name": "description", "content": "Blog"},
+        {"name": "keywords", "content": "sample, something"},
+      ]}
+    />
+    <Grid>
+      <Row>
+        <Col xs={12} sm={12} md={12} lg={12} >
+          <ProfileHeader subheading="Portfolio"/>
+          <Index projects={projects}/>
+        </Col>
+      </Row>
+    </Grid>
+  </div>
+);
 
 PortfolioTemplate.propTypes = {};
 PortfolioTemplate.defaultProps = {};

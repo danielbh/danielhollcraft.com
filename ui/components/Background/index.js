@@ -57,7 +57,7 @@ export default class Background extends Component {
           width={this.state.width + 10}
           x_colors="GnBu"
           variance={1}
-          cell_size={80}
+          cell_size={75}
           seed="Daniel Hollcraft"/>
       </div>
     );
