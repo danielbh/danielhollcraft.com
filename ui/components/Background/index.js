@@ -22,7 +22,6 @@ export default class Background extends Component {
     // Copy Trianglify.defaults instead of referencing it. Prevents big issues according to github.com/qrohlf
     this.state = update(Trianglify.defaults, {});
     this.state.resize_timer = null;
-    this.state.seed = "Daniel Hollcraft"; // Seed with my own name!
   }
 
   debounceResize() {
@@ -58,8 +57,8 @@ export default class Background extends Component {
           width={this.state.width + 10}
           x_colors="GnBu"
           variance={1}
-          cell_size={100}
-          seed={this.state.seed}/>
+          cell_size={80}
+          seed="Daniel Hollcraft"/>
       </div>
     );
   }
@@ -70,5 +69,5 @@ Background.propTypes = {
 };
 
 Background.defaultProps = {
-  color: "#00688B"
+  color: "#70c2ca"
 };
