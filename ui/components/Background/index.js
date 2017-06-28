@@ -69,5 +69,5 @@ Background.propTypes = {
 };
 
 Background.defaultProps = {
-  color: "#70c2ca"
+  color: "#23395B"
 };
