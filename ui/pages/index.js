@@ -15,6 +15,7 @@ import {
 } from '../components'
 
 import './index.scss'
+// import '../stylesheets/global.scss'
 
 // Used to give IE fetch API support
 // https://github.com/matthew-andrews/isomorphic-fetch

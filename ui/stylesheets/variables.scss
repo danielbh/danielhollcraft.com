@@ -7,6 +7,7 @@ $secondary-text-color: rgba(149, 149, 149, 0.71);
 // Theme Styles
 $shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
 $border-radius: 15px;
+$background: #2b6788;
 
 // For tagging blog posts
 @mixin tag {
@@ -15,3 +16,4 @@ $border-radius: 15px;
   border: 1px solid;
   color: $primary-text-color;
 }
+
