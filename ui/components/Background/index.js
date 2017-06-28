@@ -55,9 +55,9 @@ export default class Background extends Component {
         <TrianglifyCanvas
           height={this.state.height + 10}
           width={this.state.width + 10}
-          x_colors="GnBu"
+          x_colors={['#1B5373', '#1F5673', '#177E72', '#23395B', '#1B5373', '#031A6B']}
           variance={1}
-          cell_size={75}
+          cell_size={100}
           seed="Daniel Hollcraft"/>
       </div>
     );

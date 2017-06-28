@@ -9,7 +9,7 @@
   width: 100%;
 
   .profile-photo {
-    //border: 2px solid $primary-color;
+    border: 2px solid $primary-color;
     box-shadow: $shadow;
     padding: 0;
     margin-bottom: 20px;
@@ -17,7 +17,7 @@
 
   p {
     font-weight: bold;
-    color: $primary-text-color;
+    color: $primary-color;
     //text-shadow: $shadow;
     text-align: center;
     margin-bottom: 15px;
