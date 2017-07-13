@@ -2,7 +2,7 @@
 title: How to Deploy a Lambda Function with Public and Private Variables
 date: "04/20/2016"
 categories: Node.js, App Development, Another, Another, AND ANOTHER
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue elit vitae lacus sodales, ut tempus ligula laoreet. Nullam imperdiet ex vitae orci dapibus suscipit. Mauris sed condimentum felis. Donec nec cursus arcu. Ut sagittis a libero id molestie. In rutrum, neque sit amet sollicitudin egestas, dui tellus bibendum diam, eu euismod diam sapien cursus arcu.
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue elit vitae lacus sodales, ut tempus ligula laoreet. Nullam imperdiet ex vitae orci dapibus suscipit imperdiet ex vitae orci dapibus suscipit. 
 ---
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue elit vitae lacus sodales, ut tempus ligula laoreet. Nullam imperdiet ex vitae orci dapibus suscipit. Mauris sed condimentum felis. Donec nec cursus arcu. Ut sagittis a libero id molestie. In rutrum, neque sit amet sollicitudin egestas, dui tellus bibendum diam, eu euismod diam sapien cursus arcu. Proin non aliquam leo. Pellentesque ipsum nulla, tristique sit amet massa nec, gravida accumsan diam.
