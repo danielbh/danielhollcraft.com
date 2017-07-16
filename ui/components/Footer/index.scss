@@ -1,18 +1,13 @@
 @import '../../stylesheets/variables.scss';
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .footer-text {
   width: 100%;
   font-size: 18px;
-  color: $primary-text-color;
+  color: $primary-color;
   padding: 8px;
-  background: $primary-color;
   text-align: center;
 }
