@@ -23,7 +23,7 @@ I've been working with Node.js since before version one. I'm intimately familiar
 
 ### Amazon Web Services (AWS) Cloud Architect
 
-As a soon to be [AWS Certified Solutions Architect - Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/), I can help you leverage AWS to:
+As a [AWS Certified Solutions Architect - Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/), I can help you leverage AWS to:
 - Provide a scalable, highly available and fault tolerant infrastructure for whatever your needs might be.
 - Create and automate the deployment of solutions based on best practices. 
 - Craft solutions that are as efficient and inexpensive as possible.
