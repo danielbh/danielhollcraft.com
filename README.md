@@ -25,8 +25,7 @@ All commands must be used in root folder.
 - `static:build:deploy`: Build and deploy UI.
 - `ui:local`: Start UI server locally.
 - `ui:deploy:prod`: Deploy UI production infrastructure.
-- `api:deploy:prod`: Deploy UI production infrastructure.
-- `api:deploy`: Deploy back-end API production infrastructure.
+- `api:deploy:prod`: Deploy back-end production infrastructure.
 - `api:local`: Run local back-end API server.
       
 
