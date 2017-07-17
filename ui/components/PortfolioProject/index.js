@@ -43,7 +43,7 @@ const PortfolioProject = (props) => {
         <div><span className="font-bold">Type:</span> {props.type}</div>
         <div><span className="font-bold">Skills:</span> {props.skills}</div>
         <div><span className="font-bold">Platform:</span> {props.platform}</div>
-        { props.summary.map(paragraph => (<p>{paragraph}</p> ))}
+        { props.summary.map((paragraph, i) => (<p key={i}>{paragraph}</p> ))}
       </div>
 
       <div className="panel-footer">

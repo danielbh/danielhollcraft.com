@@ -7,7 +7,7 @@ I've been passionately developing software for the past six years. I can help ma
 Of all the lessons I've learned over the years, there is one that stands above the rest... Well designed software adheres to the **Cool Software Standard.** It must:
 
 - Be used by many people.
-- And it must fit the need it fills very well.
+- It must "fit" a need very well.
 
 In order for software to become cool there are MANY things that need to be done, but a few of the most important are:
 

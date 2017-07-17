@@ -57,6 +57,10 @@
   margin-right: 7px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
 // override nav bar button background when selected
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent;

@@ -24,6 +24,7 @@ resources:
       Properties:
         WebsiteConfiguration:
           IndexDocument: index.html
+          ErrorDocument: 404/index.html
     DnsRecords: ${file(deploy/resources/${self:custom.stage}-dns.yml)}
     SSLCert: ${file(deploy/resources/${self:custom.stage}-ssl.yml)}
     CDN:
