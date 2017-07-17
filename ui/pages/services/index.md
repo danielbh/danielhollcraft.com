@@ -2,18 +2,6 @@
 title: Services
 ---
 
-### Web Front-End Development
-
-As a React.js expert I can provide consulting or build a web interface that is modern and leverages the newest and best technologies. 
-I can help you structure your front end code (html, css, javascript) in a way that scales.
-
-[comment]: <> (Here are a few examples of what I've done Coming soon)
-
-### Mobile Development
-
-Build a cross-platform app that uses React Native to give you a native feeling app that works on both iOS and Android.
-
-[comment]: <> (Here is a testimonial - Coming soon)
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
 ### Back-End Development
@@ -30,10 +18,23 @@ As a [AWS Certified Solutions Architect - Associate](https://aws.amazon.com/cert
 - Migrate you from an expensive architecture to a much more affordable one.
 - Leverage the new [Serverless paradigm](https://en.wikipedia.org/wiki/Serverless_computing) and allow you to pay based on use instead of by per-hour.
 
+### Web Front-End Development
+
+As a React.js expert I can provide consulting or build a web interface that is modern and leverages the newest and best technologies. 
+I can help you structure your front end code (html, css, javascript) in a way that scales.
+
+[comment]: <> (Here are a few examples of what I've done Coming soon)
+
+### Mobile Development
+
+I can build you a cross-platform app that uses React Native to give you a native feeling app that works on both iOS and Android.
+
+[comment]: <> (Here is a testimonial - Coming soon)
+
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
 ### Quality Assurance
-I've been practicing Test-driven development for six years. Provided it is a Javascript app I can help you implement quality assurance at any level of your stack. This includes unit testing, integration testing, and end-to-end testing.
+I've been practicing Test-Driven Development for six years. Provided it is a Javascript app I can help you implement quality assurance at any level of your stack. This includes unit testing, integration testing, and end-to-end testing.
 
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
