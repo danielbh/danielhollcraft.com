@@ -1,6 +1,6 @@
-http://danielhollcraft.com
-http://danielhollcraft.com/blog/
-http://danielhollcraft.com/services/
-http://danielhollcraft.com/portfolio/
-http://danielhollcraft.com/contact/
-http://danielhollcraft.com/blog/getting-started-with-aws-lambda-and-serverless/
+https://danielhollcraft.com
+https://danielhollcraft.com/blog/
+https://danielhollcraft.com/services/
+https://danielhollcraft.com/portfolio/
+https://danielhollcraft.com/contact/
+https://danielhollcraft.com/blog/getting-started-with-aws-lambda-and-serverless/
