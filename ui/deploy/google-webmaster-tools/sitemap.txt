@@ -3,4 +3,5 @@ https://danielhollcraft.com/blog/
 https://danielhollcraft.com/services/
 https://danielhollcraft.com/portfolio/
 https://danielhollcraft.com/contact/
-https://danielhollcraft.com/blog/getting-started-with-aws-lambda-and-serverless/
+https://danielhollcraft.com/blog/blog/getting-started-with-aws-lambda/
+https://danielhollcraft.com/blog/blog/deploy-a-website-api-with-serverless/

@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Serverless
+title: Deploy a Website and API with Serverless
 date: 07/19/2017
 categories: Node.js, AWS,
 summary: You’ve written an awesome REST API or GraphQL endpoint and a stellar web UI, and you want to deploy it. Then you shudder. There are so many options, and you don’t know which to choose.
