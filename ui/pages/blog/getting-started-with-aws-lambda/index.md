@@ -7,13 +7,7 @@ summary: Imagine a world where you can have 1 million free API calls, automatic 
 
 Imagine a world where you can host an API that is allowed 1 million free API calls per month, automatic scaling and zero maintenance. It is all possible with Amazon Web Services' (AWS) Lambda functions. However getting started can be a bit confusing.
 
-There are many steps you need to follow and understand before deploying and executing your first lambda function. But it's not as hard as you think. This blog post is the first in a series that will show you how you can easily get started with AWS' "functions as a service" platform.
-
-**By the time you finish this series you will learn:**
- 
-1) How to create a lambda function.
-2) [How to deploy a lambda function from the command-line using Serverless](/blog/deploy-lamda-function-using-serverless/)
-3) [How to deploy a lambda function with public and private environment variables](/blog/deploy-lambda-function-with-public-and-private-enviromental-variables-using-serverless/)
+There are many steps you need to follow and understand before deploying and executing your first lambda function. But it's not as hard as you think. This blog post will show you how you can easily get started with AWS' "functions as a service" platform.
 
 **To do this part of the tutorial you will need to...**
 1) Have knowledge of how to read javascript and JSON
@@ -29,7 +23,7 @@ After that, you will be presented with the blueprints page. Here there are sever
 
 Now go to where it says "select runtime", and select `Node.js 6.10`. Then select the "hello-world" blueprint. You might need to type "hello-world" into the filter field, adjacent of the runtime field, for the "hello-world" blueprint to appear on the screen.
 
-The next page is where you configure triggers for the function. There are many choices. For example you can cause the function to be triggered through an HTTP request, when a file gets uploaded to S3 (Amazon's cloud storage service) or if something gets pushed to CodeCommit (Amazon's version control repository service). Ideally these are better added with automation through Serverless or CloudFormation (Amazon's infrastructure automated deployment service). I will explain how to do this in the next blog entry in this series. Now, press next.
+The next page is where you configure triggers for the function. There are many choices. For example you can cause the function to be triggered through an HTTP request, when a file gets uploaded to S3 (Amazon's cloud storage service) or if something gets pushed to CodeCommit (Amazon's version control repository service). [Ideally these are better added with automation through Serverless](/blog/deploy-aws-lambda-function-serverless/) or CloudFormation (Amazon's infrastructure automated deployment service).  Now, press next.
 
 Now type "hello-lambda" for the function name, and leave the description as is.
 
@@ -94,8 +88,6 @@ You should see that the output is "My first lambda output!". This displays in th
 
 Then under the "Log output" section of this screen you should see where it says "Hello lambda!". 
 
-This is the same log message that will display in Cloud Watch. Press where it says "logs" in parenthesis to see this logstream and the ones before it.
+This is the same log message that will display in Cloud Watch. Press where it says "logs" in parenthesis to see this logstream, and the ones before it.
 
-And that's all there is to it! In [the next blog entry ](/blog/deploy-lamda-function-using-serverless/)in this series, I will show you a simple example of how you can write a lambda function in your own environment and deploy it with the command line.
- 
  If you have any more questions, [feel free to contact me](/contact/).
