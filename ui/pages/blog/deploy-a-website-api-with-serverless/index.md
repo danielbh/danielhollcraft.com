@@ -23,7 +23,7 @@ Let me give quick example of how you would deploy a project with Serverless. Let
 #### Pre-requistes before getting started
 
 - You must have Node.js installed. To do this you need to go to [Nodejs.org](nodejs.org) and download it. Be sure to download LTS
-- Know how to read Javascript (although you can write functions in Python, C# and JVM compatible languages)
+- Know how to read JavaScript (although you can write functions in Python, C# and JVM compatible languages)
 - An mild familiarity with AWS will be helpful to understanding what's going on.
 - Have serverless installed. Once you have npm installed just type `npm install -g serverless` in any directory in your terminal
 - I will use AWS for this tutorial since it is my preferred cloud provider, so that means you’ll need to install and authenticate the aws-cli. This can be done by reading through following three articles.
