@@ -9,11 +9,11 @@ Functional programming (FP) has been all the rave in recent years, especially in
 
 Warning! This blog entry assumes you are familar with basic functional programming concepts. If you need a refresher [check out JavaScript Guru Eric Elliot's blog entry](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)
 
-While the above examples are rather common, what about something a bit more rare? I think it’s harder to find examples of leveraging currying and closures in the React ecosystem. Given this, I’ve put together an example that shows how you can use these two concepts in a lightweight an elegant way.
+While the above examples are rather common, what about something a bit more rare? I think it’s harder to find examples of leveraging currying and closures in the React ecosystem. Given this, I’ve put together an example that shows how you can use these two concepts in a lightweight and elegant way.
 
 Before I go on to explain the example, let’s first clarify the problem I will be solving. 
 
-Imagine you have a data feed in your UI like Facebook or LinkedIn. The feed takes time to load, but some parts of the feed or page might be ready before others. Why prevent a user from using those parts of the page? Also, sometimes a page load is slower than ideal, one strategy to increase user experience is to use some type of loading animation. This makes the user feel like they are waiting less time and is great **as long as they aren’t waiting that long!** Also it makes the user feel the page is loading and not stalled.
+Imagine you have a data feed in your UI like Facebook or LinkedIn. The feed takes time to load, but some parts of the feed or page might be ready before others. Why prevent a user from using those parts of the page? Also, sometimes a page load is slower than ideal, one strategy to increase user experience is to use some type of loading animation. This makes the user feel like they are waiting less and is great **as long as they aren’t waiting that long!** Also it makes the user feel the page is loading and not stalled.
 
 We’ll use functional programming to create loading components for our main components!
 
