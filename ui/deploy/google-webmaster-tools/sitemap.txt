@@ -5,3 +5,4 @@ https://danielhollcraft.com/portfolio/
 https://danielhollcraft.com/contact/
 https://danielhollcraft.com/blog/blog/getting-started-with-aws-lambda/
 https://danielhollcraft.com/blog/blog/deploy-a-website-api-with-serverless/
+https://danielhollcraft.com/blog/blog/fp-react-loading-component/
