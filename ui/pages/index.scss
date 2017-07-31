@@ -28,6 +28,20 @@
   }
 }
 
+// iPad pro/iPad remove padding bug on bottom.
+@media (max-width: 1024px) {
+  .base-layout {
+    padding-bottom: 75%;
+  }
+}
+
+// iPhone and iPhone+ remove padding bug on bottom.
+@media (max-width: 414px) {
+  .base-layout {
+    padding-bottom: 15%;
+  }
+}
+
 .content {
   width: 100%;
   background-color: transparent;
@@ -46,6 +60,7 @@
   }
 
   @media (max-width: 750px) {
+
     .container {
       width: 100%;
     }
@@ -108,8 +123,6 @@
     }
   }
 }
-
-
 
 .panel-footer {
   border-top: none; // override

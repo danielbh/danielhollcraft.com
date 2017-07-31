@@ -4,11 +4,9 @@ canvas, .background {
   // Prevent bug on mobile that causes a white bar to appear on bottom of screen when scrolling.
   height: 200vh;
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  background-color: $background
+  background-color: $background;
 }
