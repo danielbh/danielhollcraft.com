@@ -7,13 +7,13 @@ summary:  Functional programming (FP) has been all the rave in recent years, esp
 
 Functional programming (FP) has been all the rave in recent years, especially in the JavaScript world. When you combine FP with React you get all sorts of magic. It’s also not hard to find FP while traversing (no pun) the React ecosystem. You’ll find `array.map` used very commonly to iterate over props, and return an array of components. You can create a React component as a pure function. Redux commonly uses higher order functions/components. Also if you look at React core you will find a ton of functional programming examples!
 
-Warning! This blog entry assumes you are familar with basic functional programming concepts. If you need a refresher [check out JavaScript Guru Eric Elliot's blog entry](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)
+Warning! This blog entry assumes you are familar with basic functional programming concepts. If you need a refresher [check out JavaScript Guru Eric Elliot's blog entry](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4).
 
 While the above examples are rather common, what about something a bit more rare? I think it’s harder to find examples of leveraging currying and closures in the React ecosystem. Given this, I’ve put together an example that shows how you can use these two concepts in a lightweight and elegant way.
 
 Before I go on to explain the example, let’s first clarify the problem I will be solving. 
 
-Imagine you have a data feed in your UI like Facebook or LinkedIn. The feed takes time to load, but some parts of the feed or page might be ready before others. Why prevent a user from using those parts of the page? Also, sometimes a page load is slower than ideal, one strategy to increase user experience is to use some type of loading animation. This makes the user feel like they are waiting less and is great **as long as they aren’t waiting that long!** Also it makes the user feel the page is loading and not stalled.
+Imagine you have a data feed in your UI like Facebook or LinkedIn. The feed takes time to load, but some parts of the feed or page might be ready before others. Why prevent a user from using those parts of the page? Also, sometimes a page load is slower than ideal. After optimization and caching steps are taken, one strategy to increase user experience is to use some type of loading animation. This makes the user feel like they are waiting less time, and it makes the user feel the page is loading and not stalled.
 
 We’ll use functional programming to create loading components for our main components!
 
@@ -21,7 +21,7 @@ We’ll use functional programming to create loading components for our main com
 
 To get started I recommend you use [create react app](https://github.com/facebookincubator/create-react-app). It's the easiest way to bootstrap a React application in your local development environment. Once you've created a new project continue with the tutorial.
 
-First create the following folders `src/containers` `src/containers/Panel` `src/utils`
+First create the following folders `src/containers` `src/containers/Panel` `src/utils`.
 
  The first file should be `src/containers/Panel/loading.js`. 
 
