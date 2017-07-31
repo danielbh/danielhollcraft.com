@@ -21,7 +21,7 @@ As a [AWS Certified Solutions Architect - Associate](https://aws.amazon.com/cert
 ### Web Front-End Development
 
 As a React.js expert I can provide consulting or build a web interface that is modern and leverages the newest and best technologies. 
-I can help you structure your front end code (html, css, JavaScript) in a way that scales.
+I can help you structure your front end code (HTML5, CSS, JavaScript) in a way that scales.
 
 [comment]: <> (Here are a few examples of what I've done Coming soon)
 
