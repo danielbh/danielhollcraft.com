@@ -6,7 +6,7 @@
   "devDependencies": {
     "es6-promise": "^4.1.0",
     "front-matter": "^2.0.7",
-    "gatsby": "^0.12.6",
+    "gatsby": "^1.9.52",
     "highlight.js": "^9.6.0",
     "history": "^2.0.2",
     "immutability-helper": "^2.2.2",
