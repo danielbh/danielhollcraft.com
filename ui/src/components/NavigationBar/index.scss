@@ -1,0 +1,71 @@
+@import '../../../stylesheets/variables.scss';
+
+.logo {
+  max-width: 70px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 70px;
+    margin-top: -12px;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  background: $primary-color;
+  border-radius: 0; // override default border radius
+  .container {
+    width: 100%;
+    max-width: 1192px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    .container {
+      width: 97%; // Make navbar look nicer as it gets smaller by pulling nav buttons & logo towards the edges of screen
+    }
+  }
+}
+
+// Bootstrap override
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: 0;
+}
+
+.nav-links > li {
+  margin: 0;
+  min-height: 60px;
+  font-size: 15px;
+}
+
+.nav-links > li > a {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.nav-links > .active > a {
+  background-color: transparent !important;
+  font-weight: 600;
+  position: relative;
+  border-bottom: 2px solid $primary-selected-color;
+}
+
+.icon {
+  font-size: 1.4em;
+  margin-right: 7px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+// override nav bar button background when selected
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}

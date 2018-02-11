@@ -6,7 +6,15 @@
   "devDependencies": {
     "es6-promise": "^4.1.0",
     "front-matter": "^2.0.7",
-    "gatsby": "^0.12.6",
+    "gatsby-plugin-sass": "^1.0.16",
+    "gatsby-plugin-sharp": "^1.0.0-beta.7",
+    "gatsby-remark-copy-linked-files": "^1.0.0-beta.6",
+    "gatsby-remark-images": "^1.0.0-beta.6",
+    "gatsby-remark-prismjs": "^1.0.0-beta.6",
+    "gatsby-remark-responsive-iframe": "^1.0.0-beta.6",
+    "gatsby-remark-smartypants": "^1.0.0-beta.6",
+    "gatsby-source-filesystem": "^2.0.0-alpha.1",
+    "gatsby-transformer-remark": "^1.0.0-beta.6",
     "highlight.js": "^9.6.0",
     "history": "^2.0.2",
     "immutability-helper": "^2.2.2",
@@ -44,5 +52,8 @@
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gatsby": "^1.9.192",
+    "gatsby-link": "^1.6.36"
+  }
 }

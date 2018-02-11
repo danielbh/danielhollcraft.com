@@ -1,7 +1,6 @@
 import React from 'react'
 import toml from 'toml-js'
 import Helmet from 'react-helmet'
-import { config } from 'config'
 
 module.exports = React.createClass({
   propTypes () {
@@ -14,7 +13,7 @@ module.exports = React.createClass({
     return (
       <div>
         <Helmet
-          title={`${config.siteTitle} | ${data.title}`} 
+          title={`${config.siteTitle} | ${data.title}`}
         />
         <h1>{data.title}</h1>
         <p>Raw view of toml file</p>

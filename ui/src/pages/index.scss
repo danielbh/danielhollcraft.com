@@ -1,0 +1,164 @@
+@import '../../stylesheets/variables.scss';
+
+// CSS Debugger. Uncomment to Debug CSS.
+//* {
+//  background: #000 !important;
+//  color: #0f0 !important;
+//  outline: solid #f00 1px !important;
+//}
+
+.base-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // Looks a bit nicer when overscrolling on iOS
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.not-found {
+  background: $primary-color;
+  padding: 40px;
+  margin: 20px;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+
+  h1, h4 {
+    color: $primary-text-color;
+  }
+}
+
+// iPad pro/iPad remove padding bug on bottom.
+@media (max-width: 1024px) {
+  .base-layout {
+    padding-bottom: 75%;
+  }
+}
+
+// iPhone and iPhone+ remove padding bug on bottom.
+@media (max-width: 414px) {
+  .base-layout {
+    padding-bottom: 15%;
+  }
+}
+
+.content {
+  width: 100%;
+  background-color: transparent;
+
+  // Remove breakpoints and just smoothly decrease container size.
+  @media (max-width: 1202px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 970px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.panel {
+  background: $primary-color;
+  border-radius: $border-radius;
+  padding: 40px;
+  box-shadow: $shadow;
+
+
+  ul, p{
+    font-size: 20px;
+  }
+
+  h1, h2, h3, h4, h5, ol, ul, p {
+    color: $primary-text-color;
+  }
+
+  // Override
+  .panel-footer {
+    width: 100%;
+      a {
+        width: 100%;
+        margin: auto;
+      }
+  }
+}
+
+@media (max-width: 767px) {
+  .panel {
+    ul, p{
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    padding-right: 0; // override bootstrap globally
+    padding-left: 0; // override bootstrap globally
+  }
+  .panel {
+    padding: 30px;
+    ul, p{
+      font-size: 19px;
+    }
+  }
+}
+
+.panel-footer {
+  border-top: none; // override
+  background: transparent;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  flex-flow: row wrap;
+
+  a {
+    width: 23.5%;
+    margin: 10px 10px 10px 0;
+    font-size: 22px;
+    box-shadow: $shadow;
+  }
+}
+
+@media (max-width: 1199px) {
+  .panel-footer {
+    justify-content: space-around;
+    a {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 762px) {
+  .panel-footer {
+    a {
+      width: 100%;
+    }
+  }
+}
+
+.tag {
+  @include tag();
+}

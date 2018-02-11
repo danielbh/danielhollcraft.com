@@ -1,0 +1,50 @@
+[
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "layout": null,
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "layout": null,
+        "jsonName": "404.json",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-pages-blog-index-js",
+        "layout": null,
+        "jsonName": "blog.json",
+        "path": "/blog/"
+    },
+    {
+        "componentChunkName": "component---src-pages-contact-index-js",
+        "layout": null,
+        "jsonName": "contact.json",
+        "path": "/contact/"
+    },
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "layout": null,
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-portfolio-index-js",
+        "layout": null,
+        "jsonName": "portfolio.json",
+        "path": "/portfolio/"
+    },
+    {
+        "componentChunkName": "component---src-pages-portfolio-projects-js",
+        "layout": null,
+        "jsonName": "portfolio-projects.json",
+        "path": "/portfolio/projects/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "layout": null,
+        "jsonName": "404-html.json",
+        "path": "/404.html"
+    }
+]

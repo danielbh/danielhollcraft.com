@@ -2,10 +2,19 @@
  * Created by danielhollcraft on 4/30/17.
  */
 import ReactGA from 'react-ga';
-import { config } from 'config'; // eslint-disable-line
+
+export const googleAnalyticsId = graphql`
+  query SiteMetadataLookup($slug: String!) {
+    site {
+      siteMetadata {
+        googleAnalyticsId
+      }
+    }
+}
+`
 
 if (process.env.NODE_ENV === 'production') {
-  ReactGA.initialize(config.googleAnalyticsId);
+  ReactGA.initialize(googleAnalyticsId);
 
   exports.onRouteUpdate = (state, page, pages) => { // eslint-disable-line
     ReactGA.set({page: state.pathname});

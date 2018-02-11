@@ -1,0 +1,20 @@
+@import '../../../stylesheets/variables.scss';
+
+.contact-form {
+  background: $primary-color;
+  color: $primary-text-color;
+  padding: 40px;
+  //FIX ME: Requires to add 75% to margin-bottom so that flexbox works correcty. Too hacky. Footer CSS needs to be adjusted.
+  margin: 20px;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+}
+
+@media (max-width: 500px) {
+  .contact-form {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+

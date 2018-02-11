@@ -1,0 +1,2370 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "layout": null,
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "updatedAt": 1518317717884,
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a4c6598ab68c4d78a77d1d9750f2b922",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1062a0f5b74ae92a24109abe36bd6fcc",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0b69870012af0eb3a5e2fa6eee1e453d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d03cfa59dce1aba895d560c4116195a8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "97e6e7591d5b7692cf13a1a36db535fc",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e07bb5581e66801b4164da34a89619fb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2a9905171b955d2103ed0688a02f2d39",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sass": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-plugin-sass",
+      "id": "Plugin gatsby-plugin-sass",
+      "name": "gatsby-plugin-sass",
+      "version": "1.0.16",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "modifyWebpackConfig"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-plugin-sass",
+      "packageJson": {
+        "name": "gatsby-plugin-sass",
+        "description": "Gatsby plugin to handle scss/sass files",
+        "version": "1.0.16",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "sass",
+          "scss"
+        ],
+        "author": {
+          "name": "Daniel Farrell",
+          "email": "daniel@mobelux.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "extract-text-webpack-plugin",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "gatsby-1-config-css-modules",
+            "version": "^1.0.8"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.5.2"
+          },
+          {
+            "name": "sass-loader",
+            "version": "^4.1.1"
+          },
+          {
+            "name": "webpack",
+            "version": "^1.13.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "37150a193c4331615cc3783455a273c5",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.0-alpha.1",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "pages",
+        "path": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/"
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.0-alpha.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "be1f6ac92428129c1f1d4e9d58084198",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-images",
+            "id": "Plugin gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "1.0.0-beta.6",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 690
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-responsive-iframe",
+            "id": "Plugin gatsby-remark-responsive-iframe",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "1.0.0-beta.6",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-responsive-iframe"
+          },
+          {
+            "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-prismjs",
+            "id": "Plugin gatsby-remark-prismjs",
+            "name": "gatsby-remark-prismjs",
+            "version": "1.0.0-beta.6",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-copy-linked-files",
+            "id": "Plugin gatsby-remark-copy-linked-files",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "1.0.0-beta.6",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-smartypants",
+            "id": "Plugin gatsby-remark-smartypants",
+            "name": "gatsby-remark-smartypants",
+            "version": "1.0.0-beta.6",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-smartypants"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.0.0-beta.6",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ac8cb9c92c0dd8103632c7228fd68ab7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-images",
+      "id": "Plugin gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 690
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark",
+          "image",
+          "responsive images"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.1"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "360b6e90b75b086bedf03a5189f824c1",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-responsive-iframe": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-responsive-iframe",
+      "id": "Plugin gatsby-remark-responsive-iframe",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^0.22.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "57582a9a8bee3fcca09a5070063a4c93",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-prismjs": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-prismjs",
+      "id": "Plugin gatsby-remark-prismjs",
+      "name": "gatsby-remark-prismjs",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "parse-numeric-range",
+            "version": "^0.0.2"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.6.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "70117a60f7a9239b12019f9c65c054df",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-copy-linked-files": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-copy-linked-files",
+      "id": "Plugin gatsby-remark-copy-linked-files",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.1"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7d29d9c4bfa5d9a8571d3792f7f249a1",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-smartypants": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-smartypants",
+      "id": "Plugin gatsby-remark-smartypants",
+      "name": "gatsby-remark-smartypants",
+      "version": "1.0.0-beta.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-remark-smartypants",
+      "packageJson": {
+        "name": "gatsby-remark-smartypants",
+        "description": "Use retext-smartypants to auto-enhance typography of markdown",
+        "version": "1.0.0-beta.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "smartypants"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "retext",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-smartypants",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6d4a528768e8446940abb187e88f5aa5",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.0.0-beta.7",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.0.0-beta.7",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.4.1"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "image-size",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.17.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d414dff5be299bbd8e4542a68c7eb879",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "321fb0d1c5ac0236ce24622a67c7b7e1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "pluginFilepath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui",
+      "packageJson": {
+        "name": "web-ui-danielhollcraft",
+        "description": "The web ui made with gastby.js",
+        "version": "1.0.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Daniel Hollcraft",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.192"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.36"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "es6-promise",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "front-matter",
+            "version": "^2.0.7"
+          },
+          {
+            "name": "gatsby-plugin-sass",
+            "version": "^1.0.16"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.0.0-beta.7"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-remark-smartypants",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.0-alpha.1"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^1.0.0-beta.6"
+          },
+          {
+            "name": "highlight.js",
+            "version": "^9.6.0"
+          },
+          {
+            "name": "history",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "immutability-helper",
+            "version": "^2.2.2"
+          },
+          {
+            "name": "isomorphic-fetch",
+            "version": "^2.2.1"
+          },
+          {
+            "name": "js-yaml",
+            "version": "^3.6.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "markdown-it",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "markdown-it-abbr",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "markdown-it-attrs",
+            "version": "^0.6.3"
+          },
+          {
+            "name": "markdown-it-deflist",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "markdown-it-footnote",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "markdown-it-sub",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "normalize.css",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "object-assign",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "react-bootstrap",
+            "version": "^0.30.8"
+          },
+          {
+            "name": "react-bs-notifier",
+            "version": "^4.3.2"
+          },
+          {
+            "name": "react-dom",
+            "version": "^15.6.1"
+          },
+          {
+            "name": "react-fontawesome",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "react-ga",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "react-router-bootstrap",
+            "version": "^0.23.1"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.12.0"
+          },
+          {
+            "name": "toml-js",
+            "version": "0.0.8"
+          },
+          {
+            "name": "trianglify",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "typography",
+            "version": "^0.13.0"
+          },
+          {
+            "name": "typography-plugin-code",
+            "version": "^0.13.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "40fe9e39c4659182423e9d6fd772631b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Daniel Hollcraft",
+        "tagline": "Full Stack JavaScript Developer",
+        "linkedinProfile": "https://www.linkedin.com/in/daniel-hollcraft-752509b/",
+        "githubProfile": "https://github.com/danielbh",
+        "googleAnalyticsId": "UA-40454074-3",
+        "apiDevelopment": "http://localhost:3000",
+        "apiProduction": "https://ad87zs9n5f.execute-api.us-east-1.amazonaws.com/prod"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-02-11T02:55:16.416Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "37d9ec5589fdd6e79ba9479a0ba62ce2",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "02a8e1ef942ea00c73c9aa054dd8e0ba",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js",
+      "relativePath": "404.js",
+      "extension": "js",
+      "size": 336,
+      "prettySize": "336 B",
+      "modifiedTime": "2018-02-11T01:58:19.962Z",
+      "accessTime": "2018-02-11T02:55:17.714Z",
+      "changeTime": "2018-02-11T01:58:19.962Z",
+      "birthTime": "2018-02-11T01:58:19.962Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352353,
+      "blocks": 8,
+      "atimeMs": 1518317717714.3733,
+      "mtimeMs": 1518314299961.7754,
+      "ctimeMs": 1518314299961.7754,
+      "birthtimeMs": 1518314299961.6526,
+      "atime": "2018-02-11T02:55:17.714Z",
+      "mtime": "2018-02-11T01:58:19.962Z",
+      "ctime": "2018-02-11T01:58:19.962Z",
+      "birthtime": "2018-02-11T01:58:19.962Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/_template.jsx absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/_template.jsx absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "85ee34f52026c80f70c70b050671ad50",
+        "mediaType": "text/jsx",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/_template.jsx",
+      "relativePath": "_template.jsx",
+      "extension": "jsx",
+      "size": 506,
+      "prettySize": "506 B",
+      "modifiedTime": "2018-02-11T01:58:19.962Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.962Z",
+      "birthTime": "2018-02-11T01:58:19.962Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages",
+      "base": "_template.jsx",
+      "ext": ".jsx",
+      "name": "_template",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352354,
+      "blocks": 8,
+      "atimeMs": 1518317717714.573,
+      "mtimeMs": 1518314299961.9795,
+      "ctimeMs": 1518314299961.9795,
+      "birthtimeMs": 1518314299961.893,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.962Z",
+      "ctime": "2018-02-11T01:58:19.962Z",
+      "birthtime": "2018-02-11T01:58:19.962Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0bce3af2a5b8b61d2112150e98a0a74a",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.js",
+      "relativePath": "index.js",
+      "extension": "js",
+      "size": 1285,
+      "prettySize": "1.28 kB",
+      "modifiedTime": "2018-02-11T02:34:57.068Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:34:57.068Z",
+      "birthTime": "2018-02-11T01:58:19.966Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352369,
+      "blocks": 8,
+      "atimeMs": 1518317717714.625,
+      "mtimeMs": 1518316497067.711,
+      "ctimeMs": 1518316497067.711,
+      "birthtimeMs": 1518314299966.4294,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:34:57.068Z",
+      "ctime": "2018-02-11T02:34:57.068Z",
+      "birthtime": "2018-02-11T01:58:19.966Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.scss absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.scss absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "10bde0fa7ccd2cc19cbf012bdcacf95e",
+        "mediaType": "text/x-scss",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.scss",
+      "relativePath": "index.scss",
+      "extension": "scss",
+      "size": 2454,
+      "prettySize": "2.45 kB",
+      "modifiedTime": "2018-02-11T02:50:52.002Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:50:52.002Z",
+      "birthTime": "2018-02-11T01:58:19.967Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages",
+      "base": "index.scss",
+      "ext": ".scss",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352370,
+      "blocks": 8,
+      "atimeMs": 1518317717714.6726,
+      "mtimeMs": 1518317452002.0679,
+      "ctimeMs": 1518317452002.0679,
+      "birthtimeMs": 1518314299966.5996,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:50:52.002Z",
+      "ctime": "2018-02-11T02:50:52.002Z",
+      "birthtime": "2018-02-11T01:58:19.967Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/introduction.md absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/introduction.md absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "42c51d89a6e08871becff9b8ca8f8ce2",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/introduction.md",
+      "relativePath": "introduction.md",
+      "extension": "md",
+      "size": 1530,
+      "prettySize": "1.53 kB",
+      "modifiedTime": "2018-02-11T02:59:09.250Z",
+      "accessTime": "2018-02-11T02:59:09.866Z",
+      "changeTime": "2018-02-11T02:59:09.250Z",
+      "birthTime": "2018-02-11T01:58:19.967Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages",
+      "base": "introduction.md",
+      "ext": ".md",
+      "name": "introduction",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352371,
+      "blocks": 8,
+      "atimeMs": 1518317949866.484,
+      "mtimeMs": 1518317949250.1394,
+      "ctimeMs": 1518317949250.1394,
+      "birthtimeMs": 1518314299966.7932,
+      "atime": "2018-02-11T02:59:09.866Z",
+      "mtime": "2018-02-11T02:59:09.250Z",
+      "ctime": "2018-02-11T02:59:09.250Z",
+      "birthtime": "2018-02-11T01:58:19.967Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/_template.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/_template.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "63c7ca98e79ad94d89736c08143ca250",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/_template.js",
+      "relativePath": "blog/_template.js",
+      "extension": "js",
+      "size": 1439,
+      "prettySize": "1.44 kB",
+      "modifiedTime": "2018-02-11T02:34:02.804Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:34:02.804Z",
+      "birthTime": "2018-02-11T01:58:19.962Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog",
+      "base": "_template.js",
+      "ext": ".js",
+      "name": "_template",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352356,
+      "blocks": 8,
+      "atimeMs": 1518317717714.773,
+      "mtimeMs": 1518316442804.2737,
+      "ctimeMs": 1518316442804.2737,
+      "birthtimeMs": 1518314299962.1619,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:34:02.804Z",
+      "ctime": "2018-02-11T02:34:02.804Z",
+      "birthtime": "2018-02-11T01:58:19.962Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f3a134351e89f8443ecb333bd8b97741",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.js",
+      "relativePath": "blog/index.js",
+      "extension": "js",
+      "size": 846,
+      "prettySize": "846 B",
+      "modifiedTime": "2018-02-11T01:58:19.966Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.966Z",
+      "birthTime": "2018-02-11T01:58:19.965Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352364,
+      "blocks": 8,
+      "atimeMs": 1518317717714.8137,
+      "mtimeMs": 1518314299965.5835,
+      "ctimeMs": 1518314299965.5835,
+      "birthtimeMs": 1518314299965.4897,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.966Z",
+      "ctime": "2018-02-11T01:58:19.966Z",
+      "birthtime": "2018-02-11T01:58:19.965Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.scss absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.scss absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4dc780a2741555146b40361359c7bb8b",
+        "mediaType": "text/x-scss",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.scss",
+      "relativePath": "blog/index.scss",
+      "extension": "scss",
+      "size": 353,
+      "prettySize": "353 B",
+      "modifiedTime": "2018-02-11T01:58:19.966Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.966Z",
+      "birthTime": "2018-02-11T01:58:19.966Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog",
+      "base": "index.scss",
+      "ext": ".scss",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352365,
+      "blocks": 8,
+      "atimeMs": 1518317717714.8555,
+      "mtimeMs": 1518314299965.7705,
+      "ctimeMs": 1518314299965.7705,
+      "birthtimeMs": 1518314299965.6902,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.966Z",
+      "ctime": "2018-02-11T01:58:19.966Z",
+      "birthtime": "2018-02-11T01:58:19.966Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/_template.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/_template.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e78c4b6129e7e1c9236c6815a50e9f18",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/_template.js",
+      "relativePath": "portfolio/_template.js",
+      "extension": "js",
+      "size": 909,
+      "prettySize": "909 B",
+      "modifiedTime": "2018-02-11T02:35:06.326Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:35:06.326Z",
+      "birthTime": "2018-02-11T01:58:19.967Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio",
+      "base": "_template.js",
+      "ext": ".js",
+      "name": "_template",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352373,
+      "blocks": 8,
+      "atimeMs": 1518317717714.8953,
+      "mtimeMs": 1518316506326.2556,
+      "ctimeMs": 1518316506326.2556,
+      "birthtimeMs": 1518314299967.0715,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:35:06.326Z",
+      "ctime": "2018-02-11T02:35:06.326Z",
+      "birthtime": "2018-02-11T01:58:19.967Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ee5adcbeb5e0ec8e897b7fdd8ffcd775",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.js",
+      "relativePath": "portfolio/index.js",
+      "extension": "js",
+      "size": 413,
+      "prettySize": "413 B",
+      "modifiedTime": "2018-02-11T01:58:19.967Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.967Z",
+      "birthTime": "2018-02-11T01:58:19.967Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352374,
+      "blocks": 8,
+      "atimeMs": 1518317717714.9353,
+      "mtimeMs": 1518314299967.3633,
+      "ctimeMs": 1518314299967.3633,
+      "birthtimeMs": 1518314299967.2703,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.967Z",
+      "ctime": "2018-02-11T01:58:19.967Z",
+      "birthtime": "2018-02-11T01:58:19.967Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.scss absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.scss absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "21af67848bc6a0b199aeaacb3dee8c70",
+        "mediaType": "text/x-scss",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.scss",
+      "relativePath": "portfolio/index.scss",
+      "extension": "scss",
+      "size": 73,
+      "prettySize": "73 B",
+      "modifiedTime": "2018-02-11T02:48:52.857Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:48:52.857Z",
+      "birthTime": "2018-02-11T01:58:19.967Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio",
+      "base": "index.scss",
+      "ext": ".scss",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352375,
+      "blocks": 8,
+      "atimeMs": 1518317717714.9763,
+      "mtimeMs": 1518317332856.8306,
+      "ctimeMs": 1518317332856.8306,
+      "birthtimeMs": 1518314299967.4717,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:48:52.857Z",
+      "ctime": "2018-02-11T02:48:52.857Z",
+      "birthtime": "2018-02-11T01:58:19.967Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3e9afd6e34217197cff458cf0d9226e8",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.js",
+      "relativePath": "contact/index.js",
+      "extension": "js",
+      "size": 6500,
+      "prettySize": "6.5 kB",
+      "modifiedTime": "2018-02-11T02:34:40.633Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:34:40.633Z",
+      "birthTime": "2018-02-11T01:58:19.966Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352367,
+      "blocks": 16,
+      "atimeMs": 1518317717715.017,
+      "mtimeMs": 1518316480632.9387,
+      "ctimeMs": 1518316480632.9387,
+      "birthtimeMs": 1518314299966.0444,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:34:40.633Z",
+      "ctime": "2018-02-11T02:34:40.633Z",
+      "birthtime": "2018-02-11T01:58:19.966Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/projects.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/projects.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "36f820ef760cf4d51eb58fe8826784af",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/projects.js",
+      "relativePath": "portfolio/projects.js",
+      "extension": "js",
+      "size": 3548,
+      "prettySize": "3.55 kB",
+      "modifiedTime": "2018-02-11T01:58:19.984Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.984Z",
+      "birthTime": "2018-02-11T01:58:19.984Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio",
+      "base": "projects.js",
+      "ext": ".js",
+      "name": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352381,
+      "blocks": 8,
+      "atimeMs": 1518317717715.057,
+      "mtimeMs": 1518314299984.3857,
+      "ctimeMs": 1518314299984.3857,
+      "birthtimeMs": 1518314299984.247,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.984Z",
+      "ctime": "2018-02-11T01:58:19.984Z",
+      "birthtime": "2018-02-11T01:58:19.984Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.scss absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.scss absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "19a9fdfd6147b7582ed269bbed7af54c",
+        "mediaType": "text/x-scss",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.scss",
+      "relativePath": "contact/index.scss",
+      "extension": "scss",
+      "size": 432,
+      "prettySize": "432 B",
+      "modifiedTime": "2018-02-11T02:48:36.028Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:48:36.028Z",
+      "birthTime": "2018-02-11T01:58:19.966Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact",
+      "base": "index.scss",
+      "ext": ".scss",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352368,
+      "blocks": 8,
+      "atimeMs": 1518317717715.0994,
+      "mtimeMs": 1518317316028.4124,
+      "ctimeMs": 1518317316028.4124,
+      "birthtimeMs": 1518314299966.2473,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:48:36.028Z",
+      "ctime": "2018-02-11T02:48:36.028Z",
+      "birthtime": "2018-02-11T01:58:19.966Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/_template.js absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/_template.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1467984c5c7eed20bed5a5fe52f4ff77",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/_template.js",
+      "relativePath": "services/_template.js",
+      "extension": "js",
+      "size": 1032,
+      "prettySize": "1.03 kB",
+      "modifiedTime": "2018-02-11T02:35:14.713Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:35:14.713Z",
+      "birthTime": "2018-02-11T01:58:19.985Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services",
+      "base": "_template.js",
+      "ext": ".js",
+      "name": "_template",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352383,
+      "blocks": 8,
+      "atimeMs": 1518317717715.1406,
+      "mtimeMs": 1518316514712.541,
+      "ctimeMs": 1518316514712.541,
+      "birthtimeMs": 1518314299984.6265,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:35:14.713Z",
+      "ctime": "2018-02-11T02:35:14.713Z",
+      "birthtime": "2018-02-11T01:58:19.985Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.scss absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.scss absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c31363a4e4f5e6d4dcc019096212ebf2",
+        "mediaType": "text/x-scss",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.scss",
+      "relativePath": "services/index.scss",
+      "extension": "scss",
+      "size": 71,
+      "prettySize": "71 B",
+      "modifiedTime": "2018-02-11T02:48:59.119Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T02:48:59.119Z",
+      "birthTime": "2018-02-11T01:58:19.985Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services",
+      "base": "index.scss",
+      "ext": ".scss",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352385,
+      "blocks": 8,
+      "atimeMs": 1518317717715.182,
+      "mtimeMs": 1518317339118.9563,
+      "ctimeMs": 1518317339118.9563,
+      "birthtimeMs": 1518314299985.0469,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T02:48:59.119Z",
+      "ctime": "2018-02-11T02:48:59.119Z",
+      "birthtime": "2018-02-11T01:58:19.985Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.md absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.md absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "561843cd1be14cb9a3a0bbecfa6cda73",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services/index.md",
+      "relativePath": "services/index.md",
+      "extension": "md",
+      "size": 2255,
+      "prettySize": "2.25 kB",
+      "modifiedTime": "2018-02-11T01:58:19.985Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.985Z",
+      "birthTime": "2018-02-11T01:58:19.985Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/services",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352384,
+      "blocks": 8,
+      "atimeMs": 1518317717715.2217,
+      "mtimeMs": 1518314299984.9402,
+      "ctimeMs": 1518314299984.9402,
+      "birthtimeMs": 1518314299984.826,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.985Z",
+      "ctime": "2018-02-11T01:58:19.985Z",
+      "birthtime": "2018-02-11T01:58:19.985Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/index.md absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/index.md absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c21321e630b38112ff4f747850edfe26",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/index.md",
+      "relativePath": "blog/getting-started-with-aws-lambda/index.md",
+      "extension": "md",
+      "size": 7614,
+      "prettySize": "7.61 kB",
+      "modifiedTime": "2018-02-11T01:58:19.963Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.963Z",
+      "birthTime": "2018-02-11T01:58:19.963Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352362,
+      "blocks": 16,
+      "atimeMs": 1518317717715.262,
+      "mtimeMs": 1518314299963.309,
+      "ctimeMs": 1518314299963.309,
+      "birthtimeMs": 1518314299963.1743,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.963Z",
+      "ctime": "2018-02-11T01:58:19.963Z",
+      "birthtime": "2018-02-11T01:58:19.963Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/deploy-a-website-api-with-serverless/index.md absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/deploy-a-website-api-with-serverless/index.md absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d0fba9b38238b2ad42b9d0a28548fcfb",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/deploy-a-website-api-with-serverless/index.md",
+      "relativePath": "blog/deploy-a-website-api-with-serverless/index.md",
+      "extension": "md",
+      "size": 15614,
+      "prettySize": "15.6 kB",
+      "modifiedTime": "2018-02-11T01:58:19.963Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.963Z",
+      "birthTime": "2018-02-11T01:58:19.962Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/deploy-a-website-api-with-serverless",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352358,
+      "blocks": 32,
+      "atimeMs": 1518317717715.303,
+      "mtimeMs": 1518314299962.6165,
+      "ctimeMs": 1518314299962.6165,
+      "birthtimeMs": 1518314299962.4224,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.963Z",
+      "ctime": "2018-02-11T01:58:19.963Z",
+      "birthtime": "2018-02-11T01:58:19.962Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/fp-react-loading-component/index.md absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/fp-react-loading-component/index.md absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2166223f98579ee4913bd85c94b39096",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/fp-react-loading-component/index.md",
+      "relativePath": "blog/fp-react-loading-component/index.md",
+      "extension": "md",
+      "size": 7415,
+      "prettySize": "7.42 kB",
+      "modifiedTime": "2018-02-11T01:58:19.963Z",
+      "accessTime": "2018-02-11T02:55:17.715Z",
+      "changeTime": "2018-02-11T01:58:19.963Z",
+      "birthTime": "2018-02-11T01:58:19.963Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/fp-react-loading-component",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352360,
+      "blocks": 16,
+      "atimeMs": 1518317717715.343,
+      "mtimeMs": 1518314299962.9814,
+      "ctimeMs": 1518314299962.9814,
+      "birthtimeMs": 1518314299962.8037,
+      "atime": "2018-02-11T02:55:17.715Z",
+      "mtime": "2018-02-11T01:58:19.963Z",
+      "ctime": "2018-02-11T01:58:19.963Z",
+      "birthtime": "2018-02-11T01:58:19.963Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/lambda-function-complete.png absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/lambda-function-complete.png absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "704d0d719c2ea83aef1113d3fca4c0b6",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda/lambda-function-complete.png",
+      "relativePath": "blog/getting-started-with-aws-lambda/lambda-function-complete.png",
+      "extension": "png",
+      "size": 264133,
+      "prettySize": "264 kB",
+      "modifiedTime": "2018-02-11T01:58:19.965Z",
+      "accessTime": "2018-02-11T02:55:17.739Z",
+      "changeTime": "2018-02-11T01:58:19.965Z",
+      "birthTime": "2018-02-11T01:58:19.964Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/getting-started-with-aws-lambda",
+      "base": "lambda-function-complete.png",
+      "ext": ".png",
+      "name": "lambda-function-complete",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352363,
+      "blocks": 520,
+      "atimeMs": 1518317717739.0725,
+      "mtimeMs": 1518314299965.282,
+      "ctimeMs": 1518314299965.282,
+      "birthtimeMs": 1518314299963.5374,
+      "atime": "2018-02-11T02:55:17.739Z",
+      "mtime": "2018-02-11T01:58:19.965Z",
+      "ctime": "2018-02-11T01:58:19.965Z",
+      "birthtime": "2018-02-11T01:58:19.964Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-desktop.png absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-desktop.png absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c06a046b2b605223e0ee539a96584e60",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-desktop.png",
+      "relativePath": "portfolio/project-images/daniel-hollcraft-desktop.png",
+      "extension": "png",
+      "size": 388498,
+      "prettySize": "388 kB",
+      "modifiedTime": "2018-02-11T01:58:19.970Z",
+      "accessTime": "2018-02-11T02:55:17.742Z",
+      "changeTime": "2018-02-11T01:58:19.970Z",
+      "birthTime": "2018-02-11T01:58:19.968Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images",
+      "base": "daniel-hollcraft-desktop.png",
+      "ext": ".png",
+      "name": "daniel-hollcraft-desktop",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352377,
+      "blocks": 760,
+      "atimeMs": 1518317717741.606,
+      "mtimeMs": 1518314299970.32,
+      "ctimeMs": 1518314299970.32,
+      "birthtimeMs": 1518314299967.693,
+      "atime": "2018-02-11T02:55:17.742Z",
+      "mtime": "2018-02-11T01:58:19.970Z",
+      "ctime": "2018-02-11T01:58:19.970Z",
+      "birthtime": "2018-02-11T01:58:19.968Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/grass-monitor-mobile.png absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/grass-monitor-mobile.png absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f866ef7c2c7304352c1b43bc57bd0034",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/grass-monitor-mobile.png",
+      "relativePath": "portfolio/project-images/grass-monitor-mobile.png",
+      "extension": "png",
+      "size": 406905,
+      "prettySize": "407 kB",
+      "modifiedTime": "2018-02-11T01:58:19.978Z",
+      "accessTime": "2018-02-11T02:55:17.744Z",
+      "changeTime": "2018-02-11T01:58:19.978Z",
+      "birthTime": "2018-02-11T01:58:19.975Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images",
+      "base": "grass-monitor-mobile.png",
+      "ext": ".png",
+      "name": "grass-monitor-mobile",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352379,
+      "blocks": 800,
+      "atimeMs": 1518317717743.7195,
+      "mtimeMs": 1518314299977.7212,
+      "ctimeMs": 1518314299977.7212,
+      "birthtimeMs": 1518314299975.0815,
+      "atime": "2018-02-11T02:55:17.744Z",
+      "mtime": "2018-02-11T01:58:19.978Z",
+      "ctime": "2018-02-11T01:58:19.978Z",
+      "birthtime": "2018-02-11T01:58:19.975Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-mobile.png absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-mobile.png absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ef83f7c191e7a9a9b4dcfbb5790802a8",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/daniel-hollcraft-mobile.png",
+      "relativePath": "portfolio/project-images/daniel-hollcraft-mobile.png",
+      "extension": "png",
+      "size": 626244,
+      "prettySize": "626 kB",
+      "modifiedTime": "2018-02-11T01:58:19.975Z",
+      "accessTime": "2018-02-11T02:55:17.747Z",
+      "changeTime": "2018-02-11T01:58:19.975Z",
+      "birthTime": "2018-02-11T01:58:19.971Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images",
+      "base": "daniel-hollcraft-mobile.png",
+      "ext": ".png",
+      "name": "daniel-hollcraft-mobile",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352378,
+      "blocks": 1224,
+      "atimeMs": 1518317717747.1355,
+      "mtimeMs": 1518314299974.6423,
+      "ctimeMs": 1518314299974.6423,
+      "birthtimeMs": 1518314299970.5237,
+      "atime": "2018-02-11T02:55:17.747Z",
+      "mtime": "2018-02-11T01:58:19.975Z",
+      "ctime": "2018-02-11T01:58:19.975Z",
+      "birthtime": "2018-02-11T01:58:19.971Z"
+    },
+    "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/lal-paris-mobile.png absPath of file": {
+      "id": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/lal-paris-mobile.png absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "581b2382585badbaf17cedecc8456644",
+        "mediaType": "image/png",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images/lal-paris-mobile.png",
+      "relativePath": "portfolio/project-images/lal-paris-mobile.png",
+      "extension": "png",
+      "size": 1040478,
+      "prettySize": "1.04 MB",
+      "modifiedTime": "2018-02-11T01:58:19.984Z",
+      "accessTime": "2018-02-11T02:55:17.749Z",
+      "changeTime": "2018-02-11T01:58:19.984Z",
+      "birthTime": "2018-02-11T01:58:19.978Z",
+      "root": "/",
+      "dir": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/project-images",
+      "base": "lal-paris-mobile.png",
+      "ext": ".png",
+      "name": "lal-paris-mobile",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4308352380,
+      "blocks": 2040,
+      "atimeMs": 1518317717748.8125,
+      "mtimeMs": 1518314299983.7178,
+      "ctimeMs": 1518314299983.7178,
+      "birthtimeMs": 1518314299978.2478,
+      "atime": "2018-02-11T02:55:17.749Z",
+      "mtime": "2018-02-11T01:58:19.984Z",
+      "ctime": "2018-02-11T01:58:19.984Z",
+      "birthtime": "2018-02-11T01:58:19.978Z"
+    },
+    "SitePage /404/": {
+      "layout": null,
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "updatedAt": 1518317717894,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a00d6b9c3ef62b518ad56356ef77c3ac",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/": {
+      "layout": null,
+      "jsonName": "blog.json",
+      "internalComponentName": "ComponentBlog",
+      "path": "/blog/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.js",
+      "componentChunkName": "component---src-pages-blog-index-js",
+      "context": {},
+      "updatedAt": 1518317717895,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/blog/index.js",
+      "id": "SitePage /blog/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f067db07eca4a277b35030fd94fe8a70",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /contact/": {
+      "layout": null,
+      "jsonName": "contact.json",
+      "internalComponentName": "ComponentContact",
+      "path": "/contact/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.js",
+      "componentChunkName": "component---src-pages-contact-index-js",
+      "context": {},
+      "updatedAt": 1518317717895,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/contact/index.js",
+      "id": "SitePage /contact/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0c160a0d294152c9672aa2b45e06cfea",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": null,
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "updatedAt": 1518317717895,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2ccaf7f239e7e8615bf880c261fab604",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /portfolio/": {
+      "layout": null,
+      "jsonName": "portfolio.json",
+      "internalComponentName": "ComponentPortfolio",
+      "path": "/portfolio/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.js",
+      "componentChunkName": "component---src-pages-portfolio-index-js",
+      "context": {},
+      "updatedAt": 1518317717896,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/index.js",
+      "id": "SitePage /portfolio/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "94e5641ed46aba88aadd379c3720d190",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /portfolio/projects/": {
+      "layout": null,
+      "jsonName": "portfolio-projects.json",
+      "internalComponentName": "ComponentPortfolioProjects",
+      "path": "/portfolio/projects/",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/projects.js",
+      "componentChunkName": "component---src-pages-portfolio-projects-js",
+      "context": {},
+      "updatedAt": 1518317717896,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/portfolio/projects.js",
+      "id": "SitePage /portfolio/projects/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "85c7a9660094afa41957122f4c11d941",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": null,
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "updatedAt": 1518317717899,
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/danielhollcraft/Documents/Programming/danielhollcraft.com/ui/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d48f03b1f50e2e4639ff4bd65657583e",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "7e1313779fd7fcff3455645369b5cfef"
+  },
+  "componentDataDependencies": {
+    "nodes": {},
+    "connections": {}
+  }
+}
