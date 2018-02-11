@@ -15,6 +15,13 @@ import {
 
 import './index.scss'
 
+import 'normalize.css';
+import {
+  NavigationBar,
+  Footer,
+  Background
+} from '../components'
+import { rhythm } from '../utils/typography'
 
 export const config = graphql`
   query SiteMetadataLookup($slug: String!) {
@@ -33,7 +40,7 @@ export const config = graphql`
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const Index = ({route}) => (
+const Index = ({ route, children }) => (
   <div>
     <Helmet
       title={config.title}
@@ -42,19 +49,27 @@ const Index = ({route}) => (
         {"name": "keywords", "content": "sample, something"},
       ]}
     />
-    <Grid>
-      <Row>
-        <Col xs={12} sm={12} md={12} lg={12} >
-          <ProfileHeader/>
-          <div className="panel">
-            <div dangerouslySetInnerHTML={{__html: require('./introduction.md').body}}/>
-            <div className="panel-footer">
-              <CTAButton type="success"/>
+    <div className="base-layout">
+      <Background />
+      <NavigationBar />
+      <Grid className="content">
+        {children}
+      </Grid>
+      <Grid>
+        <Row>
+          <Col xs={12} sm={12} md={12} lg={12} >
+            <ProfileHeader />
+            <div className="panel">
+              <div className="panel-footer">
+                <CTAButton type="success" />
+              </div>
             </div>
-          </div>
-        </Col>
-      </Row>
-    </Grid>
+          </Col>
+        </Row>
+      </Grid>
+      <Footer />
+    </div>
+
   </div>
 );
 

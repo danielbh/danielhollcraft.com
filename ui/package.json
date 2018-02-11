@@ -53,6 +53,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "gatsby": "^1.9.192",
     "gatsby-link": "^1.6.36"
   }

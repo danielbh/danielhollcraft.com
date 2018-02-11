@@ -11,7 +11,6 @@ import {
 } from '../../components'
 
 const BlogIndex = ({onBlogMainPage, post, route}) => {
-
   let blogComponent;
 
   // Display main blog page or blog post depending on what the current url.

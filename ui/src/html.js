@@ -32,7 +32,8 @@ module.exports = React.createClass({
           <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-32x32.png?v=2")} />
           <link rel="icon" type="image/png" sizes="96x96" href={require("images/favicons/favicon-96x96.png?v=2")} />
           <link rel="icon" type="image/png" sizes="16x16" href={require("images/favicons/favicon.ico?v=2")} />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
           {head.title.toComponent()}
           {head.meta.toComponent()}
