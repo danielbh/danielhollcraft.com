@@ -10,9 +10,21 @@ import {
   BlogFeed,
 } from '../../components'
 
-const BlogIndex = ({onBlogMainPage, post, route}) => {
-  let blogComponent;
 
+export const pageQuery = graphql`
+  query BlogIndexBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
+
+const BlogIndex = ({onBlogMainPage, post, route, data}) => {
+  let blogComponent;
+console.log(data)
   // Display main blog page or blog post depending on what the current url.
   if (onBlogMainPage) {
     blogComponent = <BlogFeed route={route}/>

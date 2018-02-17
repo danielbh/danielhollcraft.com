@@ -28,6 +28,7 @@ module.exports = React.createClass({
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
+
           <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-16x16.png?v=2")} />
           <link rel="icon" type="image/png" sizes="32x32" href={require("images/favicons/favicon-32x32.png?v=2")} />
           <link rel="icon" type="image/png" sizes="96x96" href={require("images/favicons/favicon-96x96.png?v=2")} />
@@ -43,7 +44,8 @@ module.exports = React.createClass({
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
-          <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+            <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+
         </body>
       </html>
     )

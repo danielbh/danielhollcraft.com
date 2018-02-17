@@ -18,6 +18,9 @@ import {
 
 import Index from './index.js'
 
+
+console.log('hellooo')
+
 const Blog = ({route, location}) => {
 
   const onBlogMainPage = location.pathname === '/blog/';
