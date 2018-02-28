@@ -11,7 +11,7 @@ const Footer = (props) => {
   return (
     <footer className="footer">
     <div className="footer-text">
-        Copyright © Daniel Hollcraft 2017
+        Copyright © Daniel Hollcraft {(new Date()).getFullYear()}
     </div>
     </footer>
   );

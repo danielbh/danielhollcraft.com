@@ -42,12 +42,12 @@ const NavigationBar = (props) => {
               Blog
             </NavItem>
           </LinkContainer>
-          <LinkContainer to='/services/'>
+          {/* <LinkContainer to='/services/'>
             <NavItem eventKey={2}>
               <FontAwesome name="rocket" className='icon' />
               Services
             </NavItem>
-          </LinkContainer>
+          </LinkContainer> */}
           <LinkContainer to="/portfolio/">
             <NavItem eventKey={3}>
               <FontAwesome name="cubes" className='icon' />
