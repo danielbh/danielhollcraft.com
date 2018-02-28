@@ -1,9 +1,7 @@
 /**
  * Created by danielhollcraft on 4/5/17.
  */
-import React, {
-  PropTypes,
-} from 'react';
+import React, { PropTypes } from 'react';
 import { config } from 'config'
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import FontAwesome from 'react-fontawesome';
@@ -26,7 +24,7 @@ const NavigationBar = (props) => {
           <IndexLink to="/">
             <Image
               className='logo'
-              src={require('../../images/logo.png')}
+              src={require('../../../images/logo.png')}
               alt="daniel_hollcraft_logo"
             />
           </IndexLink>

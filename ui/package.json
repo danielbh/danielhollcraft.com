@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "author": "Daniel Hollcraft",
   "devDependencies": {
+    "config": "^1.26.2",
     "es6-promise": "^4.1.0",
     "front-matter": "^2.0.7",
     "gatsby": "^1.9.52",
+    "gatsby-link": "^1.6.20",
     "highlight.js": "^9.6.0",
     "history": "^2.0.2",
     "immutability-helper": "^2.2.2",
