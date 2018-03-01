@@ -11,6 +11,7 @@
   .profile-photo {
     border: 2px solid $primary-color;
     box-shadow: $shadow;
+    min-height: 200px;
     padding: 0;
     margin-bottom: 20px;
     //-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

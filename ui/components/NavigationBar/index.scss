@@ -4,20 +4,24 @@
   max-width: 70px;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    max-width: 70px;
-    margin-top: -12px;
-  }
-}
-
 .navbar {
   z-index: 1;
   background: $primary-color;
   border-radius: 0; // override default border radius
+  padding-bottom: 0.5em;
   .container {
     width: 100%;
     max-width: 1192px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-bottom: 0
+  }
+  .logo {
+    max-width: 70px;
+    margin-top: -12px;
   }
 }
 
@@ -41,8 +45,7 @@
 }
 
 .nav-links > li > a {
-  padding-top: 20px;
-  padding-bottom: 18px;
+  padding-top: 25px;
 }
 
 .nav-links > .active > a {
