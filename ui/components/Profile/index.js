@@ -22,7 +22,7 @@ const Profile = (props) => {
         circle
       />
       <h2>{config.siteTitle}</h2>
-      <div className="about">Full Stack JavaScript Developer specializing in Node.js, MongoDB, React, and React Native.</div>
+      <div className="about">Fullstack JavaScript Developer specializing in Node.js, MongoDB, React, and React Native.</div>
       <div className="social-links">
         <a href={config.githubProfile} >
           <FontAwesome name="github" size='2x' className="social-link" />
