@@ -4,6 +4,7 @@
   "description": "Daniel Hollcraft's Website",
   "main": "index.js",
   "scripts": {
+    "setup": "cd ui && yarn && cd ../api && yarn",
     "static:deploy:prod": "./ui/deploy/scripts/deploy_static_files.sh prod",
     "static:destroy": "./ui/deploy/scripts/delete_static_files.sh ",
     "static:destroy:local": "rm -rf ui/public",
@@ -24,6 +25,5 @@
   "bugs": {
     "url": "https://github.com/danielbh/danielhollcraft.com/issues"
   },
-  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme"
 }
