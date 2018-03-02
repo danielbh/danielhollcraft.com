@@ -1,7 +1,6 @@
 /**
  * Created by danielhollcraft on 4/8/17.
  */
-
 import React, {
   PropTypes,
 } from 'react';

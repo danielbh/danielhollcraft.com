@@ -32,7 +32,8 @@
     "toml-js": "0.0.8",
     "trianglify": "^1.0.1",
     "typography": "^0.13.0",
-    "typography-plugin-code": "^0.13.0"
+    "typography-plugin-code": "^0.13.0",
+    "react-addons-css-transition-group": "^15.6.2"
   },
   "keywords": [
     "gatsby"
