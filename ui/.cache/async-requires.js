@@ -3,6 +3,7 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-blog-post-js": require("gatsby-module-loader?name=component---src-templates-blog-post-js!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/templates/blog-post.js"),
+  "component---cache-dev-404-page-js": require("gatsby-module-loader?name=component---cache-dev-404-page-js!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/dev-404-page.js"),
   "component---src-pages-404-js": require("gatsby-module-loader?name=component---src-pages-404-js!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/404.js"),
   "component---src-pages-blog-js": require("gatsby-module-loader?name=component---src-pages-blog-js!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/blog.js"),
   "component---src-pages-contact-js": require("gatsby-module-loader?name=component---src-pages-contact-js!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/contact.js"),
@@ -29,6 +30,8 @@ exports.json = {
   "portfolio-projects-stackathon-stackathon.json": require("gatsby-module-loader?name=path---portfolio-projects-stackathon-stackathon!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/portfolio-projects-stackathon-stackathon.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
   "portfolio-projects-teledash-teledash.json": require("gatsby-module-loader?name=path---portfolio-projects-teledash-teledash!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/portfolio-projects-teledash-teledash.json"),
+  "layout-index.json": require("gatsby-module-loader?name=path---!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
+  "dev-404-page.json": require("gatsby-module-loader?name=path---dev-404-page!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/dev-404-page.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
   "404.json": require("gatsby-module-loader?name=path---404!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/404.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),

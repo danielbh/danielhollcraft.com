@@ -1,1 +1,1 @@
-{"data":{"markdownRemark":{"html":"<p>Check's if an instructor is in front of a room with a camera, and if he is asking for attention. If he asks for attention the app responds.</p>","frontmatter":{"title":"Google Clapper Responder"}}},"pathContext":{"slug":"/portfolio/projects/stackathon/stackathon/"}}
+{"data":{"markdownRemark":{"html":"<p>Responds to claps. Will only respond if it sees a human clapping.</p>","frontmatter":{"title":"Clapper Responder"}}},"pathContext":{"slug":"/portfolio/projects/stackathon/stackathon/"}}

@@ -1,6 +1,6 @@
 ---
 path: /portfolio/stackathon
-title: Google Clapper Responder
+title: Clapper Responder
 previewImage: ./projects/stackathon/stackathon.png
 start: Dec 2017,
 end: Dec 2017,
@@ -9,4 +9,4 @@ skills: Google Cloud Vision API, Node.js, Tessle.io
 platform: Web
 ---
 
-Check's if an instructor is in front of a room with a camera, and if he is asking for attention. If he asks for attention the app responds.
+Responds to claps. Will only respond if it sees a human clapping.

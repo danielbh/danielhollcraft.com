@@ -1,13 +1,22 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "9106be8bf7f7f13f097dc1cff1390e84",
         "owner": "internal-data-bridge"
       }
     },
@@ -786,14 +795,16 @@
       "siteMetadata": {
         "title": "Daniel Hollcraft"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-03-05T01:44:44.924Z",
+      "buildTime": "2018-03-05T02:01:22.371Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "353bf3a0840be4bc041b6d3d504e4829",
+        "contentDigest": "dd9b28596bcbb507137f1c8b8275f176",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -803,7 +814,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "224f91565fa76ce6d8ba94a7f94d1c47",
+        "contentDigest": "196247659094aad5d3ceb25bd6b5c4b9",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -813,9 +824,9 @@
       "extension": "",
       "size": 320,
       "prettySize": "320 B",
-      "modifiedTime": "2018-03-05T00:32:13.418Z",
-      "accessTime": "2018-03-05T01:44:46.354Z",
-      "changeTime": "2018-03-05T01:43:45.775Z",
+      "modifiedTime": "2018-03-05T01:49:16.078Z",
+      "accessTime": "2018-03-05T02:01:24.018Z",
+      "changeTime": "2018-03-05T01:49:16.078Z",
       "birthTime": "2018-03-04T01:09:54.588Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui",
@@ -832,9 +843,9 @@
       "blksize": 4194304,
       "ino": 8596106339,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.354Z",
-      "mtime": "2018-03-05T00:32:13.418Z",
-      "ctime": "2018-03-05T01:43:45.775Z",
+      "atime": "2018-03-05T02:01:24.018Z",
+      "mtime": "2018-03-05T01:49:16.078Z",
+      "ctime": "2018-03-05T01:49:16.078Z",
       "birthtime": "2018-03-04T01:09:54.588Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/assets absPath of file": {
@@ -842,7 +853,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "aa2f21c5b37e061a2c9fce87012a2200",
+        "contentDigest": "5982e3d53817f48a4ab0bf23ecbcefcd",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -852,9 +863,9 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:28:36.560Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.756Z",
+      "modifiedTime": "2018-03-05T01:49:16.008Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.008Z",
       "birthTime": "2018-03-04T03:31:35.604Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
@@ -871,9 +882,9 @@
       "blksize": 4194304,
       "ino": 8596106379,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-05T00:28:36.560Z",
-      "ctime": "2018-03-05T01:43:45.756Z",
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.008Z",
+      "ctime": "2018-03-05T01:49:16.008Z",
       "birthtime": "2018-03-04T03:31:35.604Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/components absPath of file": {
@@ -881,7 +892,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a061ba8c4d4fa98066c6c11768cdbbc7",
+        "contentDigest": "9714b38357f2960fc09bdd116f99e364",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -891,10 +902,10 @@
       "extension": "",
       "size": 160,
       "prettySize": "160 B",
-      "modifiedTime": "2018-03-04T20:17:11.140Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.742Z",
-      "birthTime": "2018-03-04T01:09:54.588Z",
+      "modifiedTime": "2018-03-05T01:49:16.016Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.016Z",
+      "birthTime": "2018-03-05T01:49:16.014Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
       "base": "components",
@@ -908,19 +919,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106355,
+      "ino": 8596143385,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-04T20:17:11.140Z",
-      "ctime": "2018-03-05T01:43:45.742Z",
-      "birthtime": "2018-03-04T01:09:54.588Z"
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.016Z",
+      "ctime": "2018-03-05T01:49:16.016Z",
+      "birthtime": "2018-03-05T01:49:16.014Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "414241180901cac0f16bc6377e56d6e2",
+        "contentDigest": "7d534a5680eec7e8d97089ede1ea29e8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -930,9 +941,9 @@
       "extension": "",
       "size": 160,
       "prettySize": "160 B",
-      "modifiedTime": "2018-03-04T07:46:31.638Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.753Z",
+      "modifiedTime": "2018-03-05T01:49:16.019Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.019Z",
       "birthTime": "2018-03-04T01:09:54.588Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
@@ -949,9 +960,9 @@
       "blksize": 4194304,
       "ino": 8596106365,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-04T07:46:31.638Z",
-      "ctime": "2018-03-05T01:43:45.753Z",
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.019Z",
+      "ctime": "2018-03-05T01:49:16.019Z",
       "birthtime": "2018-03-04T01:09:54.588Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages absPath of file": {
@@ -959,7 +970,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "42d0e506b926a529020f66f8d080e7a0",
+        "contentDigest": "4706cba9272f86441a975100b4c6e3cd",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -969,9 +980,9 @@
       "extension": "",
       "size": 224,
       "prettySize": "224 B",
-      "modifiedTime": "2018-03-04T23:14:03.502Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.775Z",
+      "modifiedTime": "2018-03-05T01:49:16.022Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.022Z",
       "birthTime": "2018-03-04T01:09:54.588Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
@@ -988,9 +999,9 @@
       "blksize": 4194304,
       "ino": 8596106386,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-04T23:14:03.502Z",
-      "ctime": "2018-03-05T01:43:45.775Z",
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.022Z",
+      "ctime": "2018-03-05T01:49:16.022Z",
       "birthtime": "2018-03-04T01:09:54.588Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/templates absPath of file": {
@@ -998,7 +1009,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "9976c89af6c14cd89c60c4ef8ae8b2a0",
+        "contentDigest": "5abf4e90ad1be051aec6399913a5c5f5",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1008,10 +1019,10 @@
       "extension": "",
       "size": 96,
       "prettySize": "96 B",
-      "modifiedTime": "2018-03-04T02:39:36.260Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.754Z",
-      "birthTime": "2018-03-04T02:39:27.940Z",
+      "modifiedTime": "2018-03-05T01:49:16.077Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.077Z",
+      "birthTime": "2018-03-05T01:49:16.077Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
       "base": "templates",
@@ -1025,19 +1036,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106377,
+      "ino": 8596143435,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-04T02:39:36.260Z",
-      "ctime": "2018-03-05T01:43:45.754Z",
-      "birthtime": "2018-03-04T02:39:27.940Z"
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.077Z",
+      "ctime": "2018-03-05T01:49:16.077Z",
+      "birthtime": "2018-03-05T01:49:16.077Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/utils absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/utils absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f31dc7e7723ae02e9025f13c90d9556a",
+        "contentDigest": "023d0539d93ee991d8852b2447b32f39",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1047,10 +1058,10 @@
       "extension": "",
       "size": 96,
       "prettySize": "96 B",
-      "modifiedTime": "2018-03-04T01:28:20.871Z",
-      "accessTime": "2018-03-05T01:44:46.357Z",
-      "changeTime": "2018-03-05T01:43:45.735Z",
-      "birthTime": "2018-03-04T01:28:10.677Z",
+      "modifiedTime": "2018-03-05T01:49:16.078Z",
+      "accessTime": "2018-03-05T02:01:24.020Z",
+      "changeTime": "2018-03-05T01:49:16.078Z",
+      "birthTime": "2018-03-05T01:49:16.078Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src",
       "base": "utils",
@@ -1064,19 +1075,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106353,
+      "ino": 8596143437,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.357Z",
-      "mtime": "2018-03-04T01:28:20.871Z",
-      "ctime": "2018-03-05T01:43:45.735Z",
-      "birthtime": "2018-03-04T01:28:10.677Z"
+      "atime": "2018-03-05T02:01:24.020Z",
+      "mtime": "2018-03-05T01:49:16.078Z",
+      "ctime": "2018-03-05T01:49:16.078Z",
+      "birthtime": "2018-03-05T01:49:16.078Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/components/Rocket absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/components/Rocket absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e9063cfda49d595a7b846f721b04a541",
+        "contentDigest": "af0d494e0f11a984324fd7580430860d",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1086,10 +1097,10 @@
       "extension": "",
       "size": 256,
       "prettySize": "256 B",
-      "modifiedTime": "2018-03-04T22:22:56.812Z",
-      "accessTime": "2018-03-05T01:44:46.360Z",
-      "changeTime": "2018-03-05T01:43:45.741Z",
-      "birthTime": "2018-03-04T19:25:11.851Z",
+      "modifiedTime": "2018-03-05T01:49:16.015Z",
+      "accessTime": "2018-03-05T02:01:24.022Z",
+      "changeTime": "2018-03-05T01:49:16.015Z",
+      "birthTime": "2018-03-05T01:49:16.014Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/components",
       "base": "Rocket",
@@ -1103,19 +1114,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106358,
+      "ino": 8596143387,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.360Z",
-      "mtime": "2018-03-04T22:22:56.812Z",
-      "ctime": "2018-03-05T01:43:45.741Z",
-      "birthtime": "2018-03-04T19:25:11.851Z"
+      "atime": "2018-03-05T02:01:24.022Z",
+      "mtime": "2018-03-05T01:49:16.015Z",
+      "ctime": "2018-03-05T01:49:16.015Z",
+      "birthtime": "2018-03-05T01:49:16.014Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/assets/images absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/assets/images absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "370179b6b50f00b64c3d432017e93923",
+        "contentDigest": "077d2cecb2bc31d8fe15e261549bbdd7",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1125,10 +1136,10 @@
       "extension": "",
       "size": 192,
       "prettySize": "192 B",
-      "modifiedTime": "2018-03-05T00:33:07.157Z",
-      "accessTime": "2018-03-05T01:44:46.360Z",
-      "changeTime": "2018-03-05T01:43:45.756Z",
-      "birthTime": "2018-03-04T03:55:44.278Z",
+      "modifiedTime": "2018-03-05T01:49:16.009Z",
+      "accessTime": "2018-03-05T02:01:24.022Z",
+      "changeTime": "2018-03-05T01:49:16.009Z",
+      "birthTime": "2018-03-05T01:49:16.008Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/assets",
       "base": "images",
@@ -1142,19 +1153,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106381,
+      "ino": 8596143380,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.360Z",
-      "mtime": "2018-03-05T00:33:07.157Z",
-      "ctime": "2018-03-05T01:43:45.756Z",
-      "birthtime": "2018-03-04T03:55:44.278Z"
+      "atime": "2018-03-05T02:01:24.022Z",
+      "mtime": "2018-03-05T01:49:16.009Z",
+      "ctime": "2018-03-05T01:49:16.009Z",
+      "birthtime": "2018-03-05T01:49:16.008Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "91987dbe11e4c55a9b979dbb0f1e46d1",
+        "contentDigest": "f56ab3a090d0c31492fd50ec6c80f658",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1164,9 +1175,9 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-04T22:49:21.833Z",
-      "accessTime": "2018-03-05T01:44:46.360Z",
-      "changeTime": "2018-03-05T01:43:45.775Z",
+      "modifiedTime": "2018-03-05T01:49:16.022Z",
+      "accessTime": "2018-03-05T02:01:24.022Z",
+      "changeTime": "2018-03-05T01:49:16.022Z",
       "birthTime": "2018-03-04T22:47:50.641Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages",
@@ -1183,9 +1194,9 @@
       "blksize": 4194304,
       "ino": 8596106391,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.360Z",
-      "mtime": "2018-03-04T22:49:21.833Z",
-      "ctime": "2018-03-05T01:43:45.775Z",
+      "atime": "2018-03-05T02:01:24.022Z",
+      "mtime": "2018-03-05T01:49:16.022Z",
+      "ctime": "2018-03-05T01:49:16.022Z",
       "birthtime": "2018-03-04T22:47:50.641Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts/sass absPath of file": {
@@ -1193,7 +1204,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b23b1cd1706a8d9b94ffffe1e51c8cbf",
+        "contentDigest": "7fb715292f56eda81b23f806fc7f82bb",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1203,10 +1214,10 @@
       "extension": "",
       "size": 192,
       "prettySize": "192 B",
-      "modifiedTime": "2018-03-04T07:07:34.856Z",
-      "accessTime": "2018-03-05T01:44:46.360Z",
-      "changeTime": "2018-03-05T01:43:45.753Z",
-      "birthTime": "2017-05-07T00:01:40.000Z",
+      "modifiedTime": "2018-03-05T01:49:16.021Z",
+      "accessTime": "2018-03-05T02:01:24.022Z",
+      "changeTime": "2018-03-05T01:49:16.021Z",
+      "birthTime": "2018-03-05T01:49:16.019Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts",
       "base": "sass",
@@ -1214,25 +1225,25 @@
       "name": "sass",
       "relativeDirectory": "layouts",
       "dev": 16777220,
-      "mode": 16893,
+      "mode": 16877,
       "nlink": 6,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106368,
+      "ino": 8596143397,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.360Z",
-      "mtime": "2018-03-04T07:07:34.856Z",
-      "ctime": "2018-03-05T01:43:45.753Z",
-      "birthtime": "2017-05-07T00:01:40.000Z"
+      "atime": "2018-03-05T02:01:24.022Z",
+      "mtime": "2018-03-05T01:49:16.021Z",
+      "ctime": "2018-03-05T01:49:16.021Z",
+      "birthtime": "2018-03-05T01:49:16.019Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8d0589fd25f0297115303b6c28f221cc",
+        "contentDigest": "3f3c0a5b83d09651d19fa9810579c6df",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1242,9 +1253,9 @@
       "extension": "",
       "size": 352,
       "prettySize": "352 B",
-      "modifiedTime": "2018-03-05T00:38:19.471Z",
-      "accessTime": "2018-03-05T01:44:46.361Z",
-      "changeTime": "2018-03-05T01:43:45.774Z",
+      "modifiedTime": "2018-03-05T01:49:16.041Z",
+      "accessTime": "2018-03-05T02:01:24.024Z",
+      "changeTime": "2018-03-05T01:49:16.041Z",
       "birthTime": "2018-03-04T22:49:21.833Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio",
@@ -1261,9 +1272,9 @@
       "blksize": 4194304,
       "ino": 8596106392,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.361Z",
-      "mtime": "2018-03-05T00:38:19.471Z",
-      "ctime": "2018-03-05T01:43:45.774Z",
+      "atime": "2018-03-05T02:01:24.024Z",
+      "mtime": "2018-03-05T01:49:16.041Z",
+      "ctime": "2018-03-05T01:49:16.041Z",
       "birthtime": "2018-03-04T22:49:21.833Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts/sass/libs absPath of file": {
@@ -1271,7 +1282,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "54c296d3544a8a34dc990f7c58900706",
+        "contentDigest": "a0b1d94f2f8bc68d7794561fb7f0eb44",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1281,10 +1292,10 @@
       "extension": "",
       "size": 192,
       "prettySize": "192 B",
-      "modifiedTime": "2017-05-07T00:01:40.000Z",
-      "accessTime": "2018-03-05T01:44:46.361Z",
-      "changeTime": "2018-03-05T01:43:45.752Z",
-      "birthTime": "2017-05-07T00:01:40.000Z",
+      "modifiedTime": "2018-03-05T01:49:16.020Z",
+      "accessTime": "2018-03-05T02:01:24.024Z",
+      "changeTime": "2018-03-05T01:49:16.020Z",
+      "birthTime": "2018-03-05T01:49:16.019Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/layouts/sass",
       "base": "libs",
@@ -1292,25 +1303,25 @@
       "name": "libs",
       "relativeDirectory": "layouts/sass",
       "dev": 16777220,
-      "mode": 16893,
+      "mode": 16877,
       "nlink": 6,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106370,
+      "ino": 8596143400,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.361Z",
-      "mtime": "2017-05-07T00:01:40.000Z",
-      "ctime": "2018-03-05T01:43:45.752Z",
-      "birthtime": "2017-05-07T00:01:40.000Z"
+      "atime": "2018-03-05T02:01:24.024Z",
+      "mtime": "2018-03-05T01:49:16.020Z",
+      "ctime": "2018-03-05T01:49:16.020Z",
+      "birthtime": "2018-03-05T01:49:16.019Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "ca1fd04ce70aef272257509939a083e3",
+        "contentDigest": "7298d08f70ed4c052a08d5222dab3720",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1320,10 +1331,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:34:48.530Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.766Z",
-      "birthTime": "2018-03-05T00:10:52.672Z",
+      "modifiedTime": "2018-03-05T01:49:16.022Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.022Z",
+      "birthTime": "2018-03-05T01:49:16.022Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "danielhollcraft-website",
@@ -1337,19 +1348,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106400,
+      "ino": 8596143411,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:34:48.530Z",
-      "ctime": "2018-03-05T01:43:45.766Z",
-      "birthtime": "2018-03-05T00:10:52.672Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.022Z",
+      "ctime": "2018-03-05T01:49:16.022Z",
+      "birthtime": "2018-03-05T01:49:16.022Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "64b0148a3428666e9d0c55cc6ca36caf",
+        "contentDigest": "c27ab2c19a40de24d9f48e88fd4126c2",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1359,10 +1370,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:16:51.248Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.769Z",
-      "birthTime": "2018-03-05T00:11:52.354Z",
+      "modifiedTime": "2018-03-05T01:49:16.028Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.028Z",
+      "birthTime": "2018-03-05T01:49:16.028Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "forty-six",
@@ -1376,19 +1387,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106406,
+      "ino": 8596143414,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:16:51.248Z",
-      "ctime": "2018-03-05T01:43:45.769Z",
-      "birthtime": "2018-03-05T00:11:52.354Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.028Z",
+      "ctime": "2018-03-05T01:49:16.028Z",
+      "birthtime": "2018-03-05T01:49:16.028Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4dac19b6b1a16412a0abf76e6a4352c8",
+        "contentDigest": "b6fe08e7eb7fe98b3cbdf5cd8bc5f1f0",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1398,10 +1409,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:40:15.342Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.772Z",
-      "birthTime": "2018-03-05T00:12:03.526Z",
+      "modifiedTime": "2018-03-05T01:49:16.030Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.030Z",
+      "birthTime": "2018-03-05T01:49:16.030Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "grass-monitor",
@@ -1415,19 +1426,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106412,
+      "ino": 8596143417,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:40:15.342Z",
-      "ctime": "2018-03-05T01:43:45.772Z",
-      "birthtime": "2018-03-05T00:12:03.526Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.030Z",
+      "ctime": "2018-03-05T01:49:16.030Z",
+      "birthtime": "2018-03-05T01:49:16.030Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "710d0aaf06b706809d80dfe204e3a125",
+        "contentDigest": "bca75568419d7256f977e4cb1abe0426",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1437,10 +1448,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:16:45.905Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.770Z",
-      "birthTime": "2018-03-05T00:12:56.300Z",
+      "modifiedTime": "2018-03-05T01:49:16.034Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.034Z",
+      "birthTime": "2018-03-05T01:49:16.033Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "imf",
@@ -1454,19 +1465,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106409,
+      "ino": 8596143420,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:16:45.905Z",
-      "ctime": "2018-03-05T01:43:45.770Z",
-      "birthtime": "2018-03-05T00:12:56.300Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.034Z",
+      "ctime": "2018-03-05T01:49:16.034Z",
+      "birthtime": "2018-03-05T01:49:16.033Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8acbce028ac014611c7866f66daf5fdb",
+        "contentDigest": "d9675c0b9b6f577aead60d1f2fe34fed",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1476,10 +1487,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:20:48.637Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.774Z",
-      "birthTime": "2018-03-05T00:12:56.300Z",
+      "modifiedTime": "2018-03-05T01:49:16.036Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.036Z",
+      "birthTime": "2018-03-05T01:49:16.036Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "lal-paris",
@@ -1493,19 +1504,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106415,
+      "ino": 8596143423,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:20:48.637Z",
-      "ctime": "2018-03-05T01:43:45.774Z",
-      "birthtime": "2018-03-05T00:12:56.300Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.036Z",
+      "ctime": "2018-03-05T01:49:16.036Z",
+      "birthtime": "2018-03-05T01:49:16.036Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/react-app-preview absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/react-app-preview absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a93ada689a826f9975d2c2b8878bd65e",
+        "contentDigest": "1c10cc1df92e6fefa1aaccb0f0d635c8",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1515,10 +1526,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:33:07.157Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.765Z",
-      "birthTime": "2018-03-05T00:12:56.300Z",
+      "modifiedTime": "2018-03-05T01:49:16.040Z",
+      "accessTime": "2018-03-05T02:01:24.027Z",
+      "changeTime": "2018-03-05T01:49:16.040Z",
+      "birthTime": "2018-03-05T01:49:16.040Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "react-app-preview",
@@ -1532,19 +1543,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106396,
+      "ino": 8596143426,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:33:07.157Z",
-      "ctime": "2018-03-05T01:43:45.765Z",
-      "birthtime": "2018-03-05T00:12:56.300Z"
+      "atime": "2018-03-05T02:01:24.027Z",
+      "mtime": "2018-03-05T01:49:16.040Z",
+      "ctime": "2018-03-05T01:49:16.040Z",
+      "birthtime": "2018-03-05T01:49:16.040Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "934ff97726f9a77f05f708293451c4fa",
+        "contentDigest": "343e182d3f740c46c67d04ae02dc91da",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1554,10 +1565,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:36:09.492Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.768Z",
-      "birthTime": "2018-03-05T00:12:56.300Z",
+      "modifiedTime": "2018-03-05T01:49:16.041Z",
+      "accessTime": "2018-03-05T02:01:24.028Z",
+      "changeTime": "2018-03-05T01:49:16.041Z",
+      "birthTime": "2018-03-05T01:49:16.040Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "stackathon",
@@ -1571,19 +1582,19 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106403,
+      "ino": 8596143429,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:36:09.492Z",
-      "ctime": "2018-03-05T01:43:45.768Z",
-      "birthtime": "2018-03-05T00:12:56.300Z"
+      "atime": "2018-03-05T02:01:24.028Z",
+      "mtime": "2018-03-05T01:49:16.041Z",
+      "ctime": "2018-03-05T01:49:16.041Z",
+      "birthtime": "2018-03-05T01:49:16.040Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "f73c5bc80de238a550e007493be9f735",
+        "contentDigest": "2f952509f01e1fe598301f9192ec72d1",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -1593,10 +1604,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2018-03-05T00:16:39.663Z",
-      "accessTime": "2018-03-05T01:44:46.363Z",
-      "changeTime": "2018-03-05T01:43:45.764Z",
-      "birthTime": "2018-03-05T00:12:56.300Z",
+      "modifiedTime": "2018-03-05T01:49:16.041Z",
+      "accessTime": "2018-03-05T02:01:24.028Z",
+      "changeTime": "2018-03-05T01:49:16.041Z",
+      "birthTime": "2018-03-05T01:49:16.041Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects",
       "base": "teledash",
@@ -1610,12 +1621,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106393,
+      "ino": 8596143432,
       "blocks": 0,
-      "atime": "2018-03-05T01:44:46.363Z",
-      "mtime": "2018-03-05T00:16:39.663Z",
-      "ctime": "2018-03-05T01:43:45.764Z",
-      "birthtime": "2018-03-05T00:12:56.300Z"
+      "atime": "2018-03-05T02:01:24.028Z",
+      "mtime": "2018-03-05T01:49:16.041Z",
+      "ctime": "2018-03-05T01:49:16.041Z",
+      "birthtime": "2018-03-05T01:49:16.041Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/.DS_Store absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/.DS_Store absPath of file",
@@ -2866,7 +2877,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "59bf99755da044b91b23d20d9eb6f8ea",
+        "contentDigest": "2da64748f1242b670b644e1245abc729",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2875,12 +2886,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md",
       "relativePath": "pages/portfolio/projects/forty-six/forty-six.md",
       "extension": "md",
-      "size": 498,
-      "prettySize": "498 B",
-      "modifiedTime": "2018-03-05T00:19:31.882Z",
-      "accessTime": "2018-03-05T01:36:20.877Z",
-      "changeTime": "2018-03-05T01:43:45.768Z",
-      "birthTime": "2018-03-04T23:11:58.863Z",
+      "size": 396,
+      "prettySize": "396 B",
+      "modifiedTime": "2018-03-05T02:02:17.024Z",
+      "accessTime": "2018-03-05T02:02:17.024Z",
+      "changeTime": "2018-03-05T02:02:17.024Z",
+      "birthTime": "2018-03-05T01:49:16.028Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six",
       "base": "forty-six.md",
@@ -2894,12 +2905,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106408,
+      "ino": 8596143415,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.877Z",
-      "mtime": "2018-03-05T00:19:31.882Z",
-      "ctime": "2018-03-05T01:43:45.768Z",
-      "birthtime": "2018-03-04T23:11:58.863Z"
+      "atime": "2018-03-05T02:02:17.024Z",
+      "mtime": "2018-03-05T02:02:17.024Z",
+      "ctime": "2018-03-05T02:02:17.024Z",
+      "birthtime": "2018-03-05T01:49:16.028Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file",
@@ -2908,7 +2919,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "c83c43f9d6801e9ec77b9c8bf92b02c3",
+        "contentDigest": "195262d74c49fe0c0b37e6b6e52fb0ce",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2917,12 +2928,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md",
       "relativePath": "pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md",
       "extension": "md",
-      "size": 586,
-      "prettySize": "586 B",
-      "modifiedTime": "2018-03-05T00:35:09.836Z",
-      "accessTime": "2018-03-05T01:36:20.877Z",
-      "changeTime": "2018-03-05T01:43:45.766Z",
-      "birthTime": "2018-03-04T22:49:40.699Z",
+      "size": 553,
+      "prettySize": "553 B",
+      "modifiedTime": "2018-03-05T02:03:10.856Z",
+      "accessTime": "2018-03-05T02:03:10.856Z",
+      "changeTime": "2018-03-05T02:03:10.856Z",
+      "birthTime": "2018-03-05T01:49:16.022Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website",
       "base": "danielhollcraft-website.md",
@@ -2936,12 +2947,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106401,
+      "ino": 8596143412,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.877Z",
-      "mtime": "2018-03-05T00:35:09.836Z",
-      "ctime": "2018-03-05T01:43:45.766Z",
-      "birthtime": "2018-03-04T22:49:40.699Z"
+      "atime": "2018-03-05T02:03:10.856Z",
+      "mtime": "2018-03-05T02:03:10.856Z",
+      "ctime": "2018-03-05T02:03:10.856Z",
+      "birthtime": "2018-03-05T01:49:16.022Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md absPath of file",
@@ -2950,7 +2961,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "758bfb9df4dfecb28f15d3295d34a6e9",
+        "contentDigest": "6045ad79c144a8836aa4abf9ee0d34f3",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -2959,12 +2970,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md",
       "relativePath": "pages/portfolio/projects/lal-paris/lal-paris.md",
       "extension": "md",
-      "size": 594,
-      "prettySize": "594 B",
-      "modifiedTime": "2018-03-05T00:23:30.096Z",
-      "accessTime": "2018-03-05T01:36:20.878Z",
-      "changeTime": "2018-03-05T01:43:45.773Z",
-      "birthTime": "2018-03-04T22:49:54.427Z",
+      "size": 593,
+      "prettySize": "593 B",
+      "modifiedTime": "2018-03-05T02:03:33.627Z",
+      "accessTime": "2018-03-05T02:03:33.626Z",
+      "changeTime": "2018-03-05T02:03:33.627Z",
+      "birthTime": "2018-03-05T01:49:16.036Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris",
       "base": "lal-paris.md",
@@ -2978,12 +2989,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106416,
+      "ino": 8596143424,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.878Z",
-      "mtime": "2018-03-05T00:23:30.096Z",
-      "ctime": "2018-03-05T01:43:45.773Z",
-      "birthtime": "2018-03-04T22:49:54.427Z"
+      "atime": "2018-03-05T02:03:33.626Z",
+      "mtime": "2018-03-05T02:03:33.627Z",
+      "ctime": "2018-03-05T02:03:33.627Z",
+      "birthtime": "2018-03-05T01:49:16.036Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf/imf.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf/imf.md absPath of file",
@@ -2992,7 +3003,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "34718cffff9a113d4081754d3dc4e606",
+        "contentDigest": "bf74f68b80aac728ffe2e5c7264a77e3",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3003,10 +3014,10 @@
       "extension": "md",
       "size": 323,
       "prettySize": "323 B",
-      "modifiedTime": "2018-03-05T00:23:20.118Z",
-      "accessTime": "2018-03-05T01:36:20.878Z",
-      "changeTime": "2018-03-05T01:43:45.769Z",
-      "birthTime": "2018-03-04T22:51:10.803Z",
+      "modifiedTime": "2018-03-05T01:59:23.308Z",
+      "accessTime": "2018-03-05T02:01:24.028Z",
+      "changeTime": "2018-03-05T01:59:23.308Z",
+      "birthTime": "2018-03-05T01:49:16.033Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf",
       "base": "imf.md",
@@ -3020,12 +3031,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106410,
+      "ino": 8596143421,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.878Z",
-      "mtime": "2018-03-05T00:23:20.118Z",
-      "ctime": "2018-03-05T01:43:45.769Z",
-      "birthtime": "2018-03-04T22:51:10.803Z"
+      "atime": "2018-03-05T02:01:24.028Z",
+      "mtime": "2018-03-05T01:59:23.308Z",
+      "ctime": "2018-03-05T01:59:23.308Z",
+      "birthtime": "2018-03-05T01:49:16.033Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor/grass-monitor.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor/grass-monitor.md absPath of file",
@@ -3034,7 +3045,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "eb852617ef765d833776530caa72c937",
+        "contentDigest": "543cfff24e0c3622913d99fc3dbcc96a",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3043,12 +3054,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor/grass-monitor.md",
       "relativePath": "pages/portfolio/projects/grass-monitor/grass-monitor.md",
       "extension": "md",
-      "size": 620,
-      "prettySize": "620 B",
-      "modifiedTime": "2018-03-05T00:20:10.511Z",
-      "accessTime": "2018-03-05T01:36:20.877Z",
-      "changeTime": "2018-03-05T01:43:45.771Z",
-      "birthTime": "2018-03-04T22:50:05.998Z",
+      "size": 619,
+      "prettySize": "619 B",
+      "modifiedTime": "2018-03-05T02:03:57.039Z",
+      "accessTime": "2018-03-05T02:03:57.039Z",
+      "changeTime": "2018-03-05T02:03:57.039Z",
+      "birthTime": "2018-03-05T01:49:16.030Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor",
       "base": "grass-monitor.md",
@@ -3062,12 +3073,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106413,
+      "ino": 8596143418,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.877Z",
-      "mtime": "2018-03-05T00:20:10.511Z",
-      "ctime": "2018-03-05T01:43:45.771Z",
-      "birthtime": "2018-03-04T22:50:05.998Z"
+      "atime": "2018-03-05T02:03:57.039Z",
+      "mtime": "2018-03-05T02:03:57.039Z",
+      "ctime": "2018-03-05T02:03:57.039Z",
+      "birthtime": "2018-03-05T01:49:16.030Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/react-app-preview/react-app-preview.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/react-app-preview/react-app-preview.md absPath of file",
@@ -3158,7 +3169,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0e17bd15946766298a99ddabb2de40f8",
+        "contentDigest": "2433d2d6c5ff5386d4c929807cfa3d7d",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3167,12 +3178,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md",
       "relativePath": "pages/portfolio/projects/stackathon/stackathon.md",
       "extension": "md",
-      "size": 369,
-      "prettySize": "369 B",
-      "modifiedTime": "2018-03-05T00:46:29.693Z",
-      "accessTime": "2018-03-05T01:36:20.878Z",
-      "changeTime": "2018-03-05T01:43:45.767Z",
-      "birthTime": "2018-03-04T22:51:33.042Z",
+      "size": 288,
+      "prettySize": "288 B",
+      "modifiedTime": "2018-03-05T02:10:29.535Z",
+      "accessTime": "2018-03-05T02:10:29.535Z",
+      "changeTime": "2018-03-05T02:10:29.535Z",
+      "birthTime": "2018-03-05T01:49:16.040Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon",
       "base": "stackathon.md",
@@ -3186,12 +3197,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106404,
+      "ino": 8596143430,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.878Z",
-      "mtime": "2018-03-05T00:46:29.693Z",
-      "ctime": "2018-03-05T01:43:45.767Z",
-      "birthtime": "2018-03-04T22:51:33.042Z"
+      "atime": "2018-03-05T02:10:29.535Z",
+      "mtime": "2018-03-05T02:10:29.535Z",
+      "ctime": "2018-03-05T02:10:29.535Z",
+      "birthtime": "2018-03-05T01:49:16.040Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash/teledash.md absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash/teledash.md absPath of file",
@@ -3200,7 +3211,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "769ffd404d1b1680ea11038909d1612f",
+        "contentDigest": "7319d5099ca0613feb8257d0df4a8c97",
         "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3209,12 +3220,12 @@
       "absolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash/teledash.md",
       "relativePath": "pages/portfolio/projects/teledash/teledash.md",
       "extension": "md",
-      "size": 321,
-      "prettySize": "321 B",
-      "modifiedTime": "2018-03-05T01:26:34.000Z",
-      "accessTime": "2018-03-05T01:36:20.878Z",
-      "changeTime": "2018-03-05T01:43:45.764Z",
-      "birthTime": "2018-03-04T22:50:52.022Z",
+      "size": 323,
+      "prettySize": "323 B",
+      "modifiedTime": "2018-03-05T02:00:28.077Z",
+      "accessTime": "2018-03-05T02:00:29.214Z",
+      "changeTime": "2018-03-05T02:00:28.077Z",
+      "birthTime": "2018-03-05T01:49:16.041Z",
       "root": "/",
       "dir": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash",
       "base": "teledash.md",
@@ -3228,12 +3239,12 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
-      "ino": 8596106395,
+      "ino": 8596143433,
       "blocks": 8,
-      "atime": "2018-03-05T01:36:20.878Z",
-      "mtime": "2018-03-05T01:26:34.000Z",
-      "ctime": "2018-03-05T01:43:45.764Z",
-      "birthtime": "2018-03-04T22:50:52.022Z"
+      "atime": "2018-03-05T02:00:29.214Z",
+      "mtime": "2018-03-05T02:00:28.077Z",
+      "ctime": "2018-03-05T02:00:28.077Z",
+      "birthtime": "2018-03-05T01:49:16.041Z"
     },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.png absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.png absPath of file",
@@ -3339,79 +3350,13 @@
         "slug": "/components/Rocket/ATTRIBUTION/"
       }
     },
-    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file",
-      "internal": {
-        "content": "---\npath: /portfolio/fortysix\npreviewImage: ./projects/forty-six/forty-six.png\ntitle: FortySix\nstart: December 2017,\nend: Present\ntype: OSS,\nskills: Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Distributing Computing\nplatform: Web\n---\n\nA platform that allows users to customize and run genetic algorithms. The computational load of each running algorithm is distributed across different web-browser clients, meaning any user can sign up and contribute their computing power.\n",
-        "contentDigest": "3966bfc2d626133abd295e8831b29e53",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "FortySix",
-        "path": "/portfolio/fortysix",
-        "previewImage": "./projects/forty-six/forty-six.png",
-        "start": "December 2017,",
-        "end": "Present",
-        "type": "OSS,",
-        "skills": "Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Distributing Computing",
-        "platform": "Web",
-        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file",
-        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file"
-      },
-      "excerpt": "",
-      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md",
-      "fields": {
-        "slug": "/portfolio/projects/forty-six/forty-six/"
-      }
-    },
-    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file",
-      "internal": {
-        "content": "---\npath: /portfolio/static-website\ntitle: \"A Static Website Blog\"\npreviewImage: ./projects/danielhollcraft-website/danielhollcraft-website.png\nstart: Apr 2017,\nend: Present,\ntype: Open Source,\nskills: GatsbyJS, GraphQL, React, SCSS, Serverless, S3, Amazon Web Services,\nsource: https://github.com/danielbh/danielhollcraft.com-gatsbyjs,\nmobilePreview: DanielHollcraftMobile,\ndesktopPreview: DanielHollcraftDesktop,\npreviewCaption: Daniel Hollcraft website preview,\nplatform: Web,\n---\n\nCreated the second version of my personal website using the Gatsby static website builder framework.\n",
-        "contentDigest": "bfd5360c051d9031f1af4e4b23a225e3",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "A Static Website Blog",
-        "path": "/portfolio/static-website",
-        "previewImage": "./projects/danielhollcraft-website/danielhollcraft-website.png",
-        "start": "Apr 2017,",
-        "end": "Present,",
-        "type": "Open Source,",
-        "skills": "GatsbyJS, GraphQL, React, SCSS, Serverless, S3, Amazon Web Services,",
-        "source": "https://github.com/danielbh/danielhollcraft.com-gatsbyjs,",
-        "mobilePreview": "DanielHollcraftMobile,",
-        "desktopPreview": "DanielHollcraftDesktop,",
-        "previewCaption": "Daniel Hollcraft website preview,",
-        "platform": "Web,",
-        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file",
-        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file"
-      },
-      "excerpt": "",
-      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md",
-      "fields": {
-        "slug": "/portfolio/projects/danielhollcraft-website/danielhollcraft-website/"
-      }
-    },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md absPath of file >>> MarkdownRemark",
       "children": [],
       "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/lal-paris/lal-paris.md absPath of file",
       "internal": {
-        "content": "---\npath: /portfolio/lal-paris\ntitle: A Tour Guide App for Paris, France,\npreviewImage: ./projects/lal-paris/lal-paris.png\nstart: Aug 2016,\nend: Present,\ntype: Freelance,\nskills: React Native, Google Places API, Node.js, REST, Amazon Web Services,\nappStore: https://appsto.re/us/5n7Bfb.i,\ngooglePlay: https://play.google.com/store/apps/details?id=com.antos_paris&hl=en,\nmobilePreview: LalParisMobile,\npreviewCaption: Lal Paris preview,\nplatform: Android, iOS,\n---\n\nDesigned and built a tour guide app on Android and iOS with React Native for a top Paris tour guide. Increased his sales by 15%.\n",
-        "contentDigest": "49c7833f86c5a5398b4b10bad1ee958a",
+        "content": "---\npath: /portfolio/lal-paris\ntitle: A Tour Guide App for Paris, France\npreviewImage: ./projects/lal-paris/lal-paris.png\nstart: Aug 2016,\nend: Present,\ntype: Freelance,\nskills: React Native, Google Places API, Node.js, REST, Amazon Web Services,\nappStore: https://appsto.re/us/5n7Bfb.i,\ngooglePlay: https://play.google.com/store/apps/details?id=com.antos_paris&hl=en,\nmobilePreview: LalParisMobile,\npreviewCaption: Lal Paris preview,\nplatform: Android, iOS,\n---\n\nDesigned and built a tour guide app on Android and iOS with React Native for a top Paris tour guide. Increased his sales by 15%.\n",
+        "contentDigest": "b2c27ee165f8bc6752e0a8d5c93e7b18",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3419,7 +3364,7 @@
         }
       },
       "frontmatter": {
-        "title": "A Tour Guide App for Paris, France,",
+        "title": "A Tour Guide App for Paris, France",
         "path": "/portfolio/lal-paris",
         "previewImage": "./projects/lal-paris/lal-paris.png",
         "start": "Aug 2016,",
@@ -3445,8 +3390,8 @@
       "children": [],
       "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/imf/imf.md absPath of file",
       "internal": {
-        "content": "---\npath: /portfolio/imf\ntitle: Intermittent Fasting Tracker\npreviewImage: ./projects/imf/imf.png\nstart: Aug 2017\nend: Present\ntype: OSS,\nskills: React, D3, Redux, Redux-Thunk, Node.js, React-Bootstrap\nsource: https://github.com/danielbh/imf-app\nplatform: Web\n---\n\nA way to track The progress of your intermittent fasting.\n",
-        "contentDigest": "20c75c2aa4b8f392a5bc80c317f298d1",
+        "content": "---\npath: /portfolio/imf\ntitle: Intermittent Fasting Tracker\npreviewImage: ./projects/imf/imf.png\nstart: Aug 2017\nend: Present\ntype: OSS,\nskills: React, D3, Redux, Redux-Thunk, Node.js, React-Bootstrap\nsource: https://github.com/danielbh/imf-app\nplatform: Web\n---\n\nA way to track the progress of your intermittent fasting.\n",
+        "contentDigest": "1d5fdbc877e39ac473fa33ca631b50f0",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3477,8 +3422,8 @@
       "children": [],
       "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/grass-monitor/grass-monitor.md absPath of file",
       "internal": {
-        "content": "---\npath: /portfolio/grass-monitor\ntitle: An Agriculture Monitoring System (IoT),\npreviewImage: ./projects/grass-monitor/grass-monitor.png\nstart: Jan 2016\nend: Mar 2017\ntype: Freelance,\nskills: Node.js, React, Meteor, Bluetooth, Raspberry Pi, WiFi, Docker, Cordova, Push Notifications, LESS, Resin.io,\ngooglePlay: https://play.google.com/store/apps/details?id=com.grass.monitor&hl=en,\nmobilePreview: GrassMonitorMobile,\npreviewCaption: Grass Monitor preview,\nplatform: Web, Android, iOS\n---\n\nAn agriculture monitoring system that displayed humidity, temperature, and luminosity of many different areas of a greenhouse.\n\n",
-        "contentDigest": "a0b4349bdd4cde69d2b1a34b7b4bc7f7",
+        "content": "---\npath: /portfolio/grass-monitor\ntitle: An Agriculture Monitoring System (IoT)\npreviewImage: ./projects/grass-monitor/grass-monitor.png\nstart: Jan 2016\nend: Mar 2017\ntype: Freelance,\nskills: Node.js, React, Meteor, Bluetooth, Raspberry Pi, WiFi, Docker, Cordova, Push Notifications, LESS, Resin.io,\ngooglePlay: https://play.google.com/store/apps/details?id=com.grass.monitor&hl=en,\nmobilePreview: GrassMonitorMobile,\npreviewCaption: Grass Monitor preview,\nplatform: Web, Android, iOS\n---\n\nAn agriculture monitoring system that displayed humidity, temperature, and luminosity of many different areas of a greenhouse.\n\n",
+        "contentDigest": "5f1d4ef6b5b2a27689bfe34584c4a8da",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3486,7 +3431,7 @@
         }
       },
       "frontmatter": {
-        "title": "An Agriculture Monitoring System (IoT),",
+        "title": "An Agriculture Monitoring System (IoT)",
         "path": "/portfolio/grass-monitor",
         "previewImage": "./projects/grass-monitor/grass-monitor.png",
         "start": "Jan 2016",
@@ -3539,37 +3484,6 @@
         "slug": "/portfolio/projects/react-app-preview/react-app-preview/"
       }
     },
-    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file",
-      "internal": {
-        "content": "---\npath: /portfolio/stackathon\ntitle: Google Clapper Responder\npreviewImage: ./projects/stackathon/stackathon.png\nstart: Dec 2017,\nend: Dec 2017,\ntype: OSS,\nskills: Google Cloud Vision API, Node.js, Tessle.io\nplatform: Web\n---\n\nCheck's if an instructor is in front of a room with a camera, and if he is asking for attention. If he asks for attention the app responds.\n",
-        "contentDigest": "d742df413b42aa17132050f0ad2a5c37",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Google Clapper Responder",
-        "path": "/portfolio/stackathon",
-        "previewImage": "./projects/stackathon/stackathon.png",
-        "start": "Dec 2017,",
-        "end": "Dec 2017,",
-        "type": "OSS,",
-        "skills": "Google Cloud Vision API, Node.js, Tessle.io",
-        "platform": "Web",
-        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file",
-        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file"
-      },
-      "excerpt": "",
-      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md",
-      "fields": {
-        "slug": "/portfolio/projects/stackathon/stackathon/"
-      }
-    },
     "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.png absPath of file": {
       "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.png absPath of file",
       "children": [],
@@ -3615,8 +3529,8 @@
       "children": [],
       "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/teledash/teledash.md absPath of file",
       "internal": {
-        "content": "---\npath: /portfolio/teledash\ntitle: Teledash\npreviewImage: ./projects/teledash/teledash.png\nstart: November 2017,\nend: Present\ntype: OSS,\nskills: React, Postgres, Redux Saga, Node.js, D3, Google Maps, YouTube API\nplatform: Web\n---\n\nAn open source telemtry dashboard. Connet and visualize data feeds without programming.\n",
-        "contentDigest": "3e97eaaddad7090a52607725ca959b68",
+        "content": "---\npath: /portfolio/teledash\ntitle: Teledash\npreviewImage: ./projects/teledash/teledash.png\nstart: November 2017,\nend: Present\ntype: OSS,\nskills: React, Postgres, Redux Saga, Node.js, D3, Google Maps, YouTube API\nplatform: Web\n---\n\nAn open source telemetry dashboard. Connect and visualize data feeds without programming.\n",
+        "contentDigest": "14a769d8d97736e993d3ea4323351a17",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3859,7 +3773,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c8fa748341be02212ada43dc65fbbe8a",
+        "contentDigest": "77ad6ca601bf59ea031b0f67539003fb",
         "owner": "internal-data-bridge"
       }
     },
@@ -3881,7 +3795,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9288f4f6a0b5f27804bf6da9fe90a556",
+        "contentDigest": "62ed2ad785376739e3fdda6091389438",
         "owner": "internal-data-bridge"
       }
     },
@@ -3903,7 +3817,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6b88c5fed4850606ba35efab44acd834",
+        "contentDigest": "2547f03f051438257d07d6fa9f52bd58",
         "owner": "internal-data-bridge"
       }
     },
@@ -3925,7 +3839,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5384b6332bd0e3229a4dc6036123d6f6",
+        "contentDigest": "55cca87565559efd866fed2eb46d783c",
         "owner": "internal-data-bridge"
       }
     },
@@ -3947,7 +3861,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1441f76db0d42c817621c655857c3822",
+        "contentDigest": "a1f9d161ff34fec2320ced7768bbe364",
         "owner": "internal-data-bridge"
       }
     },
@@ -3969,7 +3883,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "17b8b58e3689ccb989cf678e634fdbc3",
+        "contentDigest": "bc007791ce136def831c6da71a5ebdab",
         "owner": "internal-data-bridge"
       }
     },
@@ -3991,7 +3905,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "be0b382980d18ee751f67bfa10588b6a",
+        "contentDigest": "c715099662b59cce27f261fac7c3bc2a",
         "owner": "internal-data-bridge"
       }
     },
@@ -4013,7 +3927,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "826c7a82dc7691939b394f8dc9a88f39",
+        "contentDigest": "bd1e4549dc6200f18494c8855f3cc95c",
         "owner": "internal-data-bridge"
       }
     },
@@ -4035,7 +3949,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "72ae6362b8db0000dee371010cd97064",
+        "contentDigest": "bdee1d1fd2e346a94afbeed4ceb0c730",
         "owner": "internal-data-bridge"
       }
     },
@@ -4055,7 +3969,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a9b4fa39ccdcd1976472262033c021b4",
+        "contentDigest": "dbee3e3c1c789929e9a365468f2ef915",
         "owner": "internal-data-bridge"
       }
     },
@@ -4075,7 +3989,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "98dd531db61cfaa40ea7cf440e119be8",
+        "contentDigest": "765eb53ff35976e0de7c95a45e6af394",
         "owner": "internal-data-bridge"
       }
     },
@@ -4095,7 +4009,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "675743f0cb70936286dc95b0a8b5d57d",
+        "contentDigest": "02e4d0eece2fad9679201769d2a735b3",
         "owner": "internal-data-bridge"
       }
     },
@@ -4115,7 +4029,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b31d6ba526fe5d22b462f9ad1b3c7e38",
+        "contentDigest": "f453fef94efe22da93ac56e5b435b9e2",
         "owner": "internal-data-bridge"
       }
     },
@@ -4135,7 +4049,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "26e99ec1a7b02476e35533d9298a29b1",
+        "contentDigest": "b5c5f0204e462bbe16a60d4b5487221c",
         "owner": "internal-data-bridge"
       }
     },
@@ -4155,8 +4069,105 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f233300a3f4305fc7caf2942a12d2c6e",
+        "contentDigest": "8ae1e93acb9731e1f95786733c8fde4e",
         "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file",
+      "internal": {
+        "content": "---\npath: /portfolio/fortysix\npreviewImage: ./projects/forty-six/forty-six.png\ntitle: FortySix\nstart: December 2017,\nend: Present\ntype: OSS,\nskills: Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Distributing Computing\nplatform: Web\n---\n\nA platform to customize and run genetic algorithms. The computational load of an algorithm is distributed across different web-browsers.\n",
+        "contentDigest": "53b956fda10f2e6cc0d5b8df8d4c9e3e",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "FortySix",
+        "path": "/portfolio/fortysix",
+        "previewImage": "./projects/forty-six/forty-six.png",
+        "start": "December 2017,",
+        "end": "Present",
+        "type": "OSS,",
+        "skills": "Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Distributing Computing",
+        "platform": "Web",
+        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file",
+        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md absPath of file"
+      },
+      "excerpt": "",
+      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/forty-six/forty-six.md",
+      "fields": {
+        "slug": "/portfolio/projects/forty-six/forty-six/"
+      }
+    },
+    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file",
+      "internal": {
+        "content": "---\npath: /portfolio/static-website\ntitle: \"A Personal Website\"\npreviewImage: ./projects/danielhollcraft-website/danielhollcraft-website.png\nstart: Apr 2017,\nend: Present,\ntype: Open Source,\nskills: GatsbyJS, GraphQL, React, SCSS, Serverless, S3, Amazon Web Services,\nsource: https://github.com/danielbh/danielhollcraft.com-gatsbyjs,\nmobilePreview: DanielHollcraftMobile,\ndesktopPreview: DanielHollcraftDesktop,\npreviewCaption: Daniel Hollcraft website preview,\nplatform: Web,\n---\n\nCreated the second version of my personal website using the Gatsby.js.\n",
+        "contentDigest": "01042e240f13255234d0b28be649dc2c",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "A Personal Website",
+        "path": "/portfolio/static-website",
+        "previewImage": "./projects/danielhollcraft-website/danielhollcraft-website.png",
+        "start": "Apr 2017,",
+        "end": "Present,",
+        "type": "Open Source,",
+        "skills": "GatsbyJS, GraphQL, React, SCSS, Serverless, S3, Amazon Web Services,",
+        "source": "https://github.com/danielbh/danielhollcraft.com-gatsbyjs,",
+        "mobilePreview": "DanielHollcraftMobile,",
+        "desktopPreview": "DanielHollcraftDesktop,",
+        "previewCaption": "Daniel Hollcraft website preview,",
+        "platform": "Web,",
+        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file",
+        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md absPath of file"
+      },
+      "excerpt": "",
+      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/danielhollcraft-website/danielhollcraft-website.md",
+      "fields": {
+        "slug": "/portfolio/projects/danielhollcraft-website/danielhollcraft-website/"
+      }
+    },
+    "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file",
+      "internal": {
+        "content": "---\npath: /portfolio/stackathon\ntitle: Clapper Responder\npreviewImage: ./projects/stackathon/stackathon.png\nstart: Dec 2017,\nend: Dec 2017,\ntype: OSS,\nskills: Google Cloud Vision API, Node.js, Tessle.io\nplatform: Web\n---\n\nResponds to claps. Will only respond if it sees a human clapping.\n",
+        "contentDigest": "141c10a1f02042091f4996e424d7ef12",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Clapper Responder",
+        "path": "/portfolio/stackathon",
+        "previewImage": "./projects/stackathon/stackathon.png",
+        "start": "Dec 2017,",
+        "end": "Dec 2017,",
+        "type": "OSS,",
+        "skills": "Google Cloud Vision API, Node.js, Tessle.io",
+        "platform": "Web",
+        "_PARENT": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file",
+        "parent": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md absPath of file"
+      },
+      "excerpt": "",
+      "fileAbsolutePath": "/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/portfolio/projects/stackathon/stackathon.md",
+      "fields": {
+        "slug": "/portfolio/projects/stackathon/stackathon/"
       }
     }
   },
@@ -4197,6 +4208,9 @@
     "connections": {
       "MarkdownRemark": [
         "/portfolio/"
+      ],
+      "SitePage": [
+        "/dev-404-page/"
       ]
     }
   }

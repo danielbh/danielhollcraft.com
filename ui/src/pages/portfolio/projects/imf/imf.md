@@ -10,4 +10,4 @@ source: https://github.com/danielbh/imf-app
 platform: Web
 ---
 
-A way to track The progress of your intermittent fasting.
+A way to track the progress of your intermittent fasting.

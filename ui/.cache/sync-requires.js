@@ -8,6 +8,7 @@ exports.layouts = {
 
 exports.components = {
   "component---src-templates-blog-post-js": preferDefault(require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/templates/blog-post.js")),
+  "component---cache-dev-404-page-js": preferDefault(require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/404.js")),
   "component---src-pages-blog-js": preferDefault(require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/blog.js")),
   "component---src-pages-contact-js": preferDefault(require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/src/pages/contact.js")),
@@ -34,6 +35,8 @@ exports.json = {
   "portfolio-projects-stackathon-stackathon.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/portfolio-projects-stackathon-stackathon.json"),
   "layout-index.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
   "portfolio-projects-teledash-teledash.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/portfolio-projects-teledash-teledash.json"),
+  "layout-index.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
+  "dev-404-page.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/dev-404-page.json"),
   "layout-index.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),
   "404.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/404.json"),
   "layout-index.json": require("/Users/danielhollcraft/Documents/danielhollcraft.com/ui/.cache/json/layout-index.json"),

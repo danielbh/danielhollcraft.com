@@ -9,4 +9,4 @@ skills: Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Dist
 platform: Web
 ---
 
-A platform that allows users to customize and run genetic algorithms. The computational load of each running algorithm is distributed across different web-browser clients, meaning any user can sign up and contribute their computing power.
+A platform to customize and run genetic algorithms. The computational load of an algorithm is distributed across different web-browsers.

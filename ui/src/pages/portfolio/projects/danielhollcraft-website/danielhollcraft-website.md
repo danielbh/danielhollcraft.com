@@ -1,6 +1,6 @@
 ---
 path: /portfolio/static-website
-title: "A Static Website Blog"
+title: "A Personal Website"
 previewImage: ./projects/danielhollcraft-website/danielhollcraft-website.png
 start: Apr 2017,
 end: Present,
@@ -13,4 +13,4 @@ previewCaption: Daniel Hollcraft website preview,
 platform: Web,
 ---
 
-Created the second version of my personal website using the Gatsby static website builder framework.
+Created the second version of my personal website using the Gatsby.js.
