@@ -1,7 +1,0 @@
-siteTitle="Daniel Hollcraft"
-tagline= "Fullstack JavaScript Developer"
-linkedinProfile= "https://www.linkedin.com/in/daniel-hollcraft-752509b/"
-githubProfile= "https://github.com/danielbh"
-googleAnalyticsId = "UA-40454074-3"
-apiDevelopment= "http://localhost:3000"
-apiProduction="https://ad87zs9n5f.execute-api.us-east-1.amazonaws.com/prod"

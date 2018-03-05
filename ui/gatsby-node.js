@@ -1,12 +1,51 @@
 /**
- * Created by danielhollcraft on 6/21/17.
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-exports.modifyWebpackConfig = function(config, stage) {
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-  // Workaround to get canvas to build with with webpack
-  if(stage === "build-html") {
-    config._config.externals ='canvas';
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
   }
+}
 
-  return config
+exports.createPages = ({ graphql, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+  return new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allMarkdownRemark {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+    ).then(result => {
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/blog-post.js`),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug,
+          },
+        })
+      })
+      resolve()
+    })
+  })
 };

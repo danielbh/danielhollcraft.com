@@ -1,0 +1,181 @@
+@import '../../layouts/sass/libs/skel';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@include skel-breakpoints((
+  xxlarge: '(min-width: 1681px)',
+  xlarge: '(max-width: 1680px)',
+  large: '(max-width: 1280px)',
+  medium: '(max-width: 1024px)',
+  small: '(max-width: 736px)',
+  xsmall: '(max-width: 480px)'
+));
+
+.loader {
+  position: absolute;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+}
+
+/* Loader Breakpoints */
+
+@include breakpoint(xxlarge) {
+  .loader {
+    left: calc(50% + 250px);
+    bottom: calc(50% - 375px);
+  }
+}
+
+@include breakpoint(xlarge) {
+  .loader {
+    left: calc(50% + 200px);
+    bottom: calc(50% - 320px);
+  }
+}
+
+@include breakpoint(large) {
+  .loader{
+    left: calc(50% + 200px);
+    bottom: calc(50% - 280px);
+  }
+}
+
+@include breakpoint(medium) {
+  .loader {
+    left: calc(50% + 120px);
+    bottom: calc(50% - 220px);
+  }
+}
+
+@include breakpoint(small) {
+  .loader {
+    left: calc(50% + 80px);
+    bottom: calc(50% - 220px);
+  }
+}
+
+@include breakpoint(xsmall) {
+  .loader {
+    left: calc(50% + 40px);
+    bottom: calc(50% - 210px);
+  }
+}
+
+
+
+.loader-ring {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/loader-stars.jpg') no-repeat center center;
+  background-size: 95px 95px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 10px solid #d81f44;
+}
+
+.rocket-wrapper {
+  position: absolute;
+  left: 34px;
+  top: -30px;
+  height: 200px;
+}
+
+.rocket {
+  width: 37px;
+  height: auto;
+}
+
+.trail-wrapper {
+  position: absolute;
+  top: 78px;
+  left: 13px;
+  width: 12px;
+  height: 44px;
+  transform: none;
+  transform-origin: top center; // z-index: -1;
+}
+
+.trail {
+  width: 12px;
+  height: auto;
+  transform: translateZ(1);
+  animation: jet 0.02s ease alternate infinite;
+  transform-origin: top center;
+}
+
+.clouds-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 88px;
+  height: 85px;
+}
+
+.clouds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92px;
+}
+
+.cloud {
+  animation: kaboom 0.4s ease alternate infinite;
+  transform-origin: center center;
+  opacity: 0.9;
+  &:nth-child(odd) {
+    animation: kaboom 0.3s ease alternate infinite;
+  }
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  &:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  &:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes kaboom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes jet {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
