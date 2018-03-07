@@ -16,13 +16,13 @@ class Main extends Component {
         </header>
         <section>
           <article className="container">
-            <header className="major">
+            <div>
               <h2>Web Developer</h2>
               <h2>Frontend | React | Node.js</h2>
               <h2 style={{ textDecoration: 'underline' }}>
                 <Link to="/portfolio">Check out my work</Link>
               </h2>
-            </header>
+            </div>
           </article>
         </section>
       </div>
