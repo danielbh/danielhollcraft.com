@@ -1,6 +1,6 @@
 ---
 path: /portfolio/fortysix
-previewImage: ./projects/forty-six/forty-six.png
+previewImage: forty-six.png
 title: FortySix
 start: December 2017,
 end: Present

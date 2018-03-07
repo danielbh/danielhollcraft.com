@@ -1,7 +1,7 @@
 ---
 path: /portfolio/teledash
 title: Teledash
-previewImage: ./projects/teledash/teledash.png
+previewImage: teledash.png
 start: November 2017,
 end: Present
 type: OSS,

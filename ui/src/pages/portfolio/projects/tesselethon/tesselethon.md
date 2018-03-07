@@ -1,7 +1,7 @@
 ---
-path: /portfolio/stackathon
+path: /portfolio/tesselethon
 title: Clapper Responder
-previewImage: ./projects/stackathon/stackathon.png
+previewImage: tesselethon.png
 start: Dec 2017,
 end: Dec 2017,
 type: OSS,

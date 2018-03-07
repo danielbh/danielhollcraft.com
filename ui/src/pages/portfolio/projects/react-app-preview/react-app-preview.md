@@ -1,6 +1,6 @@
 ---
 path: /portfolio/react-app-preview
-previewImage: ./projects/react-app-preview/npm-logo.png
+previewImage: npm-logo.png
 title: react-app-preview-component
 start: Jan 2018,
 end: Present,

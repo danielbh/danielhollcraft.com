@@ -1,7 +1,7 @@
 ---
 path: /portfolio/imf
 title: Intermittent Fasting Tracker
-previewImage: ./projects/imf/imf.png
+previewImage: imf.png
 start: Aug 2017
 end: Present
 type: OSS,

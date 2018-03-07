@@ -1,7 +1,7 @@
 ---
 path: /portfolio/lal-paris
 title: A Tour Guide App for Paris, France
-previewImage: ./projects/lal-paris/lal-paris.png
+previewImage: lal-paris.png
 start: Aug 2016,
 end: Present,
 type: Freelance,

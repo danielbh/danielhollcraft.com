@@ -1,7 +1,7 @@
 ---
 path: /portfolio/grass-monitor
 title: An Agriculture Monitoring System (IoT)
-previewImage: ./projects/grass-monitor/grass-monitor.png
+previewImage: grass-monitor.png
 start: Jan 2016
 end: Mar 2017
 type: Freelance,

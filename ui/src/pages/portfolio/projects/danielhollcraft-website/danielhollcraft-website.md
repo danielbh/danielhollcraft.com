@@ -1,7 +1,7 @@
 ---
 path: /portfolio/static-website
 title: "A Personal Website"
-previewImage: ./projects/danielhollcraft-website/danielhollcraft-website.png
+previewImage: danielhollcraft-website.png
 start: Apr 2017,
 end: Present,
 type: Open Source,
