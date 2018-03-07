@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { ListLink } from '../components'
 import avatar from '../assets/images/profile-photo.png'
 import './sass/main.scss'
+import 'prismjs/themes/prism.css'
 import 'prismjs/themes/prism-solarizedlight.css'
 
 export default ({ children }) => (
@@ -22,7 +23,7 @@ export default ({ children }) => (
         <ul>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/portfolio">Portfolio</ListLink>
-          <ListLink to="/blog">Blog</ListLink>
+          {/* <ListLink to="/blog">Blog</ListLink> */}
           {/*<ListLink to="/contact">Contact</ListLink> */}
         </ul>
       </nav>
