@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import { Rocket } from '../components'
+import './index.scss'
 
 class Main extends Component {
-
   componentDidMount() {
   }
 
@@ -16,7 +16,7 @@ class Main extends Component {
         </header>
         <section>
           <article className="container">
-            <div>
+            <div id="homepage-description">
               <h2>Web Developer</h2>
               <h2>Frontend | React | Node.js</h2>
               <h2 style={{ textDecoration: 'underline' }}>

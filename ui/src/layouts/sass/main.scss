@@ -11,7 +11,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	@import "libs/skel";
+  @import "libs/skel";
+
+  @include skel-breakpoints((
+    xxlarge: '(min-width: 1681px)',
+    xlarge: '(max-width: 1680px)',
+    large: '(max-width: 1280px)',
+    medium: '(max-width: 1024px)',
+    small: '(max-width: 736px)',
+    xsmall: '(max-width: 480px)',
+    xxsmall: '(max-width: 320px)'
+  ));
 
 	@include skel-layout((
 		reset: 'full',
@@ -1015,38 +1025,6 @@
 			}
 		}
 	}
-/* Home Page Hero */
-  #homepage-hero {
-    position: relative;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%);
-    transform: skewY(4deg);
-    transform-origin: top right;
-    display: block;
-    height: 30em;
-    border-bottom: 10px solid #d81f44;
-    max-width: 100%;
-    display: flex;
-    margin-bottom: 2em;
-
-    h1 {
-      position: absolute;
-      left: calc(12%);
-      top: calc(8%);
-      transform: skewY(-4deg);
-      transform-origin: top right;
-      font-size:8.5em;
-      color: white
-    }
-  }
-
 
 /* Footer */
 
@@ -1083,7 +1061,7 @@
 
 /* XLarge */
 
-	@media(max-width: 1680px) {
+	@include breakpoint(xlarge) {
 
 		$size-header: 21em;
 
@@ -1131,7 +1109,7 @@
 
 /* Large */
 
-	@media(max-width: 1280px) {
+	@include breakpoint(large) {
 
 		$size-header: 20em;
 
@@ -1165,7 +1143,7 @@
 		display: none;
 	}
 
-	@media(max-width: 1024px) {
+	@include breakpoint(medium) {
 
 		/* Basic */
 
@@ -1191,15 +1169,6 @@
 			}
 
     /* Header */
-
-      #homepage-hero {
-        height: 20em;
-        h1 {
-          margin-top: 0.5em;
-          font-size: 4.5em;
-        }
-      }
-
 			#header {
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transition', ('transform #{_duration(header)} ease'));
@@ -1344,7 +1313,7 @@
 
 /* Small */
 
-	@media(max-width: 736px) {
+	@include breakpoint(small) {
 
 		$size-header: 17em;
 
@@ -1524,7 +1493,7 @@
 
 /* XSmall */
 
-	@media(max-width: 480px) {
+	@include breakpoint(xsmall) {
 
 		/* Basic */
 

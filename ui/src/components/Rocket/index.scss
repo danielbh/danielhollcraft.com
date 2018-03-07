@@ -1,4 +1,4 @@
-@import '../../layouts/sass/libs/skel';
+@import '../../layouts/sass/main';
 
 html {
   box-sizing: border-box;
@@ -6,15 +6,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-@include skel-breakpoints((
-  xxlarge: '(min-width: 1681px)',
-  xlarge: '(max-width: 1680px)',
-  large: '(max-width: 1280px)',
-  medium: '(max-width: 1024px)',
-  small: '(max-width: 736px)',
-  xsmall: '(max-width: 480px)'
-));
 
 .loader {
   position: absolute;
