@@ -1,8 +1,8 @@
 ---
+path: fp-react-loading-component
 title: Functional Programming with React - A Loading Component Example
 date: 07/30/2017
-categories: Node.js, AWS,
-summary:  Functional programming (FP) has been all the rave in recent years, especially in the JavaScript world. When you combine FP with React you get all sorts of magic.
+categories: Node.js, AWS
 ---
 
 Functional programming (FP) has been all the rave in recent years, especially in the JavaScript world. When you combine FP with React you get all sorts of magic. It’s also not hard to find FP while traversing (no pun) the React ecosystem. You’ll find `array.map` used very commonly to iterate over props, and return an array of components. You can create a React component as a pure function. Redux commonly uses higher order functions/components. Also if you look at React core you will find a ton of functional programming examples!

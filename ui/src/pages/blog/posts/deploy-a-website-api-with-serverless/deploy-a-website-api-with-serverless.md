@@ -1,8 +1,8 @@
 ---
+path: /blog/deploy-api-serverless
 title: Deploy a Website and API with Serverless
 date: 07/19/2017
-categories: Node.js, AWS,
-summary: You’ve written an awesome REST API or GraphQL endpoint and a stellar web UI, and you want to deploy it. Then you shudder. There are so many options, and you don’t know which to choose.
+categories: Node.js, AWS
 ---
 
 You’ve written an awesome REST API or GraphQL endpoint and a stellar web UI and you want to deploy it. Then you shudder. There are so many options and you don’t know which to choose. If you are looking for a non managed solution maybe you deploy to Next.js, Heroku or AWS Elastic Beanstalk. If you got the chops, you could deploy to AWS EC2 or Digital Ocean.

@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import './index.scss'
 
 export default ({ data }) => {
   return (
@@ -7,16 +9,14 @@ export default ({ data }) => {
         <header className="major">
           <h2>Blog</h2>
         </header>
-        <div className="features">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <section className="blog-preview">
             <article key={node.id}>
-              <div className="inner">
-                <h4>{node.frontmatter.title}</h4>
-                <p>{node.excerpt}</p>
-              </div>
+              <Link to={node.frontmatter.path}><h3>{node.frontmatter.title}</h3></Link>
+              <p>{node.excerpt}</p>
             </article>
-          ))}
-        </div>
+          </section>
+        ))}
       </div>
     </section>
   )
@@ -32,7 +32,7 @@ export const query = graphql`
             title
             path
           }
-          excerpt
+          excerpt(pruneLength: 300)
         }
       }
     }

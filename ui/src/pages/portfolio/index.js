@@ -13,7 +13,7 @@ export default ({ data }) => {
               <a href="#" className="image"><img src={`${node.frontmatter.previewImage.childImageSharp.responsiveSizes.src}`
               } alt="" /></a>
               <div className="inner">
-                <h4>{node.frontmatter.title}</h4>
+                <h4 style={{ color: '#0093BF'}}>{node.frontmatter.title}</h4>
                 <p>{node.excerpt}</p>
               </div>
             </article>

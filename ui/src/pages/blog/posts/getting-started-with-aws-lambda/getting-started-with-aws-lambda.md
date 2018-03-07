@@ -1,8 +1,8 @@
 ---
+path: get-started-with-aws-lambda
 title: How to Get Started with AWS Lambda
 date: 06/17/2017
-categories: Node.js, AWS,
-summary: Imagine a world where you can have 1 million free API calls, automatic scaling and zero maintenance. It is all possible with Amazon Web Services (AWS) Lambda functions. However getting started can be a bit confusing.
+categories: Node.js, AWS
 ---
 
 Imagine a world where you can host an API that is allowed 1 million free API calls per month, automatic scaling and zero maintenance. It is all possible with Amazon Web Services' (AWS) Lambda functions. However getting started can be a bit confusing.
