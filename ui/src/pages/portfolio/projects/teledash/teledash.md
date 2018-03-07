@@ -1,5 +1,6 @@
 ---
 path: /portfolio/teledash
+priority: 7
 title: Teledash
 previewImage: teledash.png
 start: November 2017

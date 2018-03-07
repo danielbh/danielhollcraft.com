@@ -1,5 +1,6 @@
 ---
 path: /portfolio/static-website
+priority: 8
 title: "A Personal Website"
 previewImage: danielhollcraft-website.png
 start: Apr 2017,

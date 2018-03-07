@@ -1,5 +1,6 @@
 ---
 path: /portfolio/grass-monitor
+priority: 9
 title: An Agriculture Monitoring System (IoT)
 previewImage: grass-monitor.png
 start: Jan 2016

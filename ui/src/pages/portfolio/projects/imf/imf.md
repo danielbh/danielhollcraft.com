@@ -1,5 +1,6 @@
 ---
 path: /portfolio/imf
+priority: 5
 title: Intermittent Fasting Tracker
 previewImage: imf.png
 start: Aug 2017

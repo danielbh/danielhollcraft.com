@@ -1,5 +1,6 @@
 ---
 path: /portfolio/fortysix
+priority: 8
 previewImage: forty-six.png
 title: FortySix
 start: December 2017,

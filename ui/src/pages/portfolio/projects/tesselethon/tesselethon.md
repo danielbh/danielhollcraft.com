@@ -1,5 +1,6 @@
 ---
 path: /portfolio/tesselethon
+priority: 0
 title: Clapper Responder
 previewImage: tesselethon.png
 start: Dec 2017

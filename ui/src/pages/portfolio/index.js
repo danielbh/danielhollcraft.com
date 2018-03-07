@@ -43,11 +43,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query PortfolioListQuery {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "portfolio/projects/.*\\.md$/"}}) {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "portfolio/projects/.*\\.md$/"}},
+    sort: { fields: [frontmatter___priority], order: DESC }
+    ) {
     edges {
       node {
         id
         frontmatter {
+          priority
           web
           source
           appStore

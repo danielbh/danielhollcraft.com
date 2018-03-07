@@ -1,5 +1,6 @@
 ---
 path: /portfolio/react-app-preview
+priority: 8
 previewImage: npm-logo.png
 title: react-app-preview-component
 start: Jan 2018
