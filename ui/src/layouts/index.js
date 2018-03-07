@@ -13,7 +13,7 @@ export default ({ children }) => (
         <span className="image avatar"><img src={avatar} alt="" /></span>
         <h1 id="logo"><a href="#">Daniel Hollcraft</a></h1>
         <p>Web Developer<br />
-          React | React Native | Node.js
+          Frontend | React | Node.js
         </p>
       </header>
       <nav id="nav">

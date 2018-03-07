@@ -13,4 +13,4 @@ previewCaption: Daniel Hollcraft website preview,
 platform: Web,
 ---
 
-Created the second version of my personal website using the Gatsby.js.
+Created the second version of my personal website using Gatsby.js.
