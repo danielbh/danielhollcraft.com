@@ -1,14 +1,19 @@
 import React from "react"
+import './index.scss'
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
-  );
-};
+    <section>
+      <div className="container">
+        <header className="major">
+          <h2 style={{ fontSize: '2.75em' }}>{post.frontmatter.title}</h2>
+        </header>
+        <p className="blog-text" style={{ fontSize: '1.15em' }} dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
+    </section>
+  )
+}
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {

@@ -1,5 +1,5 @@
 ---
-path: /blog/deploy-api-serverless
+path: /blog/deploy-a-website-api-with-serverless
 title: Deploy a Website and API with Serverless
 date: 07/19/2017
 categories: Node.js, AWS

@@ -1,5 +1,5 @@
 ---
-path: fp-react-loading-component
+path: /blog/fp-react-loading-component
 title: Functional Programming with React - A Loading Component Example
 date: 07/30/2017
 categories: Node.js, AWS

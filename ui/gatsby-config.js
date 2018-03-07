@@ -23,6 +23,10 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true
       }
+    },
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {}
     }
     // {
     //   resolve: 'gatsby-plugin-typography',

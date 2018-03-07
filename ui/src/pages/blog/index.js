@@ -24,7 +24,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogListQuery {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "blog/posts/.*\\.md$/"}}) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/.*\\.md$/"}}) {
       edges {
         node {
           id

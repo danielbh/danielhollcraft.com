@@ -1,5 +1,5 @@
 ---
-path: get-started-with-aws-lambda
+path: /blog/getting-started-with-aws-lambda
 title: How to Get Started with AWS Lambda
 date: 06/17/2017
 categories: Node.js, AWS
