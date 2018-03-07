@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.scss'
 
 export default ({ data }) => {
   return (
@@ -8,16 +9,32 @@ export default ({ data }) => {
           <h2>Portfolio</h2>
         </header>
         <div className="features">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <article key={node.id}>
-              <a href="#" className="image"><img src={`${node.frontmatter.previewImage.childImageSharp.responsiveSizes.src}`
-              } alt="" /></a>
-              <div className="inner">
-                <h4 style={{ color: '#0093BF'}}>{node.frontmatter.title}</h4>
-                <p>{node.excerpt}</p>
-              </div>
-            </article>
-          ))}
+          {data.allMarkdownRemark.edges.map(({ node }) => {
+            const { frontmatter } = node
+            const {
+              previewImage,
+              appStore,
+              googlePlay,
+              web,
+              source
+            } = frontmatter
+            return (
+              <article key={node.id}>
+                <img className="image" src={`${previewImage.childImageSharp.responsiveSizes.src}`} alt="" />
+                <div className="inner">
+                  <h4 className="project-title">{node.frontmatter.title}</h4>
+                  <p>{node.excerpt}</p>
+                  <ul className="actions">
+                    {appStore && <li><a href={appStore} className="button">App Store</a></li>}
+                    {googlePlay && <li><a href={googlePlay} className="button">Google Play</a></li>}
+                    {web && <li><a href={web} className="button">Web</a></li>}
+                    {source && <li><a href={source} className="button">Source</a></li>}
+                  </ul>
+                </div>
+              </article>
+            )
+           })
+          }
         </div>
       </div>
     </section>
@@ -31,6 +48,10 @@ export const query = graphql`
       node {
         id
         frontmatter {
+          web
+          source
+          appStore
+          googlePlay
           previewImage {
             childImageSharp {
               responsiveSizes(maxWidth: 870) {

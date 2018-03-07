@@ -6,6 +6,8 @@ start: December 2017,
 end: Present
 type: OSS,
 skills: Node.js, React, Redux, Passport, Bootstrap, Web Workers, Socket.io, Distributing Computing
+web: http://fortysix-demo.herokuapp.com/
+source: https://github.com/Minierre/fortysix
 platform: Web
 ---
 

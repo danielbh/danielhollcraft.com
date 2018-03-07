@@ -2,12 +2,12 @@
 path: /portfolio/react-app-preview
 previewImage: npm-logo.png
 title: react-app-preview-component
-start: Jan 2018,
-end: Present,
-type: OSS,
+start: Jan 2018
+end: Present
+type: OSS
 skills: React, Storybook
-src: https://github.com/danielbh/react-app-preview-component
-deployed: https://www.npmjs.com/package/react-app-preview-component
+source: https://github.com/danielbh/react-app-preview-component
+web: https://www.npmjs.com/package/react-app-preview-component
 platform: Web
 ---
 

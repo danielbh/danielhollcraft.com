@@ -2,9 +2,10 @@
 path: /portfolio/teledash
 title: Teledash
 previewImage: teledash.png
-start: November 2017,
+start: November 2017
 end: Present
-type: OSS,
+type: OSS
+source: https://github.com/teledash/teledash
 skills: React, Postgres, Redux Saga, Node.js, D3, Google Maps, YouTube API
 platform: Web
 ---

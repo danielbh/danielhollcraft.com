@@ -1,0 +1,24 @@
+@import '../../layouts/sass/main.scss';
+
+.project-title {
+  color: #0093BF
+}
+
+.actions {
+
+  :nth-child(1) a {
+    background: #0093BF;
+    &:hover {
+      background-color: lighten(_palette(accent1, bg), 7);
+      color: _palette(accent1, fg-bold) !important;
+    }
+  }
+
+  :nth-child(2) a {
+    background: #d81f44;
+     &:hover {
+       background-color: lighten(_palette(accent3, bg), 7);
+       color: _palette(accent3, fg-bold) !important;
+     }
+  }
+}
