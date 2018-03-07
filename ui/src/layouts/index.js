@@ -21,8 +21,8 @@ export default ({ children }) => (
         <ul>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/portfolio">Portfolio</ListLink>
-          {/* <ListLink to="/blog">Blog</ListLink>
-          <ListLink to="/contact">Contact</ListLink> */}
+          <ListLink to="/blog">Blog</ListLink>
+          {/*<ListLink to="/contact">Contact</ListLink> */}
         </ul>
       </nav>
       <footer>
