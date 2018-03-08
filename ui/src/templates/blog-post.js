@@ -7,7 +7,9 @@ export default ({ data }) => {
     <section>
       <div className="container">
         <header className="major">
-          <h2 style={{ fontSize: '2.75em' }}>{post.frontmatter.title}</h2>
+          <h2 className="blog-title">
+            {post.frontmatter.title}</h2>
+          <p className="blog-date" style={{}}>{post.frontmatter.date}</p>
         </header>
         <p className="blog-text" style={{ fontSize: '1.15em' }} dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
@@ -21,6 +23,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }

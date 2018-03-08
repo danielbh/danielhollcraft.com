@@ -13,6 +13,7 @@ export default ({ data }) => {
           <section className="blog-preview">
             <article key={node.id}>
               <Link to={node.frontmatter.path}><h3>{node.frontmatter.title}</h3></Link>
+              <h4>{node.frontmatter.date}</h4>
               <p>{node.excerpt}</p>
             </article>
           </section>
@@ -29,6 +30,7 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            date
             title
             path
           }
