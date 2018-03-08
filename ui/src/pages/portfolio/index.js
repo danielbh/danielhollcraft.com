@@ -16,13 +16,14 @@ export default ({ data }) => {
               appStore,
               googlePlay,
               web,
-              source
+              source,
+              title
             } = frontmatter
             return (
               <article key={node.id}>
                 <img className="image" src={`${previewImage.childImageSharp.responsiveSizes.src}`} alt="" />
-                <div className="inner">
-                  <h4 className="project-title">{node.frontmatter.title}</h4>
+                <div key={node.id} className="inner">
+                  <h4 className="project-title">{title}</h4>
                   <p>{node.excerpt}</p>
                   <ul className="actions">
                     {appStore && <li><a href={appStore} className="button">App Store</a></li>}

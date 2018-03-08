@@ -10,8 +10,8 @@ export default ({ data }) => {
           <h2>Blog</h2>
         </header>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <section className="blog-preview">
-            <article key={node.id}>
+          <section key={node.id} className="blog-preview">
+            <article >
               <Link to={node.frontmatter.path}><h3>{node.frontmatter.title}</h3></Link>
               <h4>{node.frontmatter.date}</h4>
               <p>{node.excerpt}</p>

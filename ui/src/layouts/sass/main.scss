@@ -219,8 +219,15 @@
 		}
 	}
 
+/* Title Bar */
+#titleBar {
+  display: none;
+  cursor: pointer;
+}
+
 /* Code Highlight */
 .gatsby-highlight pre {
+  background-color: #222;
   font-size: 0.85em;
   .number, .tag, .boolean {
     color: _palette(accent3, bg)
@@ -841,8 +848,7 @@
 		}
 	}
 
-/* Features */
-
+  /* Features */
 	.features {
 		article {
 			border-top: solid (_size(border-width) * 1.5) _palette(border);
@@ -1140,12 +1146,8 @@
 
 	}
 
+
 /* Medium */
-
-	#titleBar {
-		display: none;
-	}
-
 	@include breakpoint(medium) {
 
 		/* Basic */
@@ -1295,7 +1297,7 @@
 				}
 			}
 
-			body {
+			#content {
 				&.header-visible {
 					#wrapper, #titleBar {
 						@if _misc(header-side) == 'right' {
@@ -1479,8 +1481,8 @@
 				}
 			}
 
-			body {
-				&.header-visible {
+		#content {
+      &.header-visible {
 					#wrapper, #titleBar {
 						@if _misc(header-side) == 'right' {
 							@include vendor('transform', 'translateX(#{$size-header * -1})');
@@ -1491,8 +1493,7 @@
 					}
 				}
 			}
-
-	}
+   }
 
 /* XSmall */
 
