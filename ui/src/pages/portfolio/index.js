@@ -23,7 +23,7 @@ export default ({ data }) => {
               <article key={node.id}>
                 <img className="image" src={`${previewImage.childImageSharp.responsiveSizes.src}`} alt="" />
                 <div key={node.id} className="inner">
-                  <h4 className="project-title">{title}</h4>
+                  <h3 className="project-title">{title}</h3>
                   <p>{node.excerpt}</p>
                   <ul className="actions">
                     {appStore && <li><a href={appStore} className="button">App Store</a></li>}
