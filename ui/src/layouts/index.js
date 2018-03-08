@@ -50,12 +50,11 @@ export default class extends Component {
         </p>
           </header>
           <nav id="nav">
-
             <ul onClick={this.closeSideBar}>
               <ListLink to="/">Home</ListLink>
               <ListLink to="/portfolio">Portfolio</ListLink>
               <ListLink to="/blog">Blog</ListLink>
-              {/*<ListLink to="/contact">Contact</ListLink> */}
+              <ListLink to="/contact">Contact</ListLink>
             </ul>
           </nav>
           <footer>

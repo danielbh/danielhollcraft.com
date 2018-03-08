@@ -1,7 +1,7 @@
 ---
 path: /portfolio/lal-paris
 priority: 10
-title: A Tour Guide App for Paris, France
+title: LaL Paris
 previewImage: lal-paris.png
 start: Aug 2016
 end: Present

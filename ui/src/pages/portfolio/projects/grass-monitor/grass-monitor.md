@@ -1,7 +1,7 @@
 ---
 path: /portfolio/grass-monitor
 priority: 9
-title: An Agriculture Monitoring System (IoT)
+title: Grass Monitor
 previewImage: grass-monitor.png
 start: Jan 2016
 end: Mar 2017
@@ -13,5 +13,5 @@ previewCaption: Grass Monitor preview
 platform: Web, Android, iOS
 ---
 
-An agriculture monitoring system that displayed humidity, temperature, and luminosity of many different areas of a greenhouse.
+An agriculture monitoring system that displays humidity, temperature, and luminosity of many different areas of a greenhouse.
 
