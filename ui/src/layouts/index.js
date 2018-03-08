@@ -4,8 +4,7 @@ import Helmet from 'react-helmet'
 import { ListLink } from '../components'
 import avatar from '../assets/images/profile-photo.png'
 import './sass/main.scss'
-import 'prismjs/themes/prism.css'
-import 'prismjs/themes/prism-solarizedlight.css'
+import 'prismjs/themes/prism-twilight.css'
 
 export default ({ children }) => (
   <div id="content">

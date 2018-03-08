@@ -156,17 +156,6 @@
 		padding: 0.5em 0 0.5em 2em;
   }
 
-  /**
- * Add back the container background-color, border-radius, padding, margin
- * and overflow that we removed from <pre>.
- */
-
-  /**
- * Remove the default PrismJS theme background-color, border-radius, margin,
- * padding and overflow.
- * 1. Make the element just wide enough to fit its content.
- * 2. Always fill the visible space in .gatsby-highlight.
- */
 
 	.align-left {
 		text-align: left;
@@ -230,6 +219,32 @@
 		}
 	}
 
+/* Code Highlight */
+.gatsby-highlight pre {
+  font-size: 0.85em;
+  .number, .tag, .boolean {
+    color: _palette(accent3, bg)
+  }
+
+   .string, .attr-value , .operator, .attr-name {
+     color: hsl(53, 89%, 79%);
+   }
+
+   .language-yaml {
+     .number {
+       color: white
+     }
+     .key {
+       color: hsl(53, 89%, 79%);
+     }
+   }
+
+   .language-bash {
+     .variable {
+       color:_palette(accent3, bg)
+     }
+   }
+}
 /* Form */
 
 	form {
@@ -408,7 +423,7 @@
 		opacity: 1.0;
 	}
 
-/* Box */
+  /* Box */
 
 	.box {
 		border-radius: _size(border-radius);

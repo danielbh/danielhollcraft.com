@@ -4,7 +4,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`,
+        ]
+      }
+    },
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     {
@@ -24,10 +31,6 @@ module.exports = {
         anonymize: true
       }
     },
-    {
-      resolve: `gatsby-remark-prismjs`,
-      options: {}
-    }
     // {
     //   resolve: 'gatsby-plugin-typography',
     //   options: {

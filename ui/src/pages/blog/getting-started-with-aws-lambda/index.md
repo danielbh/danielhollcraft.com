@@ -29,7 +29,7 @@ Now type "hello-lambda" for the function name, and leave the description as is.
 
 Replace the code with the following:
 
-```
+```javascript
 'use strict';
 
 console.log('Loading function');
@@ -46,7 +46,7 @@ exports.handler = (event, context, callback) => {
 
 Scroll down to where it says "Role". A role is where you give your function rights to access other AWS resources such as: giving permission to make logs with CloudWatch or to interact with an S3 bucket. A common practice for naming roles, is to name a role based on what the function with this role is doing. If a function is a contact form response then you could call it "contact-form-responder". A role can have several "Identity Access Management (IAM) policies" Which are the statements that allow the function to use AWS resources. These are written in JSON.
 
-```
+```javascript
 {
     "Effect": "Allow",
     "Action": "logs:CreateLogGroup",

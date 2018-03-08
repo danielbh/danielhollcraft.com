@@ -223,8 +223,8 @@ endpoints:
 
 Copy it into the below part of the `index.html` file...
 
-```html
- xhttp.open("GET", <here>, true);
+```
+ xhttp.open("GET", /*copy it here*/, true);
 ```
 
 As of July 2017, the shortest and most elegant way to deploy static files to a Serverless project for web rendering, is with bash scripts. I won't explain these too much, but essentially the below scripts will take the Cloud Formation Outputs that we placed in the `serverless.yml`, and it will use this to access the website bucket. By default these scripts will manipulate the dev bucket. You will need to add the stage name if you wish to target a different bucket. This can be done by appending the stage name at the end of the command `. script.sh <name of stage>`.
@@ -291,7 +291,7 @@ echo "Bucket ${BUCKET_NAME} has been emptied"
 
 You can add commands in the package.json to make calling these scripts easier
 
-```json
+```javascript
 {
 
 ...
