@@ -23,7 +23,7 @@ After that, you will be presented with the blueprints page. Here there are sever
 
 Now go to where it says "select runtime", and select `Node.js 6.10`. Then select the "hello-world" blueprint. You might need to type "hello-world" into the filter field, adjacent of the runtime field, for the "hello-world" blueprint to appear on the screen.
 
-The next page is where you configure triggers for the function. There are many choices. For example you can cause the function to be triggered through an HTTP request, when a file gets uploaded to S3 (Amazon's cloud storage service) or if something gets pushed to CodeCommit (Amazon's version control repository service). [Ideally these are better added with automation through Serverless](/blog/deploy-aws-lambda-function-serverless/) or CloudFormation (Amazon's infrastructure automated deployment service).  Now, press next.
+The next page is where you configure triggers for the function. There are many choices. For example you can cause the function to be triggered through an HTTP request, when a file gets uploaded to S3 (Amazon's cloud storage service) or if something gets pushed to CodeCommit (Amazon's version control repository service). [Ideally these are better added with automation through Serverless](/blog/deploy-a-website-api-with-serverless/) or CloudFormation (Amazon's infrastructure automated deployment service).  Now, press next.
 
 Now type "hello-lambda" for the function name, and leave the description as is.
 
