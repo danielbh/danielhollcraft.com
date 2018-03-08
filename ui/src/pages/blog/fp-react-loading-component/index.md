@@ -9,7 +9,7 @@ Functional programming (FP) has been all the rave in recent years, especially in
 
 Warning! This blog entry assumes you are familar with basic functional programming concepts. If you need a refresher [check out JavaScript Guru Eric Elliot's blog entry](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4).
 
-I’ve put together an example that shows how you can use two common functional programming concepts, in the context of React. Currying and closures.
+I’ve put together an example that shows how you can use two common functional programming concepts in the context of React. Currying and closures.
 
 Before I go on to explain the example, let’s first clarify the problem I will be solving.
 
