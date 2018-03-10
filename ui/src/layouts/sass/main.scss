@@ -293,7 +293,11 @@
 
 		&:focus {
 			border-color: _palette(accent1, bg);
-		}
+    }
+
+    &.error {
+      border-color: _palette(accent3, bg);
+    }
 	}
 
 	.select-wrapper {

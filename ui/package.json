@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "axios": "^0.18.0",
+    "formik": "^0.11.11",
     "gatsby": "^1.9.218",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-google-analytics": "^1.0.20",
