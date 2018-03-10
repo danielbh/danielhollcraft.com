@@ -6,10 +6,10 @@
   "scripts": {
     "setup": "cd ui && yarn && cd ../api && yarn",
     "static:deploy:prod": "./ui/deploy/scripts/deploy_static_files.sh prod",
-    "static:destroy": "./ui/deploy/scripts/delete_static_files.sh ",
+    "static:destroy:prod": "./ui/deploy/scripts/delete_static_files.sh prod",
     "static:destroy:local": "rm -rf ui/public",
     "static:build": "cd ui && yarn build && cd ../..",
-    "static:build:deploy": "yarn static:build && npm run static:deploy:prod",
+    "static:build:deploy": "yarn static:build && yarn static:deploy:prod",
     "ui:local": "cd ui && yarn develop",
     "ui:deploy:prod": "cd ui && sls deploy -s prod && cd ..",
     "api:deploy:prod": "cd api && sls deploy -s prod && cd ..",
