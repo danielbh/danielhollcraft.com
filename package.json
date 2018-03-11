@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/danielbh/danielhollcraft.com/issues"
   },
-  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme"
+  "homepage": "https://github.com/danielbh/danielhollcraft.com#readme",
+  "dependencies": {
+    "gatsby-plugin-favicon": "^2.1.1"
+  }
 }
