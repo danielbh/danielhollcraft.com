@@ -32,7 +32,6 @@ module.exports = class HTML extends React.Component {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
           {this.props.headComponents}
           {css}
-          <script async>(function(s,u,m,o,j,v){j = u.createElement(m); v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='d72f256005f80506fdecd25e36de7177abb7aee5891029af111bfd798f21a62b';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
