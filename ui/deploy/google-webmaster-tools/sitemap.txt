@@ -1,6 +1,5 @@
 https://danielhollcraft.com
 https://danielhollcraft.com/blog/
-https://danielhollcraft.com/services/
 https://danielhollcraft.com/portfolio/
 https://danielhollcraft.com/contact/
 https://danielhollcraft.com/blog/blog/getting-started-with-aws-lambda/
