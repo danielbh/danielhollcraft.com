@@ -82,7 +82,7 @@ It usually takes under a minute for your function to be provisioned. When the ne
 
 After it runs you should see the following in the bottom of the screen...
 
-![lambda function complete](/blog/getting-started-with-aws-lambda-and-serverless/lambda-function-complete.png)
+![lambda function complete](lambda-function-complete.png)
 
 You should see that the output is "My first lambda output!". This displays in the top of the "Execution result: succeeded" screen.
 

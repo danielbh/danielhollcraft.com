@@ -225,8 +225,15 @@
   cursor: pointer;
 }
 
-/* Code Highlight */
+/* Gatsby Overrides */
+.gatsby-resp-image-wrapper {
+  // HACK: Gatsby gatsby-remark-responsive-image plugin
+  // https://github.com/gatsbyjs/gatsby/issues/1935
+  // hard codes an in-line z-index.
+  z-index: 1 !important;
+}
 
+/* Code Highlight*/
 	code {
 	  background: #222;
 	  border-radius: _size(border-radius);

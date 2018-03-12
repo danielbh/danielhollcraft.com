@@ -9,6 +9,12 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-responsive-image`,
+            options: {
+              maxWidth: 590
+            },
+          }
         ]
       }
     },
