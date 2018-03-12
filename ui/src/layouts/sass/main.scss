@@ -226,9 +226,30 @@
 }
 
 /* Code Highlight */
+
+	code {
+	  background: #222;
+	  border-radius: _size(border-radius);
+	  color: #fff;
+	  font-family: _font(family-fixed);
+	  font-size: 0.9em;
+	  margin: 0 0.25em;
+    padding: 0.1em 0.4em;
+    border: .1em solid hsl(0, 0%, 33%);
+	}
+
+
 .gatsby-highlight pre {
+
+  code {
+    border: none;
+    margin: .5em 0;
+    padding: 1em 0;
+    font-size: 0.85em;
+  }
+
   background-color: #222;
-  font-size: 0.85em;
+
   .number, .tag, .boolean {
     color: _palette(accent3, bg)
   }
