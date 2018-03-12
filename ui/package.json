@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "danielhollcraft.com",
+  "description": "Daniel Hollcraft's Personal Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Daniel Hollcraft",
   "dependencies": {
     "axios": "^0.18.0",
     "formik": "^0.11.11",
