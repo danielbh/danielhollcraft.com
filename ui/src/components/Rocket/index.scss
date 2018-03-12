@@ -60,6 +60,7 @@ html {
 
 
 .loader-ring {
+  z-index: 1;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/loader-stars.jpg') no-repeat center center;
   background-size: 95px 95px;
   width: 105px;
@@ -76,22 +77,24 @@ html {
 }
 
 .rocket {
-  width: 37px;
+  transform: translate(-15%, 4%);
+  width: 50px;
   height: auto;
 }
 
 .trail-wrapper {
+  z-index: 0;
   position: absolute;
-  top: 78px;
-  left: 13px;
-  width: 12px;
+  top: 73px;
+  left: 11.8px;
+  width: 10px;
   height: 44px;
   transform: none;
   transform-origin: top center; // z-index: -1;
 }
 
 .trail {
-  width: 12px;
+  width: 16px;
   height: auto;
   transform: translateZ(1);
   animation: jet 0.02s ease alternate infinite;

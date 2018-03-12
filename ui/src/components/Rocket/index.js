@@ -1,5 +1,7 @@
 import React from 'react'
 import './index.scss'
+import rocket from './little-rocket-light.png'
+import trail from './trail.png'
 
 export default () => (
   <div className="frame">
@@ -10,9 +12,9 @@ export default () => (
 
       <div className="rocket-wrapper">
         <div className="trail-wrapper">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/trail.png" alt="" className="trail" />
+          <img src={trail} alt="" className="trail" />
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/small-rocket.png" alt="" className="rocket" />
+        <img src={rocket} alt="" className="rocket" />
       </div>
 
       <div className="clouds-wrapper">
