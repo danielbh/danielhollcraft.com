@@ -13,8 +13,7 @@
     "ui:local": "cd ui && yarn develop",
     "ui:deploy:prod": "cd ui && sls deploy -s prod && cd ..",
     "api:deploy:prod": "cd api && sls deploy -s prod && cd ..",
-    "api:local": "cd api && sls offline && cd ..",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api:local": "cd api && sls offline && cd .."
   },
   "devDependencies": {
     "eslint": "^4.10.0",
