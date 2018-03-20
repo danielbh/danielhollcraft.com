@@ -36,7 +36,7 @@ export default class extends Component {
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
+            { name: 'description', content: 'Software engineer. Expert in JavaScript technologies.' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
