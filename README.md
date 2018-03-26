@@ -35,7 +35,7 @@ All commands must be used in the root file directory.
 
 To create the front-end I used the library [gatsby.js](https://github.com/gatsbyjs/gatsby) for static content generation. The reason I prefer gatsby.js as a static generation lib is because it uses [React.js](https://github.com/facebook/react) and I love to React! I use gatsby.js instead of vanilla React because it simplifies development in many ways. Very notably it generates routes through the filesystem. For example if I wanted a top level React component to be the main template for `/blog`, I create a folder in `ui/pages/blog` and then `/blog` will route to that top level component. It's the best part of PHP **WITHOUT** PHP!
  
-The website uses [SCSS](http://sass-lang.com/) for a CSS pre-processor.
+The website uses [SCSS](http://sass-lang.com/) as a CSS pre-processor.
 
 It is deployed using [serverless](https://serverless.com/). While you can use Amazon Web Services (AWS), Azure, IBM Open Wisk, or Google Cloud for serverless deployments, I used AWS since it is the most mature and best IMHO. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/ui/serverless.yml) to see the deployment configuration for the UI. If you are confused about how to create, read, and use `serverless.yml` files, here are a few resources:
 
