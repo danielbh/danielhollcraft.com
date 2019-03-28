@@ -2,7 +2,7 @@
 
 ### Purpose
 
-This the repo for danielhollcraft.com. It could also be used as a template for a freelancer/consultant personal blog. It includes an "about me" as the main page, a portfolio page, services page, blog, and contact form. It uses [gatsby.js](https://github.com/gatsbyjs/gatsby) for the user interface. For the back-end API it uses [serverless](serverless.com). The deployment of the UI and API are both managed by Serverless and the [aws-cli](https://aws.amazon.com/cli/). 
+This the repo for danielhollcraft.com. It could also be used as a template for a freelancer/consultant personal blog. It includes an "about me" as the main page, a portfolio page, services page, blog, and contact form. It uses [gatsby.js](https://github.com/gatsbyjs/gatsby) for the user interface. For the back-end API it uses [serverless](https://serverless.com). The deployment of the UI and API are both managed by Serverless and the [aws-cli](https://aws.amazon.com/cli/). 
 
 ### Pre-requistes
 
@@ -59,4 +59,4 @@ It is deployed using [serverless](https://serverless.com/). While you can use Am
 
 ### API
 
-The API is deployed with [serverless](serverless.com). The API only contains one function that is an [AWS Lambda](https://aws.amazon.com/lambda/) function. The function serves as a submit function for the contact form. It takes the submitted form data and sends it to AWS Lambda which then sends the message via [Mailgun](https://mailgun.com) to a specified environmentally configured variable e-mail address. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the API. 
+The API is deployed with [serverless](https://serverless.com). The API only contains one function that is an [AWS Lambda](https://aws.amazon.com/lambda/) function. The function serves as a submit function for the contact form. It takes the submitted form data and sends it to AWS Lambda which then sends the message via [Mailgun](https://mailgun.com) to a specified environmentally configured variable e-mail address. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the API. 
