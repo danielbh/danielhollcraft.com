@@ -38,8 +38,13 @@
     font-size: 3.5em;
     &+p {
       color: _palette(fg-bold);
+      line-height: 1.5em;
       font-size: 1.75em;
       font-weight: _font(weight-bold);
+      a {
+        text-decoration: underline;
+        color: _palette(accent1, bg);
+      }
     }
   }
 }
