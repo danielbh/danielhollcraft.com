@@ -64,8 +64,8 @@ Scroll down to where it says "Role". A role is where you give your function righ
 
 Here are some great resources for creating roles...
 
-- [AWS docs for IAM Policies](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
-- [AWS docs for Amazon Resource Names](http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-cloudwatch-logs)
+- [AWS docs for IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+- [AWS docs for Amazon Resource Names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-cloudwatch-logs)
 - [Cloudonaut - a great reference for finding the right policy for your use case](https://iam.cloudonaut.io/reference/index.html#/)
 
 Now time to add a role to our function. Name the role, "lambda-demo". Don't select any policy templates. We will need logs but, by default logs will already be enabled when you create a role.

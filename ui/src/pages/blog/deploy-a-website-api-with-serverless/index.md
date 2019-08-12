@@ -27,9 +27,9 @@ Let me give quick example of how you would deploy a project with Serverless. Let
 - An mild familiarity with AWS will be helpful to understanding what's going on.
 - Have serverless installed. Once you have npm installed just type `npm install -g serverless` in any directory in your terminal
 - I will use AWS for this tutorial since it is my preferred cloud provider, so that means you’ll need to install and authenticate the aws-cli. This can be done by reading through following three articles.
-    1) [aws-cli installed](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-    2) [AWS user created with programmatic access](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
-    3) [aws-cli authenticated](http://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
+    1) [aws-cli installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+    2) [AWS user created with programmatic access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
+    3) [aws-cli authenticated](https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html)
 
 ### Setting up the Project Files and Code
 
@@ -74,7 +74,7 @@ Now, create a directory called `dist` and add a filed called `index.html`. This 
               }
             };
             // 3
-            xhttp.open("GET", "http://localhost:3000", true);
+            xhttp.open("GET", "https://localhost:3000", true);
             xhttp.send();
         </script>
 
@@ -311,7 +311,7 @@ The terminal should output the following:
 Deploying static assets to dev...
 upload: dist/404.html to s3://hello-serverless-dev-website-uzv5zwnqswdi/404.html
 upload: dist/index.html to s3://hello-serverless-dev-website-uzv5zwnqswdi/index.html
-Bucket URL: http://hello-serverless-dev-website-<website-id>.s3-website-us-east-1.amazonaws.com
+Bucket URL: https://hello-serverless-dev-website-<website-id>.s3-website-us-east-1.amazonaws.com
 ```
 
 Now navigate to the bucket URL. You now have an app that displays your external IP address to a web page!

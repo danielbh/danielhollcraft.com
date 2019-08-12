@@ -45,9 +45,6 @@ export default class extends Component {
           <header>
             <span className="image avatar"><img src={avatar} alt="" /></span>
             <h1 id="logo"><Link to="/">Daniel Hollcraft</Link></h1>
-            <p>Web Developer<br />
-              Frontend | React | Node.js
-        </p>
           </header>
           <nav id="nav">
             <ul onClick={this.closeSideBar}>
@@ -71,7 +68,7 @@ export default class extends Component {
           <section id="footer">
             <div className="container">
               <ul className="copyright">
-                <li>&copy; Daniel Hollcraft. All rights reserved.</li><li>Theme: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Daniel Hollcraft 2019.</li><li>Derivative work of: <a href="https://html5up.net/read-only">HTML5 UP</a></li>
               </ul>
             </div>
           </section>

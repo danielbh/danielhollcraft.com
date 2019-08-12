@@ -19,7 +19,7 @@ export default () => (
 
       <div className="clouds-wrapper">
 
-        <svg className="clouds" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 90.83">
+        <svg className="clouds" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 92 90.83">
           <defs>
             <clipPath id="clip-path" transform="translate(1.75)">
               <circle cx="42.5" cy="42.5" r="42.5" fill="none" />
