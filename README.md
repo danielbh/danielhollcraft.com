@@ -37,7 +37,7 @@ To create the front-end I used the library [gatsby.js](https://github.com/gatsby
 
 The website uses [SCSS](https://sass-lang.com/) as a CSS pre-processor.
 
-It is deployed using [serverless](https://serverless.com/). While you can use Amazon Web Services (AWS), Azure, IBM Open Wisk, or Google Cloud for serverless deployments, I used AWS since it is the most mature and best IMHO. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/ui/serverless.yml) to see the deployment configuration for the UI. If you are confused about how to create, read, and use `serverless.yml` files, here are a few resources:
+It is deployed using [serverless](https://serverless.com/). While you can use Amazon Web Services (AWS), Azure, IBM Open Wisk, or Google Cloud for serverless deployments, I used AWS since it is the most mature and best IMHO. Please see [api/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the UI. If you are confused about how to create, read, and use `serverless.yml` files, here are a few resources:
 
 - [acloud.guru](https://acloud.guru) where I received most of my education about serverless.
 - [serverless docs](https://serverless.com/framework/docs/providers/aws/guide/intro/)
@@ -46,7 +46,7 @@ It is deployed using [serverless](https://serverless.com/). While you can use Am
 
 1) Install pre-requisites
 3) You must have a registered domain name that points to AWS name servers.
-4) Go to [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/ui/serverless.yml) and change the following to match the attributes for your project
+4) Go to [api/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) and change the following to match the attributes for your project
    - `custom.rootDomain`
    - `custom.devDomains`
    - `custom.prodDomains`
@@ -59,4 +59,4 @@ It is deployed using [serverless](https://serverless.com/). While you can use Am
 
 ### API
 
-The API is deployed with [serverless](https://serverless.com). The API only contains one function that is an [AWS Lambda](https://aws.amazon.com/lambda/) function. The function serves as a submit function for the contact form. It takes the submitted form data and sends it to AWS Lambda which then sends the message via [Mailgun](https://mailgun.com) to a specified environmentally configured variable e-mail address. Please see [ui/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the API.
+The API is deployed with [serverless](https://serverless.com). The API only contains one function that is an [AWS Lambda](https://aws.amazon.com/lambda/) function. The function serves as a submit function for the contact form. It takes the submitted form data and sends it to AWS Lambda which then sends the message via [Mailgun](https://mailgun.com) to a specified environmentally configured variable e-mail address. Please see [api/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the API.
