@@ -45,6 +45,7 @@ export default class extends Component {
           <header>
             <span className="image avatar"><img src={avatar} alt="" /></span>
             <h1 id="logo"><Link to="/">Daniel Hollcraft</Link></h1>
+            <p>Web Developer</p>
           </header>
           <nav id="nav">
             <ul onClick={this.closeSideBar}>
