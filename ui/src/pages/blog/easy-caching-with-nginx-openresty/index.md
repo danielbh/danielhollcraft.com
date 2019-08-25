@@ -1,18 +1,19 @@
 ---
-path: /blog/easy-caching-with-nginx-openresty/
+path: /blog/easy-caching-with-nginx-openresty
 title: Easy Caching with Nginx/OpenResty
 date: 08/25/2019
 categories: Nginx, OpenResty, Caching
 ---
 
-Web response time is a metric makers of web use that has a clear impact
-on if potential prospects will stay on your site and give you their money or
-leave before you even have a chance to woo them. Another very obvious problem is reliability. When
-we make an api request, or request a remote stylesheet or javascript asset, we expect it to given to us. These two problems can be addressed very elegantly and succinctly by using nginx out of the box caching capabilities.
+Web response time has a clear impact on if potential prospects will stay on your site and become engaged with your prodct or leave before you even have a chance to woo them. What happens when a website is slower than we want it to be.
+
+Obviously website reliability is very key as well. When we make an api request, or request a remote stylesheet or javascript asset, we expect it to given to us. What happens when the resource is not available or the origin server that has the resource is down?
+
+These two problems can be addressed very elegantly and succinctly by using out of the box nginx caching capabilities.
 
 Caching is hard and when we begin to work out our caching strategy there are important questions we must answer. Some of these include:
 
- 1. Do we do an in-process cache for one service or an out-of-process cache that multiple services can benefit from
+ 1. Do we do an in-process cache for one service or an out-of-process cache that multiple services can benefit from?
 
  2. If we want to do out-of-process caching. How do we do it?
 
@@ -20,7 +21,7 @@ Caching is hard and when we begin to work out our caching strategy there are imp
 
  4. How to handle cache invalidation?
 
-There a ton of ways we could go about solving each one of these problems using different software packages, caching applications etc. It would also depend on the skills of your team, the throughput demands required by the system, and assuming you are not starting from scratch, leveraging what you have already built would be ideal. If you are starting from scratch... Nice! Have fun!
+There a ton of ways we could go about solving each one of these problems using different software packages, caching applications etc. It would also depend on the skills of your team, the throughput demands required by the system, and assuming you are not starting from scratch, leveraging what you have already built. If you are starting from scratch... Nice! Have fun!
 
 Let's address the four questions posed above. We will address them by using features that nginx offers us out of the box in the community edition. Certainly, if you have the $$$ check out nginx+, but none of these solutions will require it.
 
@@ -28,11 +29,11 @@ Also for the purposes of this article we will only be focused on caching "safe" 
 
 This blog is also focused on eventual consistency not strong consistency caching. If you are unfamiliar with these two terms here is a quick catch-up:
 
-*Strong consistency*: data in a source of record gets updated to all consumers as soon as a write request is made.
+*Strong consistency*: data in a store of record gets updated to all consumers as soon as a write is made.
 
-*Eventual consistency*: data that gets updated in a source of record that gets updated to all consumers eventually, but not at the time of write neccesarily.
+*Eventual consistency*: data that gets updated in a store of record that gets updated to all consumers eventually, but not at the time of write neccesarily.
 
-I've found that typically eventual consistency in caching for most web development is typically ok. Also eventual consistency is not so bad since nginx can handle traffic with only a few instances in the majority of cases.
+I've found that typically eventual consistency in caching for most web development is typically ok.
 
 If you are interested in a strongly consistent approach here are a few options:
 
@@ -44,7 +45,7 @@ If you are interested in a strongly consistent approach here are a few options:
 
 ### In-Process vs Out-of-Process Application Cache
 
-In the world of software architecture. Less is always more! When you are building a solution an important question to ask is, could this be simplier. If you have one node service for example. It might just make sense to have an in memory store in that service to handle the caching as opposed to spinning up an a separate cache. This might be better considering the inherant complexity when you create an in memory cache. I've definitely gotten bitten on a couple occasions from using code that leveraged an in process cache. This I think was due to the over-complexity of the implementation, stemming from what I think is a lack of a standard approach to this problem. There are alot of different ways to set up an in memory cache! In any case simplicity are your best friend! This I think is the huge benefit of setting up caching with nginx.
+In the world of software architecture. Less is always more! When you are building a solution an important question to ask is, could this be simplier. If you have one node service for example. It might just make sense to have an in memory store in that service to handle the caching as opposed to spinning up an a separate cache. This might be better considering the inherit complexity when you create an in memory cache. I've definitely gotten bitten on a couple occasions from using code that leveraged an in process cache. This I think was due to the over-complexity of the implementation, stemming from what I think is a lack of a standard approach to this problem. There are alot of different ways to set up an in memory cache! In any case simplicity is your best friend! This I think is the huge benefit of setting up caching with nginx. It's easy.
 
 Another important question to ask is: Will multiple services be making requests to the resource and where is the resource?
 
@@ -56,9 +57,9 @@ You need to make sure that if you are caching a request out of process. The resp
 
 What if you have many application instances?
 
-Back to the eventual vs strong consistency point. The more application instances you have with in-memory stores the more important data consistency might become as each application instance might have different versions of the upstream response. When you use nginx as a central store this is reduced because typically nginx can have fewer instances running with a cache across a few instances than most application servers can such as node.js.
+Back to the eventual vs strong consistency point. The more application instances you have with in-memory stores the more important data consistency might become, as different application instances might have different versions of the upstream response. When you use nginx as a central store, and are not using clustering or redis, this is still reduced because typically nginx can operate well having fewer instances running than most application servers can such as node.js.
 
-Ultimately remember that simplicity is your friend here. Whatever you do make a conscious effort to make as few components and as little logic as possible, because you or someone else will eventually get confused by the code. It's inevitable! Minimize this.
+Ultimately remember that simplicity is your friend here. Whatever you do, make a conscious effort to make as few components and as little logic as possible, because you or someone else will eventually get confused by the code. It's inevitable! Minimize this.
 
 <a id="Setting-Up-Nginx-Caching"></a>
 
@@ -345,6 +346,51 @@ location /deployment-info {
 `more_set_headers "X-Cache $upstream_cache_status";`: This is required to send the cache status header as a response header to the `location.capture`. [according to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), "the standard ngx_headers (`add_header`) module works only in main requests, and it is a no-op in subrequests. You have to use Lua or ngx_headers_more (`more_set_headers`)" to add the Foo header in location /bar. So... fun.
 
 `proxy_cache assets_cache;`: This is assigning a new cache to this location block specifically for caching assets.
+
+This is what it looks like in action:
+
+```bash
+
+$ curl -D - localhost:8080/stylesheet.fingerprint.css
+
+HTTP/1.1 200 OK
+Server: openresty/1.15.8.1
+Date: Sun, 24 Aug 2019 18:40:12 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+Version: ctdlhrjbhy
+X-Cache: MISS
+
+fake css with new version: ctdlhrjbhy
+
+$ curl -D - localhost:8080/stylesheet.fingerprint.css
+
+HTTP/1.1 200 OK
+Server: openresty/1.15.8.1
+Date: Sun, 24 Aug 2019 18:40:14 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+Version: ctdlhrjbhy
+X-Cache: HIT
+
+fake css with new version: ctdlhrjbhy
+
+$ curl -D - localhost:8080/stylesheet.fingerprint.css
+
+HTTP/1.1 200 OK
+Server: openresty/1.15.8.1
+Date: Sun, 24 Aug 2019 18:40:16 GMT
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+Version: lvrlljytjd
+X-Cache: MISS
+
+fake css with new version: lvrlljytjd
+
+```
 
 Invalidation of API calls
 
