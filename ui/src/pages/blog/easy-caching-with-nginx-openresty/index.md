@@ -49,11 +49,11 @@ In the world of software architecture. Less is always more! When you are buildin
 
 Another important question to ask is: Will multiple services be making requests to the resource and where is the resource?
 
-If you already have a reverse proxy or an API gateway in front of the service calls (I HOPE YOU DO) then it might just make sense to add a cache to the "front door" for these service calls to avoid duplication. Especially if your team(s) are polyglot!
+If you already have a reverse proxy or an API gateway in front of the service calls (I HOPE YOU DO) then it might just make sense to add a cache to the "front door" for these service calls to avoid duplicating in memory caches for each service. Especially if your team(s) are polyglot!
 
-Will the latency of requests to an out of process cache negate any perforamce gain that it would give you?
+Will the latency of requests to an out of process cache negate any performance gain that it would give you?
 
-You need to make sure that if you are caching a request out of process. The response time it takes to get that request from the cache might negate caching in the first place, on the flip-side if the 99% percentile response time for the upstream service call is not very long then caching might be a waste of developer time to begin with... At that point the main benefit might be having the cache as a fallback for upstream failures. As you will see later, this is a powerful pattern and easy to implement in nginx.
+The response time it takes to get a cached result from a cache might negate caching in the first place, as it might take longer to get the cached result than from the origin. Additionally if the 99% percentile response time for the upstream service call is not very long you could maybe make your SLA without it. At that point there are still benefits to the cache, such as a fallback for upstream failures. As you will see later, this is a powerful pattern and easy to implement in nginx.
 
 What if you have many application instances?
 
@@ -125,7 +125,9 @@ http {
 ### Handling Failing Upstreams with Cache
 ![handling failing upstreams with cache nginx](handling-failing-upstreams-with-cache.png)
 
-This next feature I'm going to tell you about is hands-down one of my favorite nginx features. I love it because how powerful it is, and how easy it is to do. If you are sending "safe" requests (GET, HEAD, OPTIONS), and the upstream is failing you can set nginx to just return a stale version of the cache. I've seen this work in production and it is beautiful. When you do this just be sure that you have alerting on the failing upstream service so you know there is an issue.
+This next feature I'm going to tell you about is hands-down one of my favorite nginx features. I love it because how powerful it is, and how easy it is to do. Here is the scenario where it applies most...
+
+ If you are sending "safe" requests (GET, HEAD, OPTIONS), and the upstream is failing you can set nginx to just return that cached request, even if it's stale. I've seen this work in production and it is beautiful. When you do this just be sure that you have alerting on the failing upstream service so you know there is an issue.
 
 ```conf
 ...
@@ -418,8 +420,8 @@ Here are some approaches you could take:
 
 ### Conclusion
 
-As you can see nginx offers a variety of options for any backend caching strategy that you'd like to create. Most patterns are very simple, but some are complex. All in all, Nginx makes an caching strategy easier and I highly reccommend it.
+As you can see nginx offers a variety of options for any backend caching strategy that you'd like to create. Most patterns are very simple and easy to implement. For free software you get some bang for your buck. As you can also see there are some options that are more complicated than others.
 
-Nginx OpenResty is a great technology, but it can also be a beast especially when you start customizing and adding logic via lua with OpenResty. I'm an OpenResty specialist. If you would love to help on your project if you are using OpenResty. Drop me a line. Happy to help.
+Nginx OpenResty is a great technology, but it can also be a beast especially when you start customizing and adding logic via lua with OpenResty. I'm an OpenResty specialist. If are working with OpenResty and would like help on your project. Drop me a line. Happy to help.
 
 
