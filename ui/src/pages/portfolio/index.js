@@ -21,7 +21,7 @@ export default ({ data }) => {
             } = frontmatter
             return (
               <article key={node.id}>
-                <img className="image" src={`${previewImage.childImageSharp.responsiveSizes.src}`} alt="" />
+                <img className="image" alt="" />
                 <div key={node.id} className="inner">
                   <h3 className="project-title">{title}</h3>
                   <p>{node.excerpt}</p>
