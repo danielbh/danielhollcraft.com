@@ -12,7 +12,13 @@ export default ({ data }) => {
           </h2>
           <p className="blog-date">{post.frontmatter.date}</p>
         </header>
-        <p className="blog-text" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article>
+          <section
+            className="blog-text"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </article>
+
       </div>
     </section>
   )

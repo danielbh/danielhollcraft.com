@@ -6,7 +6,6 @@
 const path = require(`path`)
 const { createFilePath } = require('gatsby-source-filesystem')
 const _ = require('lodash')
-const slash = require(`slash`)
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -41,7 +40,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           if (_.includes(slug, `/blog/`)) {
             createPage({
               path: `${edge.node.fields.slug}`, // required
-              component: slash(blogPostTemplate),
+              component:blogPostTemplate,
               context: {
                 slug: edge.node.fields.slug,
               },
