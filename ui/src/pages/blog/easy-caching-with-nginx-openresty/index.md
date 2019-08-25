@@ -5,7 +5,7 @@ date: 08/25/2019
 categories: Nginx, OpenResty, Caching
 ---
 
-Web response time has a clear impact on if potential prospects will stay on your site and become engaged with your prodct or leave before you even have a chance to woo them. What happens when a website is slower than we want it to be.
+Web response time has a clear impact on if potential prospects will stay on your site and become engaged with your product or leave before you even have a chance to woo them. What happens when a website is slower than desired?
 
 Obviously website reliability is very key as well. When we make an api request, or request a remote stylesheet or javascript asset, we expect it to given to us. What happens when the resource is not available or the origin server that has the resource is down?
 

@@ -8,10 +8,11 @@ export default ({ data }) => {
       <div className="container">
         <header className="major">
           <h2 className="blog-title">
-            {post.frontmatter.title}</h2>
-          <p className="blog-date" style={{}}>{post.frontmatter.date}</p>
+            {post.frontmatter.title}
+          </h2>
+          <p className="blog-date">{post.frontmatter.date}</p>
         </header>
-        <p className="blog-text" style={{ fontSize: '1.15em' }} dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p className="blog-text" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </section>
   )
