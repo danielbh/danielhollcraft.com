@@ -289,7 +289,7 @@ This is the essence of the approach:
 
 2. Then put the value of this version as a part of the cache key of the request being cached. The ways you do this are many. Let's imagaine you had an up-to-date store somewhere that took a couple of milliseconds or less where you could do this look-up.
 
-To do this we are going to leverage the scripting capabilities of OpenResty and write some lua. The lua code will make a subrequest to an endpoint on a go microservice that will have a random string representing it's version. For the purposes of simulation, the string is regenerated every 2 seconds. This will allow us to see this method of cache invalidation in action.
+To do this we are going to leverage the scripting capabilities of OpenResty and write some Lua. The Lua code will make a subrequest to an endpoint on a go microservice that will have a random string representing it's version. For the purposes of simulation, the string is regenerated every 2 seconds. This will allow us to see this method of cache invalidation in action.
 
 Keep in mind that when we use this in production we would want to make sure that the check to see if there was a new deployment was faster than just going and getting the assets. If not, there is really no point to doing this. Also, the pattern you are about to see can be applied to other scenarios as well, where the check to see if something has been updated is much faster than going all the way to the upstream server.
 
@@ -328,11 +328,11 @@ location / {
 
 `location ~* \.(js|css)$`:
 
-`rewrite_by_lua_block`: This is a block where we can write lua code. Something very subtle is happening here that will be hard to see without explanation. This block needs to be done first and make subrequests to the enclosed `location.capture` invocations. That is because `cache_keys` are assigned before a `rewrite_by_lua_block` can execute. Now you might ask, why not do a location.capture inside of a `set_by_lua_block` like we are doing above? You cannot do a `location.capture` inside of a `set_by_lua_block`. Why? Because according to [the docs](https://github.com/openresty/lua-nginx-module#set_by_lua) "`ngx_http_rewrite_module` does not support nonblocking I/O in its commands, Lua APIs requiring yielding the current Lua "light thread" cannot work in this directive." So we must do it this weird way. It's either that or you submit a PR...
+`rewrite_by_lua_block`: This is a block where we can write Lua code. Something very subtle is happening here that will be hard to see without explanation. This block needs to be done first and make subrequests to the enclosed `location.capture` invocations. That is because `cache_keys` are assigned before a `rewrite_by_lua_block` can execute. Now you might ask, why not do a location.capture inside of a `set_by_lua_block` like we are doing above? You cannot do a `location.capture` inside of a `set_by_lua_block`. Why? Because according to [the docs](https://github.com/openresty/lua-nginx-module#set_by_lua) "`ngx_http_rewrite_module` does not support nonblocking I/O in its commands, Lua APIs requiring yielding the current Lua "light thread" cannot work in this directive." So we must do it this weird way. It's either that or you submit a PR...
 
-`ngx.location.capture("/deployment-info").body`: This directive is what makes a subrequest in lua. In order to use it we must have a valid location block. You will notice none such exists explicity. However, the match all location block `location /` will catch this and send it to the upstream go app. Here we are grabbing the body from the deployment info response which is the fake version we will use as part of our cache key to identify if there has been an update to the code.
+`ngx.location.capture("/deployment-info").body`: This directive is what makes a subrequest in Lua. In order to use it we must have a valid location block. You will notice none such exists explicity. However, the match all location block `location /` will catch this and send it to the upstream go app. Here we are grabbing the body from the deployment info response which is the fake version we will use as part of our cache key to identify if there has been an update to the code.
 
-`ngx.var.uri`: This is the equivalent of the `$uri` variable, but in lua context. It is just the path being requested in this block.
+`ngx.var.uri`: This is the equivalent of the `$uri` variable, but in Lua context. It is just the path being requested in this block.
 
 `vars = { version = deployment_version }`: Here we must pass the deployment version through to the "/get-asset" location block so that we may use it in a cache key.
 
@@ -346,7 +346,7 @@ location / {
 
 `set_by_lua_block $version`: This is taking the ngx.var.version variable passed in in the `location.capture` and defining it within the context of the "/get-asset" location block.
 
-`more_set_headers "X-Cache $upstream_cache_status"`: This is required to send the cache status header as a response header to the `location.capture`. [According to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), `add_header` only works in main requests, and it is a no-op in subrequests. Therefore, you have to use lua or `more_set_headers`. So... fun.
+`more_set_headers "X-Cache $upstream_cache_status"`: This is required to send the cache status header as a response header to the `location.capture`. [According to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), `add_header` only works in main requests, and it is a no-op in subrequests. Therefore, you have to use Lua or `more_set_headers`. So... fun.
 
 `proxy_cache assets_cache`: This is assigning a new cache to this location block specifically for caching assets.
 
@@ -409,7 +409,7 @@ Here are some approaches you could take:
 
 1) This guy, FRiCKLE, [created an nginx module that enables cache purging](https://github.com/FRiCKLE/ngx_cache_purge). Disclaimer! I have not used it, but I plan to do some experiments with it. I will update with a post when I've had time to do this.
 
-2) Another alternative could be to use an in process lru implemented in lua with [lua-resty-lrucache](https://github.com/openresty/lua-resty-lrucache) module.
+2) Another alternative could be to use an in process lru implemented in Lua with [lua-resty-lrucache](https://github.com/openresty/lua-resty-lrucache) module.
 
 3) You could also use the nginx or OpenResty redis module. Your microservice that is making writes to the database could be connected to an out of process cache, for example... redis. Then you just setup a cache purging endpoint which removes the entry from redis. You could also have logic to read the redis entry. You have a few options here. A disclaimer, for these is that I know of only one instance using the lua-resty-redis module in production. The other two I have not tried.
 
@@ -423,6 +423,6 @@ Here are some approaches you could take:
 
 As you can see nginx offers a variety of options for any backend caching strategy that you'd like to create. Most patterns are very simple and easy to implement. For free software you get some good bang for your buck. However, some options that are more complicated than others.
 
-Nginx and OpenResty are great technologies, but can be a beast especially when you start customizing and adding logic via lua with OpenResty. I'm an nginx and OpenResty specialist. If are working with OpenResty and would like help on your project. [Drop me a line](/contact). Happy to help.
+Nginx and OpenResty are great technologies, but can be a beast especially when you start customizing and adding logic via Lua with OpenResty. I'm an nginx and OpenResty specialist. If are working with OpenResty and would like help on your project. [Drop me a line](/contact). Happy to help.
 
 
