@@ -5,27 +5,23 @@ date: 08/25/2019
 categories: Nginx, OpenResty, Caching
 ---
 
-Web response time has a clear impact on if potential prospects will stay on your site and become engaged with your product or leave before you even have a chance to woo them. What happens when a website is slower than desired?
+Web response time has a clear impact on if potential prospects will stay on your site and become engaged with your product. What happens when a website is slower than desired? They leave before you can woo them. Obviously, website reliability is very key as well. When we make an api request, or request a remote stylesheet or javascript asset, we expect it to given to us. What happens when the resource is not available or the upstream server that has the resource is down? Not good.
 
-Obviously website reliability is very key as well. When we make an api request, or request a remote stylesheet or javascript asset, we expect it to given to us. What happens when the resource is not available or the origin server that has the resource is down?
+These two problems can be addressed very elegantly and succinctly by using out of the box nginx and OpenResty caching capabilities.
 
-These two problems can be addressed very elegantly and succinctly by using out of the box nginx caching capabilities.
+Caching can be hard, and introduces complexity. When we begin to work out our caching strategy there are important questions we must answer. Some of these include:
 
-Caching is hard and when we begin to work out our caching strategy there are important questions we must answer. Some of these include:
+ 1. **Do we do an in-process cache for one service or an out-of-process cache that multiple services can benefit from?**
 
- 1. Do we do an in-process cache for one service or an out-of-process cache that multiple services can benefit from?
+ 2. **If we want to do out-of-process caching. How do we do it?**
 
- 2. If we want to do out-of-process caching. How do we do it?
+ 3. **What if an upstream service is failing, how can we continue to serve the response if cached?**
 
- 3. What if an upstream service is failing, how can we continue to serve the response if cached?
+ 4. **How to handle cache invalidation?**
 
- 4. How to handle cache invalidation?
+There tons of ways we could go about solving each one of these problems using different software packages, caching applications etc. It would also depend on the skills of your team, the throughput demands required by the system, and assuming you are not starting from scratch, leveraging what you have already built. If you are starting from scratch... Nice! Have fun!
 
-There a ton of ways we could go about solving each one of these problems using different software packages, caching applications etc. It would also depend on the skills of your team, the throughput demands required by the system, and assuming you are not starting from scratch, leveraging what you have already built. If you are starting from scratch... Nice! Have fun!
-
-Let's address the four questions posed above. We will address them by using features that nginx offers us out of the box in the community edition. Certainly, if you have the $$$ check out nginx+, but none of these solutions will require it.
-
-Also for the purposes of this article we will only be focused on caching "safe" requests (`GET`, `HEAD`, `OPTIONS`). Caching non-safe request methods like `POST` requires other considerations when it comes to both fast response time, resilliency, and managing complexity. In these cases you might investigate using a `cache-aside` or `read-through/write-through` pattern. Both of these topics could posts by themselves.
+For the purposes of this article we will only be focused on caching "safe" requests (`GET`, `HEAD`, `OPTIONS`). Caching non-safe request methods like `POST` requires other considerations when it comes to both fast response time, resilliency, and managing complexity. In these cases you might investigate using a more involved `cache-aside` or `read-through/write-through` pattern. Both of these topics could posts by themselves.
 
 This blog is also focused on eventual consistency not strong consistency caching. If you are unfamiliar with these two terms here is a quick catch-up:
 
@@ -33,33 +29,33 @@ This blog is also focused on eventual consistency not strong consistency caching
 
 *Eventual consistency*: data that gets updated in a store of record that gets updated to all consumers eventually, but not at the time of write neccesarily.
 
-I've found that typically eventual consistency in caching for most web development is typically ok.
+I've found that typically eventual consistency in caching for most web development is just fine.
 
 If you are interested in a strongly consistent approach here are a few options:
 
-1. Skip to the bottom of this article where we discuss adding a distributed redis cache.
+1. Skip to the bottom of this article where I point you to resources for adding a distributed redis cache.
 
-2. It requires a commercial subscription, but [checkout nginx+ cache clustering](https://www.nginx.com/blog/shared-caches-nginx-plus-cache-clusters-part-1/).
+2. It requires a commercial nginx+ subscription, but [checkout nginx+ cache clustering](https://www.nginx.com/blog/shared-caches-nginx-plus-cache-clusters-part-1/).
 
 <a id="In-Process-vs-Out-of-Process-Application-Cache"></a>
 
 ### In-Process vs Out-of-Process Application Cache
 
-In the world of software architecture. Less is always more! When you are building a solution an important question to ask is, could this be simplier. If you have one node service for example. It might just make sense to have an in memory store in that service to handle the caching as opposed to spinning up an a separate cache. This might be better considering the inherit complexity when you create an in memory cache. I've definitely gotten bitten on a couple occasions from using code that leveraged an in process cache. This I think was due to the over-complexity of the implementation, stemming from what I think is a lack of a standard approach to this problem. There are alot of different ways to set up an in memory cache! In any case simplicity is your best friend! This I think is the huge benefit of setting up caching with nginx. It's easy.
+In the world of software architecture. Less is more! When you are building a solution an important question to ask is, could it be simplier. If you have one node.js service for example, it might make more sense to have an in memory store as opposed to spinning up a separate cache. This might be better considering the inherit complexity when you create an in memory cache. I've definitely gotten bitten on a couple occasions from using code that leveraged an in process cache. This was due to the over-complexity of the implementation, stemming from what I think is a lack of a standard approach to this problem. There are alot of different ways to set up an in memory cache! In any case, simplicity is your best friend! This is the huge benefit for setting up caching with nginx. It's easy.
 
-Another important question to ask is: Will multiple services be making requests to the resource and where is the resource?
+**Will multiple services be making requests, and where is the upstream server?**
 
-If you already have a reverse proxy or an API gateway in front of the service calls (I HOPE YOU DO) then it might just make sense to add a cache to the "front door" for these service calls to avoid duplicating in memory caches for each service. Especially if your team(s) are polyglot!
+If you already have a reverse proxy or an API gateway in front of the service calls (I hope you do) then it makes sense to add a cache to the "front door". This avoids duplicating in memory caches for each service being called. Especially if your team(s) are polyglot!
 
-Will the latency of requests to an out of process cache negate any performance gain that it would give you?
+**Will the latency of requests to an out of process cache negate any performance gain that it would give you?**
 
-The response time it takes to get a cached result from a cache might negate caching in the first place, as it might take longer to get the cached result than from the origin. Additionally if the 99% percentile response time for the upstream service call is not very long you could maybe make your SLA without it. At that point there are still benefits to the cache, such as a fallback for upstream failures. As you will see later, this is a powerful pattern and easy to implement in nginx.
+The response time it takes to get a cached result from a cache might negate caching in the first place, as it might take longer to get the cached result than going all the way to the upstream. Additionally, if the 99% percentile response time for the upstream service call is not very long you could maybe make your SLA without caching. At that point there are still benefits to the cache, such as a fallback for upstream failures. As you will see later, this is a powerful pattern and easy to implement in nginx.
 
-What if you have many application instances?
+**What if you have many application instances?**
 
-Back to the eventual vs strong consistency point. The more application instances you have with in-memory stores the more important data consistency might become, as different application instances might have different versions of the upstream response. When you use nginx as a central store, and are not using clustering or redis, this is still reduced because typically nginx can operate well having fewer instances running than most application servers can such as node.js.
+Back to eventual vs strong consistency mentioned earlier. The more application instances you have with in-memory stores the more important data consistency might become, as different application instances might have different versions of the upstream response. When you use nginx as a central store, and are not using clustering or redis, this is still reduced because typically nginx can operate with fewer instances than most application servers can such as node.js.
 
-Ultimately remember that simplicity is your friend here. Whatever you do, make a conscious effort to make as few components and as little logic as possible, because you or someone else will eventually get confused by the code. It's inevitable! Minimize this.
+Ultimately, remember that simplicity is your friend here. Whatever you do, make a conscious effort to make as few components with as little logic as possible, because you, or someone else, will eventually get confused by the code. It's inevitable! Minimize this.
 
 <a id="Setting-Up-Nginx-Caching"></a>
 
@@ -67,9 +63,9 @@ Ultimately remember that simplicity is your friend here. Whatever you do, make a
 
 [You can access the completed tutorial repo here](https://github.com/danielbh/openresty-caching-example)
 
-A resource that rarely changes is usually a great candidate for caching. For example: a stylesheet or script. Depending on if your application is exposed to the internet you could put assets behind a CDN like AWS Cloudfront as your users might be distributed around the world. In other cases it could make sense to have certain backend calls for data or assets cached on a cache you control in a proxy to avoid the round trip to upstream services. For the purposes for this example I will assume that you prefer to cache in a proxy that you control. An important thing to consider is consistency of cached items and upstream responses and how you might want to do cache invalidation. You might want the resource cached, but always get the most recent one. We will address this in future sections.
+A resource that rarely changes is a great candidate for caching. For example: a stylesheet or script. Depending on if your application is internet facing you could put assets behind a CDN like AWS Cloudfront as your users might be distributed around the world. In other cases it could make sense to have certain backend calls for data or assets cached on a cache you control, in a proxy, to avoid the round trip to upstream services.
 
-How do we setup an nginx cache?
+**How do we setup an nginx cache?**
 
 ```conf
 
@@ -96,7 +92,7 @@ http {
 ```
 `proxy_cache_path`: This is how we setup the cache.
 
-- `/tmp/my_cache`: This is the path where a cache exists. The directory you use here is the unique identifer for this cache when used in other directives that you want to apply to it. Here we are calling the cache "my_cache".
+- `/tmp/my_cache`: This is the path where a cache exists. The directory you use is the unique identifer for this cache when used in other directives that you want to apply to it. Here we are calling the cache "my_cache".
 
 - `keys_zone=my_cache:10m`: This is the maxium storage that is is being allocated for cache keys. This allocates 10 mb for cache keys. 10 mb is about 80,000 keys.
 
@@ -104,30 +100,31 @@ http {
 
 - `inactive=600s`: This is the eviction time for a cache entry. After this duration the entry will be removed from the cache. Note: This is different from `proxy_cache_valid` which states if an item is stale or not.
 
-- ` max_size=100m;`: Upper limit of the size of the cache. It is optional; if not specified it will use all available disk space. When cache limit reached. A process called the cache manager removes the files that were least recently used to bring the cache size back to.
+- ` max_size=100m;`: Upper limit of the size of the cache. It is optional; if not specified it will use all available disk space. When cache limit reached. A process called the cache manager removes the files that were least recently used to reduce the cache size.
 
 `proxy_cache_valid`: This directive says under what circumstances a request will be cached and how long until an entry is stale.
 
   - `code`: The http status codes whose corresponding response will be cached.
 
-  - `time`: The amount of time until the cache entry is considered "stale" This is different from `inactive` directive which will remove the item from the cache.
+  - `time`: The amount of time until the cache entry is considered "stale" This is different from the `inactive` directive which will remove the item from the cache.
 
-`proxy_cache_methods`: The methods who's responses will be cached.
+`proxy_cache_methods`: The REST methods who's responses will be cached.
 
 `add_header X-Cache $upstream_cache_status`: This will tell the consumer of the request the state of the cache. The status can be either "MISS", "BYPASS", "EXPIRED", "STALE", "UPDATING", "REVALIDATED", or "HIT".
 
-`proxy_cache my_cache;`: This is the cache that this location block will use. You can set each location block to use a different cache. In case you want to set different parameters for different location blocks. Perhaps you want to set `inactive` for different location blocks some requests to be evicted sooner than others.
+`proxy_cache my_cache;`: This is the cache that this location block will use. You can set each location block to use a different cache. This is useful if you want to set different parameters for different location blocks. Perhaps you want to set `inactive` differently for different location blocks.
 
-`proxy_cache_key:` This is the cache key for the look up of the response. Above we are using the $uri variable. The $uri is the path used after the host. So for example if you made a request to `website.com/path` the $uri would be `/path`. The $uri variable is one of many convenience variables we can use in our nginx configurations. [Here is the list](http://nginx.org/en/docs/http/ngx_http_core_module.html#var_status).
+`proxy_cache_key:` This is the cache key for the look-up of the response. Above we are using the $uri variable. The $uri is the path used after the host. For example, if you made a request to `website.com/path` the $uri would be `/path`. The $uri variable is one of many convenience variables we can use in our nginx configurations. [Here is the list](http://nginx.org/en/docs/http/ngx_http_core_module.html#var_status).
 
 <a id="Handling-Failing-Upstreams-with-Cache"></a>
 
 ### Handling Failing Upstreams with Cache
-![handling failing upstreams with cache nginx](handling-failing-upstreams-with-cache.png)
 
 This next feature I'm going to tell you about is hands-down one of my favorite nginx features. I love it because how powerful it is, and how easy it is to do. Here is the scenario where it applies most...
 
- If you are sending "safe" requests (GET, HEAD, OPTIONS), and the upstream is failing you can set nginx to just return that cached request, even if it's stale. I've seen this work in production and it is beautiful. When you do this just be sure that you have alerting on the failing upstream service so you know there is an issue.
+![handling failing upstreams with cache nginx](handling-failing-upstreams-with-cache.png)
+
+ If you are sending "safe" requests (GET, HEAD, OPTIONS), and the upstream is failing, you can set nginx to just return that cached request, even if it's stale. I've seen this work in production and it is bea-ut-iful. When you do this just be sure that you have alerting on the failing upstream service so you know there is an issue.
 
 ```conf
 ...
@@ -154,9 +151,9 @@ server {
 
 `proxy_cache_use_stale`: These are all the error situations that you want to fallback to a stale cache.
 
-`proxy_cache_background_update`: Allows starting a background subrequest to update an expired cache item, while a stale cached response is returned to the client. Note that it is necessary to allow the usage of a stale cached response when it is being updated [from docs](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_cache_background_update). This is neccesary so that a stale cache will be used when an upstream is failing.
+`proxy_cache_background_update`: Allows starting a background subrequest to update an expired cache item. During this time a stale cached response is returned to the client. This is neccesary so that a stale cache will be used when an upstream is failing.
 
-`/cached/`: This location block will use the cache and will fallback to it when the upstream fails. Notice the trailing slash after `cached` and `http://goapp:8000` This matters!
+`/cached/`: This location block will use the cache and will fallback to it when the upstream fails. Notice the trailing slash after `cached` and `http://goapp:8000`. This matters!
 
 `/`: This location block remains un-cached.
 
@@ -225,13 +222,15 @@ Notice you can tell that it was cached because the `X-Cache` response header was
 ### Cache Invalidation and Bypass
 
 Ah yes... The bane of every caching strategy. What happens when a cached resource changes and you immediately
-want to use the new version. So there is good new and bad news when it comes to Nginx/OpenResty. Bad news first. [Cache invalidation through exposing an endpoint from nginx requires nginx+](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/#purge). However, fear not. There are some good work-arounds depending on your situtation. Here we will go through two.
+want to use the new version. So there is good new and bad news when it comes to Nginx/OpenResty. Bad news first. [Cache purging through exposing an endpoint from nginx requires nginx+](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/#purge). However, fear not. There are some good work-arounds depending on your situtation. Here we will go through three.
 
-Bypass
+**Bypass**
 
-For the first one, the pre-requisite is that you don't know if there is a new version of the cached response, but you request it through the use of `proxy_cache_bypass` directive. You could also just send a query string through that would change the cache key, but proxy_cache_bypass is probably easy to read and more standard.
+For the first one, the pre-requisite is that you don't know if there is a new version of the cached response, but you force it through the use of `proxy_cache_bypass` directive. You could also just send a query string through that would change the cache key, but `proxy_cache_bypass` is easier to read and more standard.
 
-To do this you can use a cookie or header. The cookie is just prefaced with `$cookie_` then you add the name of your cookie. so you could do `$cookie_yourkey` then you add `$arg_cookie`. Similarly if you want use a header just add `$http_`. Below we are using a header called `$http_bypass_cache`. Here the value of the header does not matter, just the key. It must be defined though when you send it. Another important thing to note. YOU MUST have `underscores_in_headers on` enabled. Oh boy Nginx. You done it again. You could also use `$http_cache_control` but that might be confusing for consumers since they might think the value matters... ie `no-cache` vs `max-age=<seconds>` which it does not. Nginx does not have this built in 😭.
+To do this you can use a cookie or header. The cookie is just prefaced with `$cookie_` then you add the name of your cookie. so you could do `$cookie_yourkey` then you add `$arg_cookie`. Similarly, if you want use a header just add `$http_`. Below we are using a header called `$http_bypass_cache`. Here the value of the header does not matter, just the key. However, it must have some value when you send it. Another important thing to note is **you must** have `underscores_in_headers on` enabled.
+
+Quick note on the `Cache-Control` request header. You could use `$http_cache_control`, but that might be confusing for consumers since they might think the value matters which it does not. i.e. `no-cache` vs `max-age=<seconds>`. Nginx does not have this built in 😭.
 
 ```conf
 server {
@@ -253,8 +252,7 @@ server {
 
 Let's use the fail-odd example again. This time on the odd number of request we will pass a cache bypass header through and it fail with a 500 even though it's cached.
 
-
-```bash
+```conf
 
 $ curl -H "bypass_cache:true" -D - localhost:8080/cached/failodd
 
@@ -281,15 +279,19 @@ Uh oh something bad happened
 
 ```
 
-Invalidation of Static Assets
+**Invalidation of Static Assets**
 
-The second method you could use can be used if the request will change if you are caching static assets that change. For example you are fetching a javascript or a stylesheet. Keep in mind best practices recommend that you also be fingerprinting these assets and setting `Cache-Control` control headers for consumers in the proxy. The topic of `Cache-Control` headers is a blog entry all by itself... If you would like to look more into this I recommend [Mozilla Cache-Control Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control). We will use them but not explain them in depth. For the purposes of this blog entry we will be focusing on just caching the assets in nginx cache.
+This method is best used when you are caching static assets that change on a deploy. For example you are fetching a javascript or a stylesheet. Keep in mind best practices recommend that you also be fingerprinting these assets and setting `Cache-Control` control headers for consumers in the proxy. The topic of `Cache-Control` headers is a blog entry all by itself... If you would like to look more into this I recommend [Mozilla Cache-Control Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control). For the purposes of this blog entry we will ignore their existence, and be focusing on just caching the assets in nginx cache.
 
-The method I find most interesting to approach this is as follows... Map the path i.e. `/path/` in `/path/script.fingerprint.js` to the last version was last deployed. The version could be a git tag or even git sha. Do this look-up then put the value of this version as a part of the cache key of the request being cached. The ways you do this are many. Let's imagaine you had an up-to-date store somewhere that took a couple of ms or less where you could do this look-up.
+This is the essence of the approach:
 
-To do this we are going to leverage the scripting capabilities of openresty and write us some lua. The lua will code will make a subrequest to an endpoint on a go microservice that will have a random string representing it's version regenerated every 2 seconds. This will allow us to see this method of cache invalidation in action.
+1. Map the path i.e. `/path/` in `/path/script.fingerprint.js` to the last version was last deployed. The version could be a git tag or even git sha.
 
-Keep in mind that when we use this in production we would want to make sure that the check to see if there was a new deployment was faster than just going and getting the assets. If not there is really no point to doing this. Also, the pattern you are about to see can be applied to other scenarios as well, where the check to see if something has been updated is much faster than going all the way to the origin.
+2. Then put the value of this version as a part of the cache key of the request being cached. The ways you do this are many. Let's imagaine you had an up-to-date store somewhere that took a couple of milliseconds or less where you could do this look-up.
+
+To do this we are going to leverage the scripting capabilities of OpenResty and write some lua. The lua code will make a subrequest to an endpoint on a go microservice that will have a random string representing it's version. For the purposes of simulation, the string is regenerated every 2 seconds. This will allow us to see this method of cache invalidation in action.
+
+Keep in mind that when we use this in production we would want to make sure that the check to see if there was a new deployment was faster than just going and getting the assets. If not, there is really no point to doing this. Also, the pattern you are about to see can be applied to other scenarios as well, where the check to see if something has been updated is much faster than going all the way to the upstream server.
 
 ```conf
 
@@ -318,8 +320,7 @@ location ^~ /get-asset/ {
   proxy_pass  http://goapp:8000/;
 }
 
-location /deployment-info {
-  internal;
+location / {
   proxy_pass  http://goapp:8000;
 }
 
@@ -327,31 +328,31 @@ location /deployment-info {
 
 `location ~* \.(js|css)$`:
 
-`rewrite_by_lua_block`: This is a block where we can write lua code. Something very subtle is happening here that will be hard to see without explanation. This block needs to be done first and make subrequests to the enclosed `location.capture` invocations. That is because cache_keys are assigned before a rewrite_by_lua_blocks can execute. Now you might ask, why not do a location.capture inside of a set_by_lua_block like we are doing above? You cannot do a location.capture inside of a set_by_lua_block. Why? Because according to [the docs](https://github.com/openresty/lua-nginx-module#set_by_lua) "`ngx_http_rewrite_module` does not support nonblocking I/O in its commands, Lua APIs requiring yielding the current Lua "light thread" cannot work in this directive." So we must do it this weird way. I will explain more as I discuss the other lines of code being used ehre.
+`rewrite_by_lua_block`: This is a block where we can write lua code. Something very subtle is happening here that will be hard to see without explanation. This block needs to be done first and make subrequests to the enclosed `location.capture` invocations. That is because `cache_keys` are assigned before a `rewrite_by_lua_block` can execute. Now you might ask, why not do a location.capture inside of a `set_by_lua_block` like we are doing above? You cannot do a `location.capture` inside of a `set_by_lua_block`. Why? Because according to [the docs](https://github.com/openresty/lua-nginx-module#set_by_lua) "`ngx_http_rewrite_module` does not support nonblocking I/O in its commands, Lua APIs requiring yielding the current Lua "light thread" cannot work in this directive." So we must do it this weird way. It's either that or you submit a PR...
 
-`ngx.location.capture("/deployment-info").body`: This directive is what makes a subrequest in lua. In order to use it we must have a valid location block. You will notice none such exists explicity. However match all location block will catch this and send it to the upstream go app. Here we are grabbing the body from the deployment info which is the fake version which we will use as part of our cache key to identify if there has been an update to the code.
+`ngx.location.capture("/deployment-info").body`: This directive is what makes a subrequest in lua. In order to use it we must have a valid location block. You will notice none such exists explicity. However, the match all location block `location /` will catch this and send it to the upstream go app. Here we are grabbing the body from the deployment info response which is the fake version we will use as part of our cache key to identify if there has been an update to the code.
 
-`ngx.var.uri`: This is the equivalent of $uri used above. It is just the path being requested in this block.
+`ngx.var.uri`: This is the equivalent of the `$uri` variable, but in lua context. It is just the path being requested in this block.
 
 `vars = { version = deployment_version }`: Here we must pass the deployment version through to the "/get-asset" location block so that we may use it in a cache key.
 
 `ngx.header["X-Cache"] = asset.header["X-Cache"]`: Here we are assigning the `X-Cache` header to the response header of the consumer so they know if the value is cached or not.
 
-`ngx.say(asset.body)`: This is how we are terminating the request and send the aggregate response to the consumer.
+`ngx.say(asset.body)`: This is how we are terminating the request and sending the aggregate response to the consumer.
 
-`location ^~ /get-asset/ {`: Is a `startsWith` check. The `^~` is important, and we must have it. Otherwise a request to `/something.js` will cause an infinite loop because the `location.capture` will continue to call the `~* \.(js|css)$ ` until it errors out. The regex for the assets takes priority otherwise.
+`location ^~ /get-asset/`: Is a "startsWith" check. The `^~` is important, and we must have it. Otherwise, a request to `/something.js` will cause an infinite loop because the `location.capture` will continue to call the `~* \.(js|css)$ ` until it crashes nginx. The regex for the assets takes priority otherwise.
 
-`internal;`: This means the request can only be made internally by nginx.
+`internal`: This means the request can only be made internally by nginx.
 
-`set_by_lua_block $version {`: This is taking the ngx.var.version variable passed in in the `location.capture` and defining it within the context of the "/get-asset" location block
+`set_by_lua_block $version`: This is taking the ngx.var.version variable passed in in the `location.capture` and defining it within the context of the "/get-asset" location block.
 
-`more_set_headers "X-Cache $upstream_cache_status";`: This is required to send the cache status header as a response header to the `location.capture`. [according to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), "the standard ngx_headers (`add_header`) module works only in main requests, and it is a no-op in subrequests. You have to use Lua or ngx_headers_more (`more_set_headers`)" to add the Foo header in location /bar. So... fun.
+`more_set_headers "X-Cache $upstream_cache_status"`: This is required to send the cache status header as a response header to the `location.capture`. [According to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), `add_header` only works in main requests, and it is a no-op in subrequests. Therefore, you have to use lua or `more_set_headers`. So... fun.
 
-`proxy_cache assets_cache;`: This is assigning a new cache to this location block specifically for caching assets.
+`proxy_cache assets_cache`: This is assigning a new cache to this location block specifically for caching assets.
 
 This is what it looks like in action:
 
-```bash
+```conf
 
 $ curl -D - localhost:8080/stylesheet.fingerprint.css
 
@@ -394,15 +395,15 @@ fake css with new version: lvrlljytjd
 
 ```
 
-Invalidation of API calls
+**Invalidation of API calls**
 
-Now what about API calls backed by a database where strong consistency between the cache and database is desired. For simplicity of this example I again want to emphasize that depending on the use-case and if this proxy handles un-safe requests for these resources (`PUT`, `DELETE`, `POST`, `PATCH`) we might implement a different pattern here with `cache-aside` or `read-through/write-through`.
+Now what about API calls backed by a database. For simplicity of this example I again want to emphasize that depending on the use-case and if this proxy handles un-safe requests for these resources (`PUT`, `DELETE`, `POST`, `PATCH`) we might implement a different pattern here.
 
-Also remember that cache-purging requires an nginx commercial license if you want it out of the box, but you still have other options if you would rather build it than buy it.
+Remember that cache-purging requires an nginx+ commercial license if you want it out of the box, but you still have other options if you would rather build it than buy it.
 
-Also the pre-requisite for these approaches is that on every database write you need to send out a fire and forget web request to an nginx cache invalidation endpoint or, if you elect to use a distributed cache, you send the invalidation request to the cache itself, and the nginx instances would just be connected to it.
+Also, The pre-requisite for these approaches is that on every database write you need to send out a fire and forget web request to an nginx cache invalidation endpoint or, if you elect to use a distributed cache, you send the invalidation request to the cache itself, and the nginx instances would just be connected to it.
 
-Also keep in mind the consequences of purging a shared cache. You might want to add things like authorization to confirm those who attempt to purge the cache are allowed to do so.
+Lastly, keep in mind the consequences of purging a shared cache. You might want to add things like authorization to confirm those who attempt to purge the cache are allowed to do so.
 
 Here are some approaches you could take:
 
@@ -410,7 +411,7 @@ Here are some approaches you could take:
 
 2) Another alternative could be to use an in process lru implemented in lua with [lua-resty-lrucache](https://github.com/openresty/lua-resty-lrucache) module.
 
-3) Another alternative is to use the nginx or OpenResty redis module. Your microservice that is making updates or inserts to the database could also be connected to an out of process cache, for example... redis. Then you just setup a cache purging endpoint which removes the entry from redis. You would also have logic to read the redis entry. You have a few options here. A disclaimer for these is that I know of only one instance using the lua-resty-redis module in production. The other two I have not tried. I will try to write a blog entry to compare them:
+3) You could also use the nginx or OpenResty redis module. Your microservice that is making updates or inserts to the database could be connected to an out of process cache, for example... redis. Then you just setup a cache purging endpoint which removes the entry from redis. You could also have logic to read the redis entry. You have a few options here. A disclaimer, for these is that I know of only one instance using the lua-resty-redis module in production. The other two I have not tried. I will try to write a blog entry to compare them:
 
    - [ngx http redis module](https://www.nginx.com/resources/wiki/modules/redis/)
    - [openresty-redis-module](https://github.com/openresty/redis2-nginx-module#readme)
@@ -420,8 +421,8 @@ Here are some approaches you could take:
 
 ### Conclusion
 
-As you can see nginx offers a variety of options for any backend caching strategy that you'd like to create. Most patterns are very simple and easy to implement. For free software you get some bang for your buck. As you can also see there are some options that are more complicated than others.
+As you can see nginx offers a variety of options for any backend caching strategy that you'd like to create. Most patterns are very simple and easy to implement. For free software you get some good bang for your buck. However, some options that are more complicated than others.
 
-Nginx OpenResty is a great technology, but it can also be a beast especially when you start customizing and adding logic via lua with OpenResty. I'm an OpenResty specialist. If are working with OpenResty and would like help on your project. Drop me a line. Happy to help.
+Nginx and OpenResty are great technologies, but can be a beast especially when you start customizing and adding logic via lua with OpenResty. I'm an nginx and OpenResty specialist. If are working with OpenResty and would like help on your project. [Drop me a line](/contact). Happy to help.
 
 
