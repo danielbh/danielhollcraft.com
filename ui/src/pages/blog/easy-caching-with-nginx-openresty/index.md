@@ -401,7 +401,7 @@ Now what about API calls backed by a database. For simplicity of this example I 
 
 Remember that cache-purging requires an nginx+ commercial license if you want it out of the box, but you still have other options if you would rather build it than buy it.
 
-Also, The pre-requisite for these approaches is that on every database write you need to send out a fire and forget web request to an nginx cache invalidation endpoint or, if you elect to use a distributed cache, you send the invalidation request to the cache itself, and the nginx instances would just be connected to it.
+Also, the pre-requisite for these approaches is that on every database write you need to send out a fire and forget web request to an nginx cache invalidation endpoint or, if you elect to use a distributed cache, you send the invalidation request to the cache itself, and the nginx instances would just be connected to it.
 
 Lastly, keep in mind the consequences of purging a shared cache. You might want to add things like authorization to confirm those who attempt to purge the cache are allowed to do so.
 
@@ -411,7 +411,7 @@ Here are some approaches you could take:
 
 2) Another alternative could be to use an in process lru implemented in lua with [lua-resty-lrucache](https://github.com/openresty/lua-resty-lrucache) module.
 
-3) You could also use the nginx or OpenResty redis module. Your microservice that is making updates or inserts to the database could be connected to an out of process cache, for example... redis. Then you just setup a cache purging endpoint which removes the entry from redis. You could also have logic to read the redis entry. You have a few options here. A disclaimer, for these is that I know of only one instance using the lua-resty-redis module in production. The other two I have not tried. I will try to write a blog entry to compare them:
+3) You could also use the nginx or OpenResty redis module. Your microservice that is making writes to the database could be connected to an out of process cache, for example... redis. Then you just setup a cache purging endpoint which removes the entry from redis. You could also have logic to read the redis entry. You have a few options here. A disclaimer, for these is that I know of only one instance using the lua-resty-redis module in production. The other two I have not tried.
 
    - [ngx http redis module](https://www.nginx.com/resources/wiki/modules/redis/)
    - [openresty-redis-module](https://github.com/openresty/redis2-nginx-module#readme)
