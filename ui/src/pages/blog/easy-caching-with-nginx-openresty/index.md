@@ -222,7 +222,7 @@ Notice you can tell that it was cached because the `X-Cache` response header was
 ### Cache Invalidation and Bypass
 
 Ah yes... The bane of every caching strategy. What happens when a cached resource changes and you immediately
-want to use the new version. So there is good new and bad news when it comes to Nginx/OpenResty. Bad news first. [Cache purging through exposing an endpoint from nginx requires nginx+](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/#purge). However, fear not. There are some good work-arounds depending on your situtation. Here we will go through three.
+want to use the new version. So there is good new and bad news when it comes to Nginx/OpenResty. Bad news first. [Cache purging through exposing an endpoint from nginx requires nginx+](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/#purge). However, fear not. There are some good work-arounds depending on your situtation. Here we will go through two examples.
 
 **Bypass**
 
@@ -276,122 +276,6 @@ Content-Length: 28
 Connection: keep-alive
 
 Uh oh something bad happened
-
-```
-
-**Invalidation of Static Assets**
-
-This method is best used when you are caching static assets that change on a deploy. For example you are fetching a javascript or a stylesheet. Keep in mind best practices recommend that you also be fingerprinting these assets and setting `Cache-Control` control headers for consumers in the proxy. The topic of `Cache-Control` headers is a blog entry all by itself... If you would like to look more into this I recommend [Mozilla Cache-Control Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control). For the purposes of this blog entry we will ignore their existence, and be focusing on just caching the assets in nginx cache.
-
-This is the essence of the approach:
-
-1. Map the path i.e. `/path/` in `/path/script.fingerprint.js` to the last version was last deployed. The version could be a git tag or even git sha.
-
-2. Then put the value of this version as a part of the cache key of the request being cached. The ways you do this are many. Let's imagaine you had an up-to-date store somewhere that took a couple of milliseconds or less where you could do this look-up.
-
-To do this we are going to leverage the scripting capabilities of OpenResty and write some Lua. The Lua code will make a subrequest to an endpoint on a go microservice that will have a random string representing it's version. For the purposes of simulation, the string is regenerated every 2 seconds. This will allow us to see this method of cache invalidation in action.
-
-Keep in mind that when we use this in production we would want to make sure that the check to see if there was a new deployment was faster than just going and getting the assets. If not, there is really no point to doing this. Also, the pattern you are about to see can be applied to other scenarios as well, where the check to see if something has been updated is much faster than going all the way to the upstream server.
-
-```conf
-
-location ~* \.(js|css)$ {
-  rewrite_by_lua_block {
-    local deployment_version = ngx.location.capture("/deployment-info").body
-    local asset = ngx.location.capture("/get-asset" .. ngx.var.uri, {
-      vars = { version = deployment_version }
-    })
-    ngx.header["Version"] = deployment_version
-    ngx.header["X-Cache"] = asset.header["X-Cache"]
-    ngx.say(asset.body)
-  }
-}
-
-location ^~ /get-asset/ {
-  internal;
-
-  set_by_lua_block $version {
-    return ngx.var.version
-  }
-
-  more_set_headers "X-Cache $upstream_cache_status";
-  proxy_cache assets_cache;
-  proxy_cache_key $uri$version;
-  proxy_pass  http://goapp:8000/;
-}
-
-location / {
-  proxy_pass  http://goapp:8000;
-}
-
-```
-
-`location ~* \.(js|css)$`:
-
-`rewrite_by_lua_block`: This is a block where we can write Lua code. Something very subtle is happening here that will be hard to see without explanation. This block needs to be done first and make subrequests to the enclosed `location.capture` invocations. That is because `cache_keys` are assigned before a `rewrite_by_lua_block` can execute. Now you might ask, why not do a location.capture inside of a `set_by_lua_block` like we are doing above? You cannot do a `location.capture` inside of a `set_by_lua_block`. Why? Because according to [the docs](https://github.com/openresty/lua-nginx-module#set_by_lua) "`ngx_http_rewrite_module` does not support nonblocking I/O in its commands, Lua APIs requiring yielding the current Lua "light thread" cannot work in this directive." So we must do it this weird way. It's either that or you submit a PR...
-
-`ngx.location.capture("/deployment-info").body`: This directive is what makes a subrequest in Lua. In order to use it we must have a valid location block. You will notice none such exists explicity. However, the match all location block `location /` will catch this and send it to the upstream go app. Here we are grabbing the body from the deployment info response which is the fake version we will use as part of our cache key to identify if there has been an update to the code.
-
-`ngx.var.uri`: This is the equivalent of the `$uri` variable, but in Lua context. It is just the path being requested in this block.
-
-`vars = { version = deployment_version }`: Here we must pass the deployment version through to the "/get-asset" location block so that we may use it in a cache key.
-
-`ngx.header["X-Cache"] = asset.header["X-Cache"]`: Here we are assigning the `X-Cache` header to the response header of the consumer so they know if the value is cached or not.
-
-`ngx.say(asset.body)`: This is how we are terminating the request and sending the aggregate response to the consumer.
-
-`location ^~ /get-asset/`: Is a "startsWith" check. The `^~` is important, and we must have it. Otherwise, a request to `/something.js` will cause an infinite loop because the `location.capture` will continue to call the `~* \.(js|css)$ ` until it crashes nginx. The regex for the assets takes priority otherwise.
-
-`internal`: This means the request can only be made internally by nginx.
-
-`set_by_lua_block $version`: This is taking the ngx.var.version variable passed in in the `location.capture` and defining it within the context of the "/get-asset" location block.
-
-`more_set_headers "X-Cache $upstream_cache_status"`: This is required to send the cache status header as a response header to the `location.capture`. [According to the creator of openresty](https://github.com/openresty/lua-nginx-module/issues/68), `add_header` only works in main requests, and it is a no-op in subrequests. Therefore, you have to use Lua or `more_set_headers`. So... fun.
-
-`proxy_cache assets_cache`: This is assigning a new cache to this location block specifically for caching assets.
-
-This is what it looks like in action:
-
-```conf
-
-$ curl -D - localhost:8080/stylesheet.fingerprint.css
-
-HTTP/1.1 200 OK
-Server: openresty/1.15.8.1
-Date: Sun, 24 Aug 2019 18:40:12 GMT
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Connection: keep-alive
-Version: ctdlhrjbhy
-X-Cache: MISS
-
-fake css with new version: ctdlhrjbhy
-
-$ curl -D - localhost:8080/stylesheet.fingerprint.css
-
-HTTP/1.1 200 OK
-Server: openresty/1.15.8.1
-Date: Sun, 24 Aug 2019 18:40:14 GMT
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Connection: keep-alive
-Version: ctdlhrjbhy
-X-Cache: HIT
-
-fake css with new version: ctdlhrjbhy
-
-$ curl -D - localhost:8080/stylesheet.fingerprint.css
-
-HTTP/1.1 200 OK
-Server: openresty/1.15.8.1
-Date: Sun, 24 Aug 2019 18:40:16 GMT
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Connection: keep-alive
-Version: lvrlljytjd
-X-Cache: MISS
-
-fake css with new version: lvrlljytjd
 
 ```
 
