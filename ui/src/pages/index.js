@@ -17,7 +17,8 @@ class Main extends Component {
         <section>
           <article className="container">
             <div id="homepage-description">
-              <h2>Web Developer</h2>
+              <br/>
+              <h2>Software Engineer</h2>
               <p>
                 Hello. My name is Daniel. I've been working in the
                 software industry since 2008, and have been a professional

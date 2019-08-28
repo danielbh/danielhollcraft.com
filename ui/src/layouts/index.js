@@ -36,7 +36,7 @@ export default class extends Component {
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Software engineer. Expert in JavaScript technologies.' },
+            { name: 'description', content: 'Software engineer. Expert in Cloud Engineering.' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
@@ -45,7 +45,7 @@ export default class extends Component {
           <header>
             <span className="image avatar"><img src={avatar} alt="" /></span>
             <h1 id="logo"><Link to="/">Daniel Hollcraft</Link></h1>
-            <p>Web Developer</p>
+            <p>Software Engineer</p>
           </header>
           <nav id="nav">
             <ul onClick={this.closeSideBar}>
