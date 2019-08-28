@@ -69,7 +69,7 @@ export default class extends Component {
           <section id="footer">
             <div className="container">
               <ul className="copyright">
-                <li>&copy; Daniel Hollcraft 2019.</li><li>Derivative work of: <a href="https://html5up.net/read-only">HTML5 UP</a></li>
+                <li>&copy; Daniel Hollcraft 2019 </li><li> Visual Theme is Derivative work of: <a href="https://html5up.net/read-only">HTML5 UP</a></li>
               </ul>
             </div>
           </section>
