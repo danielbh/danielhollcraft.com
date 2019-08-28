@@ -1,5 +1,5 @@
 ---
-path: /blog/easy-caching-with-nginx-openresty
+path: /blog/easy-caching-with-nginx
 title: Easy Caching with Nginx
 date: 08/25/2019
 categories: Nginx, OpenResty, Caching
