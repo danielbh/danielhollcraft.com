@@ -20,8 +20,8 @@ class Main extends Component {
               <br/>
               <h2>Software Engineer</h2>
               <p>
-                Hello. My name is Daniel. I've software developer since 2011.
-                I've worked in e-learning, agricultural monitoring, tourism, and fintech. My current focus is building backend solutions in a Cloud Native environment. In my spare time I contribute to open source golang projects. To see what I've been up to lately, <a href="blog">check-out my blog</a>.
+                Hello. My name is Daniel, software developer since 2011, with experience in
+                e-learning, agricultural monitoring, tourism, and fintech. My current focus is building backend solutions in a Cloud Native environment. In my spare time I contribute to open source golang projects. To see what I've been up to lately, <a href="blog">check-out my blog</a>.
               </p>
             </div>
           </article>
