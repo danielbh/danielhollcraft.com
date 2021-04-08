@@ -1,4 +1,6 @@
 # danielhollcraft.com powered by gatsbyjs and serverless
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdanielbh%2Fdanielhollcraft.com.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdanielbh%2Fdanielhollcraft.com?ref=badge_shield)
+
 
 ### Purpose
 
@@ -60,3 +62,7 @@ It is deployed using [serverless](https://serverless.com/). While you can use Am
 ### API
 
 The API is deployed with [serverless](https://serverless.com). The API only contains one function that is an [AWS Lambda](https://aws.amazon.com/lambda/) function. The function serves as a submit function for the contact form. It takes the submitted form data and sends it to AWS Lambda which then sends the message via [Mailgun](https://mailgun.com) to a specified environmentally configured variable e-mail address. Please see [api/serverless.yml](https://github.com/danielbh/danielhollcraft.com/blob/master/api/serverless.yml) to see the deployment configuration for the API.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdanielbh%2Fdanielhollcraft.com.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdanielbh%2Fdanielhollcraft.com?ref=badge_large)
