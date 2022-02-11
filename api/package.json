@@ -8,7 +8,7 @@
     "dev": "sls offline"
   },
   "dependencies": {
-    "ajv": "^5.1.5",
+    "ajv": "^6.12.3",
     "mailgun-js": "^0.11.2",
     "serverless-offline": "^3.14.1"
   }
